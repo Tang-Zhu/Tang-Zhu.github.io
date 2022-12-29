@@ -3,7 +3,7 @@
     <title>My New Hugo Site</title>
     <link>https://kkkiona.github.io/</link>
     <description>This is my new Hugo FixIt site</description>
-    <generator>Hugo -- gohugo.io</generator><language>en-us</language>
+    <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 28 Dec 2022 18:02:29 &#43;0800</lastBuildDate>
       <atom:link href="https://kkkiona.github.io/index.xml" rel="self" type="application/rss+xml" />
     </channel>
 </rss>

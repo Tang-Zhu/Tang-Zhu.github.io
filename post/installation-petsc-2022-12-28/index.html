@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="en-us">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>Installation of PETSc - My New Hugo Site</title><meta name="author" content="">
+<meta name="author-link" content="">
+<meta name="description" content="Introduction This article will cover the installation of the PETSc library, including the common installation for Linux and the attempt on Windows.
+Installation for Linux This article is applicable to the building of PETSc-3.14.1. You can download the newest version by:
+git clone -b release https://gitlab.com/petsc/petsc.git #If haven&#39;t the git tool, you can install it through &#39;apt&#39;. #Follow steps will show how to use &#39;apt&#39;. or search the applicable version through the link:" /><meta name="keywords" content='Hugo, FixIt' /><meta itemprop="name" content="Installation of PETSc">
+<meta itemprop="description" content="Introduction This article will cover the installation of the PETSc library, including the common installation for Linux and the attempt on Windows.
+Installation for Linux This article is applicable to the building of PETSc-3.14.1. You can download the newest version by:
+git clone -b release https://gitlab.com/petsc/petsc.git #If haven&#39;t the git tool, you can install it through &#39;apt&#39;. #Follow steps will show how to use &#39;apt&#39;. or search the applicable version through the link:"><meta itemprop="datePublished" content="2022-12-28T18:02:29+08:00" />
+<meta itemprop="dateModified" content="2022-12-28T18:02:29+08:00" />
+<meta itemprop="wordCount" content="1266">
+<meta itemprop="keywords" content="" /><meta property="og:title" content="Installation of PETSc" />
+<meta property="og:description" content="Introduction This article will cover the installation of the PETSc library, including the common installation for Linux and the attempt on Windows.
+Installation for Linux This article is applicable to the building of PETSc-3.14.1. You can download the newest version by:
+git clone -b release https://gitlab.com/petsc/petsc.git #If haven&#39;t the git tool, you can install it through &#39;apt&#39;. #Follow steps will show how to use &#39;apt&#39;. or search the applicable version through the link:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kkkiona.github.io/post/installation-petsc-2022-12-28/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-12-28T18:02:29+08:00" />
+<meta property="article:modified_time" content="2022-12-28T18:02:29+08:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Installation of PETSc"/>
+<meta name="twitter:description" content="Introduction This article will cover the installation of the PETSc library, including the common installation for Linux and the attempt on Windows.
+Installation for Linux This article is applicable to the building of PETSc-3.14.1. You can download the newest version by:
+git clone -b release https://gitlab.com/petsc/petsc.git #If haven&#39;t the git tool, you can install it through &#39;apt&#39;. #Follow steps will show how to use &#39;apt&#39;. or search the applicable version through the link:"/>
+<meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" href="https://kkkiona.github.io/post/installation-petsc-2022-12-28/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Installation of PETSc",
+    "inLanguage": "en-us",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https:\/\/kkkiona.github.io\/post\/installation-petsc-2022-12-28\/"
+    },"genre": "post","wordcount":  1266 ,
+    "url": "https:\/\/kkkiona.github.io\/post\/installation-petsc-2022-12-28\/","datePublished": "2022-12-28T18:02:29+08:00","dateModified": "2022-12-28T18:02:29+08:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "Author"
+      },"description": ""
+  }
+  </script></head>
+  <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/" title="My New Hugo Site"><img
+    class="lazyload logo"
+    src="/svg/loading.min.svg"
+    data-src="/kiona.gif"
+    data-srcset="/kiona.gif, /kiona.gif 1.5x, /kiona.gif 2x"
+    data-sizes="auto"
+    alt="My New Hugo Site"
+    title="My New Hugo Site" width="400" height="200"/><span class="header-title-text"></span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/posts/"
+                
+                
+              ><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> Posts</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/categories/"
+                
+                
+              ><i class="fa-solid fa-th fa-fw fa-sm" aria-hidden="true"></i> Categories</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/tags/"
+                
+                
+              ><i class="fa-solid fa-tags fa-fw fa-sm" aria-hidden="true"></i> Tags</a></li><li class="menu-item delimiter"></li><li class="menu-item search" id="search-desktop">
+            <input type="text" placeholder="Search titles or contents ..." id="search-input-desktop">
+            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+              <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+            </a>
+            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+              <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+            </a>
+            <span class="search-button search-loading" id="search-loading-desktop">
+              <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+            </span>
+          </li><li class="menu-item theme-switch" title="Switch Theme">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title="My New Hugo Site"><img
+    class="lazyload logo"
+    src="/svg/loading.min.svg"
+    data-src="/kiona.gif"
+    data-srcset="/kiona.gif, /kiona.gif 1.5x, /kiona.gif 2x"
+    data-sizes="auto"
+    alt="/kiona.gif"
+    title="/kiona.gif" width="400" height="200"/><span class="header-title-text"></span></a><span class="header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li class="search-wrapper">
+            <div class="search mobile" id="search-mobile">
+              <input type="text" placeholder="Search titles or contents ..." id="search-input-mobile">
+              <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+              </a>
+              <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+              </a>
+              <span class="search-button search-loading" id="search-loading-mobile">
+                <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+              </span>
+            </div>
+            <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+              Cancel
+            </a>
+          </li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/posts/"
+                  
+                  
+                ><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> Posts</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/categories/"
+                  
+                  
+                ><i class="fa-solid fa-th fa-fw fa-sm" aria-hidden="true"></i> Categories</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/tags/"
+                  
+                  
+                ><i class="fa-solid fa-tags fa-fw fa-sm" aria-hidden="true"></i> Tags</a></li><li class="menu-item theme-switch" title="Switch Theme">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li></ul>
+    </nav>
+  </div>
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+  </div>
+  <div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+  </div><main class="container" data-page-style="normal"><article class="page single special">
+    <div class="header"><h1 class="single-title animate__animated animate__pulse animate__faster">Installation of PETSc</h1></div><div
+      class="content"
+      id="content"
+      
+      
+    ><h1 id="introduction">Introduction</h1>
+<p>This article will cover the installation of the PETSc library, including the common installation for Linux and the attempt on Windows.</p>
+<h1 id="installation-for-linux">Installation for Linux</h1>
+<p>This article is applicable to the building of <strong>PETSc-3.14.1</strong>. You can download the newest version by:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git clone -b release https://gitlab.com/petsc/petsc.git
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#If haven&#39;t the git tool, you can install it through &#39;apt&#39;.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#Follow steps will show how to use &#39;apt&#39;.</span>
+</span></span></code></pre></div><p>or search the applicable version through the link:</p>
+<p><a href="https://gitlab.com/petsc/petsc"target="_blank" rel="external nofollow noopener noreferrer">https://gitlab.com/petsc/petsc</a></p>
+<h2 id="environment">Environment</h2>
+<p>Building PETSc relies on the following environments：</p>
+<ul>
+<li><strong>Ubuntu</strong> (Linux system, tested in 22.04.1 version)</li>
+<li><strong>gcc/g++/gfrotran</strong> (C/C++/Frotran compiler, tested in 11.3.0 version)</li>
+<li><strong>Python3</strong> (tested in 3.10.6)</li>
+<li><strong>LAPACK/BLAS</strong> (Scientific computing library, tested in 3,4,2 version)</li>
+<li><strong>MPICH</strong> (Realization of MPI, tested in 4.0.2 version)</li>
+</ul>
+<h2 id="installation">Installation</h2>
+<p>The first step is installing <strong>Ubuntu</strong> system, you can install it on your PC or virtual machine (e.g.VMware).</p>
+<ul>
+<li><em>Please choose <strong>English</strong> as the system language if you can accpet, which is convenient for programming.</em></li>
+<li><em>You can choose the minimal installation and don&rsquo;t choose any third-part software and updating opeions when installing, if you internet is not good enough.</em></li>
+</ul>
+<p>After Ubuntu installation, the first thing you need to do is updating software. Ubuntu uses <strong>apt</strong> gizmo to manage software, the updating command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># Using &#39;apt-get&#39; to instead &#39;apt&#39;, If your system doesn&#39;t support &#39;apt&#39; </span>
+</span></span><span style="display:flex;"><span>sudo apt update <span style="color:#75715e"># update &#39;apt&#39; itself</span>
+</span></span><span style="display:flex;"><span>sudo apt upgrade <span style="color:#75715e"># update software</span>
+</span></span></code></pre></div><p>If the origin software mirror source is too late, you can change it by:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>cp /etc/apt/sources.list /etc/apt/sources.list.bak <span style="color:#75715e"># Copy old version</span>
+</span></span><span style="display:flex;"><span>sudo vi /etc/apt/sources.list
+</span></span><span style="display:flex;"><span>deb http://mirrors.aliyun.com/ubuntu/ xxxx main restricted universe multiverse
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Change all the link, notice keep &#39;xxxx&#39; with your own Codename</span>
+</span></span></code></pre></div><p>Some recommended sources are follows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># Aliyun</span>
+</span></span><span style="display:flex;"><span>deb http://mirrors.aliyun.com/ubuntu/ xenial main restricted universe multiverse
+</span></span><span style="display:flex;"><span>deb http://mirrors.aliyun.com/ubuntu/ xenial-security main restricted universe multiverse
+</span></span><span style="display:flex;"><span>deb http://mirrors.aliyun.com/ubuntu/ xenial-updates main restricted universe multiverse
+</span></span><span style="display:flex;"><span>deb http://mirrors.aliyun.com/ubuntu/ xenial-backports main restricted universe multiverse
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Tsinghua</span>
+</span></span><span style="display:flex;"><span>deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial main restricted universe multiverse
+</span></span><span style="display:flex;"><span>deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-security main restricted universe multiverse
+</span></span><span style="display:flex;"><span>deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-updates main restricted universe multiverse
+</span></span><span style="display:flex;"><span>deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-backports main restricted universe multiverse
+</span></span></code></pre></div><p>The next step is installing <strong>gcc/g++/gfrotran</strong> and <strong>Python3</strong>, you can directly install them with <strong>apt</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo apt install gcc
+</span></span><span style="display:flex;"><span>sudo apt install g++
+</span></span><span style="display:flex;"><span>sudo apt install gfortran
+</span></span><span style="display:flex;"><span>sudo apt install python3
+</span></span></code></pre></div><p>If can&rsquo;t find the package, you can use <em><code>apt search</code></em> to search it and choose the right version for installing.</p>
+<p>In some situation, you might meet error:
+<em><code>configure: error: no acceptable C compiler found in $PATH</code></em>, especially choosing minimal version when installing Ubuntu. You can fix it by:<em><code>sudo apt-get install -y build-essential</code></em>.</p>
+<p>There are two different ways about installing <strong>LAPACK/BLAS</strong> and  <strong>MPICH</strong>. The first is installing during the PETSc configuring, which recommended by PETSc official. The other is using <strong>apt</strong>.</p>
+<p>For the first way, <em><code>cd</code></em> into the PETSc&rsquo;s root directory and configure with follow command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>./configure --with-cc<span style="color:#f92672">=</span>gcc --with-cxx<span style="color:#f92672">=</span>g++ --with-fc<span style="color:#f92672">=</span>gfortran --download-mpich --download-fblaslapack
+</span></span></code></pre></div><p>If download fails, you can download these packages mannually from the given link in the configure message. Then, indicate the download directory:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>./configure --with-cc<span style="color:#f92672">=</span>gcc --with-cxx<span style="color:#f92672">=</span>g++ --with-fc<span style="color:#f92672">=</span>gfortran --download-mpich --download-fblaslapack --with-download-dir<span style="color:#f92672">=</span>&lt;xxxxx&gt;
+</span></span></code></pre></div><p>After configuration, make the project:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>make all check
+</span></span></code></pre></div><p>If you don&rsquo;t have the <em><code>make</code></em> tool, install it by <em><code>apt</code></em>.</p>
+<p>The second way is installing <strong>LAPACK/BLAS</strong> and  <strong>MPICH</strong> mannually. <strong>LAPACK/BLAS</strong> are easily to install:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo apt search lapack-dev
+</span></span><span style="display:flex;"><span>...
+</span></span><span style="display:flex;"><span>sudo apt install liblapack64-dev <span style="color:#75715e">#Choose the applicable version</span>
+</span></span><span style="display:flex;"><span>sudo apt search blas-dev
+</span></span><span style="display:flex;"><span>...
+</span></span><span style="display:flex;"><span>sudo apt install libblas64-dev <span style="color:#75715e">#Choose the applicable version</span>
+</span></span></code></pre></div><p><strong>MPI</strong> is a cross-language communication protocol for parallel programming. <strong>MPICH</strong> is one of realizations of MPI, and you can also choose <strong>OpenMPI</strong> to instead it:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo apt install mpich
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#sudo apt install openmpi</span>
+</span></span></code></pre></div><p>After that, if the <strong>$PATH</strong> is correct you can configure PETSc directly, otherwise you need indicate the directory:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>./configure --with-cc<span style="color:#f92672">=</span>gcc --with-cxx<span style="color:#f92672">=</span>g++ --with-fc<span style="color:#f92672">=</span>gfortran
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#./configure --with-cc=gcc --with-cxx=g++ --with-fc=gfortran --with--mpich-dir=&lt;xxxx&gt; --with--fblaslapack-dir=&lt;xxxx&gt;</span>
+</span></span></code></pre></div><p>After configuration, make the project:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>make all check
+</span></span></code></pre></div><p>During the making process, some errors might occur such as <em><code>/usr/bin/ld: cannot find -lmpi_cxx</code></em>, which means lack of depended libs. You need to use <strong>apt</strong> to install them for example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo apt search lmpi
+</span></span><span style="display:flex;"><span>...
+</span></span><span style="display:flex;"><span>sudo apt install libmkl-blacs-intelmpi-ilp64 <span style="color:#75715e">#Choose the applicable version</span>
+</span></span></code></pre></div><p>After making, the message will show follows. You can re-check this information through configure.log, the <strong>PETSC_DIR</strong> and <strong>PETSC_ARCH</strong> will be used in your project.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>-----------------------------------------
+</span></span><span style="display:flex;"><span>PETSC_VERSION_RELEASE
+</span></span><span style="display:flex;"><span>.
+</span></span><span style="display:flex;"><span>.
+</span></span><span style="display:flex;"><span>.
+</span></span><span style="display:flex;"><span>-----------------------------------------
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#define SOME_PETSC_VARIABLE</span>
+</span></span><span style="display:flex;"><span>.
+</span></span><span style="display:flex;"><span>.
+</span></span><span style="display:flex;"><span>.
+</span></span><span style="display:flex;"><span>-----------------------------------------
+</span></span><span style="display:flex;"><span>Installed Compiler, Package, and Library Information
+</span></span><span style="display:flex;"><span>.
+</span></span><span style="display:flex;"><span>.
+</span></span><span style="display:flex;"><span>.
+</span></span><span style="display:flex;"><span><span style="color:#f92672">=========================================</span>
+</span></span><span style="display:flex;"><span>       FC arch-darwin-c-debug/obj/sys/f90-mod/petscsysmod.o
+</span></span><span style="display:flex;"><span>       FC arch-darwin-c-debug/obj/sys/fsrc/somefort.o
+</span></span><span style="display:flex;"><span>       FC arch-darwin-c-debug/obj/sys/f90-src/fsrc/f90_fwrap.o
+</span></span><span style="display:flex;"><span>       CC arch-darwin-c-debug/obj/sys/info/verboseinfo.o
+</span></span><span style="display:flex;"><span>       CC arch-darwin-c-debug/obj/sys/info/ftn-auto/verboseinfof.o
+</span></span><span style="display:flex;"><span>       CC arch-darwin-c-debug/obj/sys/info/ftn-custom/zverboseinfof.o
+</span></span><span style="display:flex;"><span>       .
+</span></span><span style="display:flex;"><span>       .
+</span></span><span style="display:flex;"><span>       .
+</span></span><span style="display:flex;"><span>       FC arch-darwin-c-debug/obj/snes/f90-mod/petscsnesmod.o
+</span></span><span style="display:flex;"><span>       FC arch-darwin-c-debug/obj/ts/f90-mod/petsctsmod.o
+</span></span><span style="display:flex;"><span>       FC arch-darwin-c-debug/obj/tao/f90-mod/petsctaomod.o
+</span></span><span style="display:flex;"><span>  CLINKER arch-darwin-c-debug/lib/libpetsc.PETSC_MAJOR.PETSC_MINOR.PETSC_PATCH.dylib
+</span></span><span style="display:flex;"><span> DSYMUTIL arch-darwin-c-debug/lib/libpetsc.PETSC_MAJOR.PETSC_MINOR.PETSC_PATCH.dylib
+</span></span><span style="display:flex;"><span>gmake<span style="color:#f92672">[</span>2<span style="color:#f92672">]</span>: Leaving directory <span style="color:#e6db74">&#39;/your/petsc/dir&#39;</span>
+</span></span><span style="display:flex;"><span>gmake<span style="color:#f92672">[</span>1<span style="color:#f92672">]</span>: Leaving directory <span style="color:#e6db74">&#39;/your/petsc/dir&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">=========================================</span>
+</span></span><span style="display:flex;"><span>Running test examples to verify correct installation
+</span></span><span style="display:flex;"><span>Using PETSC_DIR<span style="color:#f92672">=</span>/your/petsc/dir and PETSC_ARCH<span style="color:#f92672">=</span>your-petsc-arch
+</span></span><span style="display:flex;"><span>C/C++ example src/snes/examples/tutorials/ex19 run successfully with <span style="color:#ae81ff">1</span> MPI process
+</span></span><span style="display:flex;"><span>C/C++ example src/snes/examples/tutorials/ex19 run successfully with <span style="color:#ae81ff">2</span> MPI processes
+</span></span><span style="display:flex;"><span>Fortran example src/snes/examples/tutorials/ex5f run successfully with <span style="color:#ae81ff">1</span> MPI process
+</span></span><span style="display:flex;"><span>Completed test examples
+</span></span></code></pre></div><h1 id="installation-for-windows">Installation for Windows</h1>
+<p>The installation of PETSc for <strong>Windows</strong> is not successful yet, this is just a record for the works.</p>
+<h2 id="environment-1">Environment</h2>
+<p>This article try <strong>MSYS2</strong> and <strong>Cygwin</strong> separately to build PETSc：</p>
+<ul>
+<li><strong>MSYS2</strong> (Linux environment in Windows, tested in 20221216.0.0 version)</li>
+<li><strong>Cygwin</strong> (Linux environment in Windows, tested in 1.2.1 version)</li>
+</ul>
+<h2 id="test-in-msys2">Test in MSYS2</h2>
+<p>The <strong>MSYS2</strong> system uses <em><code>pacman</code></em> to manage packages such like <em><code>apt</code></em>. You need to install all the same packages in <strong>Linux</strong> to <strong>MSYS2</strong> by <em><code>pacman</code></em>. <strong>MSYS2</strong> doesn&rsquo;t have some base packages (e.g.<em><code>make</code></em>), which you also need to install. Usage of <em><code>pacman</code></em>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>pacman -Ss <span style="color:#f92672">[</span>package name<span style="color:#f92672">]</span> <span style="color:#75715e">#Search package</span>
+</span></span><span style="display:flex;"><span>pacman -S <span style="color:#f92672">[</span>package name<span style="color:#f92672">]</span> <span style="color:#75715e">#Install package</span>
+</span></span></code></pre></div><p>The problem is when trying to configure PETSc after installing all the packages, it will meet error:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>Could not execute <span style="color:#e6db74">&#34;[&#39;/bin/rpm -q diffutils&#39;]&#34;</span>: 
+</span></span><span style="display:flex;"><span>    /bin/sh: line 1: /bin/rpm: No such file or directory.
+</span></span></code></pre></div><p>The <strong>MSYS2</strong> is a simple Linux environment running on Windows, which doesn&rsquo;t support enough to run this command.</p>
+<h2 id="test-in-cygwin">Test in Cygwin</h2>
+<p>The <strong>Cygwin</strong> system doesn&rsquo;t have such as <em><code>pacman</code></em> or <em><code>apt</code></em> tool to manage packages. One of the way to get package is to re-run the <strong>Cygwin-setup</strong> and to choose the needed package.
+<img
+    class="lazyload"
+    src="/svg/loading.min.svg"
+    data-src="D:/Blog/blog/content/images/Installation-PETSc-2022-12-28-1.png"
+    data-srcset="D:/Blog/blog/content/images/Installation-PETSc-2022-12-28-1.png, D:/Blog/blog/content/images/Installation-PETSc-2022-12-28-1.png 1.5x, D:/Blog/blog/content/images/Installation-PETSc-2022-12-28-1.png 2x"
+    data-sizes="auto"
+    alt="Cygwin-setup"
+    title="Cygwin-setup"/></p>
+<p>The other way to get the package is use <em><code>apt-cyg</code></em>. <em><code>apt-cyg</code></em> is similar to <em><code>apt</code></em>, but need be installed mannually:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>lynx -source rawgit.com/transcode-open/apt-cyg/master/apt-cyg &gt; apt-cyg
+</span></span><span style="display:flex;"><span>install apt-cyg /bin
+</span></span></code></pre></div><p>Or you can copy the <em>apt-cyg</em>&rsquo;s content through <a href="https://github.com/transcode-open/apt-cyg"target="_blank" rel="external nofollow noopener noreferrer">https://github.com/transcode-open/apt-cyg</a> to <em><strong>Cygwin:</strong></em>/bin to creat the same file and run:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>chmod +x apt-cyg
+</span></span></code></pre></div><p>The first problem except installing the base packages is <strong>Cygwin</strong> can&rsquo;t install <strong>MPICH</strong> successfully through above ways. So I try to build it mannualy.</p>
+<p>Firstly, download the source of <strong>MPICH</strong> from <a href="https://www.mpich.org/downloads/"target="_blank" rel="external nofollow noopener noreferrer">https://www.mpich.org/downloads/</a> and unpack the tar file (If doesn&rsquo;t have <strong>tar</strong> or other tools, just install them by <strong>Cygwin-setup</strong> or <em><code>apt-cyg</code></em>):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>tar xfz mpich.tar.gz
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#If tar doesn’t accept the z option, use</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#gunzip -c mpich.tar.gz | tar xf -</span>
+</span></span></code></pre></div><p>Let us assume that the directory where you do this is <em>/home/you/libraries</em>. It will now contain a subdirectory named <em>mpich-x.x.x</em>. Choose an installation directory (the default is <em>/usr/local/bin</em>):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>mkdir /home/you/mpich-install
+</span></span></code></pre></div><p>Choose a build directory:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>mkdir /tmp/you/mpich-x.x.x
+</span></span></code></pre></div><p>Configure <strong>MPICH</strong>, specifying the installation directory, and running the configure script in the source directory:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>cd /tmp/you/mpich-x.x.x
+</span></span><span style="display:flex;"><span>/home/you/libraries/mpich-x.x.x/configure -prefix<span style="color:#f92672">=</span>/home/you/mpich-install |&amp; tee c.txt
+</span></span></code></pre></div><p>For the <strong>Cygwin</strong>&rsquo;s <em>gfortran</em>, it will meet error:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>configure: error: The Fortran compiler gfortran does not accept programs that call the same routine with arguments of different types without the option -fallow-argument-mismatch.  Rerun configure with FFLAGS<span style="color:#f92672">=</span>-fallow-argument-mismatch and FCFLAGS<span style="color:#f92672">=</span>-fallow-argument-mismatch
+</span></span></code></pre></div><p>Change the command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>/home/you/libraries/mpich-x.x.x/configure -prefix<span style="color:#f92672">=</span>/home/you/mpich-install FFLAGS<span style="color:#f92672">=</span>-fallow-argument-mismatch FCFLAGS<span style="color:#f92672">=</span>-fallow-argument-mismatch |&amp; tee c.txt
+</span></span></code></pre></div><p>The error change to:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>configure: error: libfabric only builds on Linux, OS X, and FreeBSD
+</span></span><span style="display:flex;"><span>configure: error: libfabric configure failed
+</span></span></code></pre></div><p>It seems <strong>Cygwin</strong> can not support <strong>MPICH</strong> yet.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>It is not to hard to and possible to change the code to Windows version, because of the similarity between <strong>gcc</strong> and <strong>MSVC</strong>。So the best way is to rewrite the full code instead of using virtual Linux environment.</p>
+</div></article></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line powered">Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo 0.109.0">Hugo</a> | Theme - <a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt v0.2.17-RC"><img class="fixit-icon" src="/fixit.min.svg" alt="FixIt logo" />&nbsp;FixIt</a>
+        </div><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">2021 - 2022</span><span class="author" itemprop="copyrightHolder">
+              <a href="/"></a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line statistics"><span class="site-time" title='Website running ...'><i class="fa-solid fa-heartbeat fa-fw animate-icon" aria-hidden="true"></i><span class="run-times ms-1">Website running ...</span></span></div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="Back to Top"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric d-none">0%</span>
+        </div></div><div id="mask"></div><noscript>
+    <div class="noscript-warning">Theme FixIt works best with JavaScript enabled.</div>
+  </noscript>
+</div><link rel="stylesheet" href="/lib/katex/katex.min.css"><script src="/lib/autocomplete/autocomplete.min.js" defer></script><script src="/lib/lunr/lunr.min.js" defer></script><script src="/lib/lazysizes/lazysizes.min.js" async defer></script><script src="/lib/sharer/sharer.min.js" async defer></script><script src="/lib/katex/katex.min.js" defer></script><script src="/lib/katex/auto-render.min.js" defer></script><script src="/lib/katex/copy-tex.min.js" defer></script><script src="/lib/katex/mhchem.min.js" defer></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","editLockTitle":"Lock editable code block","editUnLockTitle":"Unlock editable code block","editable":true,"maxShownLines":10},"comment":{"enable":false},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script src="/js/theme.min.js" defer></script></body>
+</html>
