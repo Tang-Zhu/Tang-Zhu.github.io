@@ -1,7 +1,20 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories - Category - My New Hugo Site</title>
+    <title>Categories on Kiona</title>
     <link>https://kkkiona.github.io/categories/</link>
-    <description>Categories - Category - My New Hugo Site</description>
-    <generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://kkkiona.github.io/categories/" rel="self" type="application/rss+xml" /></channel>
+    <description>Recent content in Categories on Kiona</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 29 Dec 2022 17:18:05 +0800</lastBuildDate><atom:link href="https://kkkiona.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>draft</title>
+      <link>https://kkkiona.github.io/categories/draft/</link>
+      <pubDate>Thu, 29 Dec 2022 17:18:05 +0800</pubDate>
+      
+      <guid>https://kkkiona.github.io/categories/draft/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
 </rss>
