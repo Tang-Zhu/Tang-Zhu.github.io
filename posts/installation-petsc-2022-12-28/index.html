@@ -9,7 +9,7 @@
     <title>Installation of PETSc</title>
     <link rel="icon" type="image/png" href="/favicon.ico">
     
-    <link rel="stylesheet" href="https://kkkiona.github.io/style.min.8c5e32fb79c371e60144e8d92e154be671c950764ac3e89b85f9edecd33c1a13.css">
+    <link rel="stylesheet" href="https://kkkiona.github.io/style.min.26be4dda097a77a6cfac08515c7f1d92df076066b735599299246b1e2de1d32f.css">
     
     <script type="text/javascript" src="/main.js" defer></script>
     
@@ -66,8 +66,8 @@
     <script>
         (function(){
             if(''){
-                if (prompt('请输入文章密码') !== ''){
-                    alert('密码错误！');
+                if (prompt('Enter password') !== ''){
+                    alert('Password wrong');
                     history.back();
                 }
             }
@@ -130,30 +130,36 @@
         
         <nav id="TableOfContents">
   <ul>
-    <li><a href="#environment">Environment</a></li>
-    <li><a href="#installation">Installation</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#environment-1">Environment</a></li>
-    <li><a href="#test-in-msys2">Test in MSYS2</a></li>
-    <li><a href="#test-in-cygwin">Test in Cygwin</a></li>
-    <li><a href="#conclusion">Conclusion</a></li>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#installation-for-linux">Installation for Linux</a>
+      <ul>
+        <li><a href="#environment">Environment</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#installation-for-windows">Installation for Windows</a>
+      <ul>
+        <li><a href="#environment-1">Environment</a></li>
+        <li><a href="#test-in-msys2">Test in MSYS2</a></li>
+        <li><a href="#test-in-cygwin">Test in Cygwin</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
     </div>
 
     <div class='content  content '>
-        <h1 id="introduction">Introduction</h1>
+        <h2 id="introduction">Introduction</h2>
 <p>This article will cover the installation of the PETSc library, including the common installation for Linux and the attempt on Windows.</p>
-<h1 id="installation-for-linux">Installation for Linux</h1>
+<h2 id="installation-for-linux">Installation for Linux</h2>
 <p>This article is applicable to the building of <strong>PETSc-3.14.1</strong>. You can download the newest version by:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone -b release https://gitlab.com/petsc/petsc.git
 </span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">#If haven&#39;t the git tool, you can install it through &#39;apt&#39;.</span>
 </span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">#Follow steps will show how to use &#39;apt&#39;.</span>
 </span></span></code></pre></div><p>or search the applicable version through the link:</p>
 <p><a href="https://gitlab.com/petsc/petsc">https://gitlab.com/petsc/petsc</a></p>
-<h2 id="environment">Environment</h2>
+<h3 id="environment">Environment</h3>
 <p>Building PETSc relies on the following environments：</p>
 <ul>
 <li><strong>Ubuntu</strong> (Linux system, tested in 22.04.1 version)</li>
@@ -162,7 +168,7 @@
 <li><strong>LAPACK/BLAS</strong> (Scientific computing library, tested in 3,4,2 version)</li>
 <li><strong>MPICH</strong> (Realization of MPI, tested in 4.0.2 version)</li>
 </ul>
-<h2 id="installation">Installation</h2>
+<h3 id="installation">Installation</h3>
 <p>The first step is installing <strong>Ubuntu</strong> system, you can install it on your PC or virtual machine (e.g.VMware).</p>
 <ul>
 <li><em>Please choose <strong>English</strong> as the system language if you can accpet, which is convenient for programming.</em></li>
@@ -264,15 +270,15 @@
 </span></span><span style="display:flex;"><span>C/C++ example src/snes/examples/tutorials/ex19 run successfully with <span style="color:#099">2</span> MPI processes
 </span></span><span style="display:flex;"><span>Fortran example src/snes/examples/tutorials/ex5f run successfully with <span style="color:#099">1</span> MPI process
 </span></span><span style="display:flex;"><span>Completed <span style="color:#0086b3">test</span> examples
-</span></span></code></pre></div><h1 id="installation-for-windows">Installation for Windows</h1>
+</span></span></code></pre></div><h2 id="installation-for-windows">Installation for Windows</h2>
 <p>The installation of PETSc for <strong>Windows</strong> is not successful yet, this is just a record for the works.</p>
-<h2 id="environment-1">Environment</h2>
+<h3 id="environment-1">Environment</h3>
 <p>This article try <strong>MSYS2</strong> and <strong>Cygwin</strong> separately to build PETSc：</p>
 <ul>
 <li><strong>MSYS2</strong> (Linux environment in Windows, tested in 20221216.0.0 version)</li>
 <li><strong>Cygwin</strong> (Linux environment in Windows, tested in 1.2.1 version)</li>
 </ul>
-<h2 id="test-in-msys2">Test in MSYS2</h2>
+<h3 id="test-in-msys2">Test in MSYS2</h3>
 <p>The <strong>MSYS2</strong> system uses <em><code>pacman</code></em> to manage packages such like <em><code>apt</code></em>. You need to install all the same packages in <strong>Linux</strong> to <strong>MSYS2</strong> by <em><code>pacman</code></em>. <strong>MSYS2</strong> doesn&rsquo;t have some base packages (e.g.<em><code>make</code></em>), which you also need to install. Usage of <em><code>pacman</code></em>:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pacman -Ss <span style="color:#000;font-weight:bold">[</span>package name<span style="color:#000;font-weight:bold">]</span> <span style="color:#998;font-style:italic">#Search package</span>
 </span></span><span style="display:flex;"><span>pacman -S <span style="color:#000;font-weight:bold">[</span>package name<span style="color:#000;font-weight:bold">]</span> <span style="color:#998;font-style:italic">#Install package</span>
@@ -280,7 +286,7 @@
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Could not execute <span style="color:#d14">&#34;[&#39;/bin/rpm -q diffutils&#39;]&#34;</span>: 
 </span></span><span style="display:flex;"><span>    /bin/sh: line 1: /bin/rpm: No such file or directory.
 </span></span></code></pre></div><p>The <strong>MSYS2</strong> is a simple Linux environment running on Windows, which doesn&rsquo;t support enough to run this command.</p>
-<h2 id="test-in-cygwin">Test in Cygwin</h2>
+<h3 id="test-in-cygwin">Test in Cygwin</h3>
 <p>The <strong>Cygwin</strong> system doesn&rsquo;t have such as <em><code>pacman</code></em> or <em><code>apt</code></em> tool to manage packages. One of the way to get package is to re-run the <strong>Cygwin-setup</strong> and to choose the needed package.</p>
 <p><img src="https://raw.githubusercontent.com/KKKiona/KKKiona.github.io/master/posts/images/Installation-PETSc-2022-12-28-1.png" alt="Cygwin-setup"></p>
 <p>The other way to get the package is use <em><code>apt-cyg</code></em>. <em><code>apt-cyg</code></em> is similar to <em><code>apt</code></em>, but need be installed mannually:</p>
@@ -308,7 +314,7 @@
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>configure: error: libfabric only builds on Linux, OS X, and FreeBSD
 </span></span><span style="display:flex;"><span>configure: error: libfabric configure failed
 </span></span></code></pre></div><p>It seems <strong>Cygwin</strong> can not support <strong>MPICH</strong> yet.</p>
-<h2 id="conclusion">Conclusion</h2>
+<h3 id="conclusion">Conclusion</h3>
 <p>It is not to hard to and possible to change the code to Windows version, because of the similarity between <strong>gcc</strong> and <strong>MSVC</strong>。So the best way is to rewrite the full code instead of using virtual Linux environment.</p>
     </div>
 

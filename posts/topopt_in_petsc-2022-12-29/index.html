@@ -9,7 +9,7 @@
     <title>Usage of TopOpt_in_PETSc Projects</title>
     <link rel="icon" type="image/png" href="/favicon.ico">
     
-    <link rel="stylesheet" href="https://kkkiona.github.io/style.min.8c5e32fb79c371e60144e8d92e154be671c950764ac3e89b85f9edecd33c1a13.css">
+    <link rel="stylesheet" href="https://kkkiona.github.io/style.min.26be4dda097a77a6cfac08515c7f1d92df076066b735599299246b1e2de1d32f.css">
     
     <script type="text/javascript" src="/main.js" defer></script>
     
@@ -66,8 +66,8 @@
     <script>
         (function(){
             if(''){
-                if (prompt('请输入文章密码') !== ''){
-                    alert('密码错误！');
+                if (prompt('Enter password') !== ''){
+                    alert('Password wrong');
                     history.back();
                 }
             }
@@ -124,25 +124,22 @@
         
         <div class="page-operation">
             <div><a href="#"><img src="/imgs/icons/arrow-up-circle.svg" alt=""></a></div>
-            <div></div>
+            <div><a href="https://kkkiona.github.io/posts/starting-nodejs/"><img src="/imgs/icons/arrow-left-circle.svg" alt=""></a></div>
             <div><a href="https://kkkiona.github.io/posts/installation-petsc-2022-12-28/"><img src="/imgs/icons/arrow-right-circle.svg" alt=""></a></div>
         </div>
         
         <nav id="TableOfContents">
   <ul>
-    <li><a href="#installation">Installation</a></li>
-    <li><a href="#running">Running</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#running-1">Running</a>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#installation-of-topopt">Installation of TopOpt</a>
       <ul>
-        <li><a href="#running-hello-world-example">Running &lsquo;hello world&rsquo; example</a></li>
-        <li><a href="#running-examples">Running examples</a></li>
-        <li><a href="#running-on-eth-euler-without-installing-petsc">Running on ETH Euler (without installing PETSc)</a></li>
-        <li><a href="#running-tests">Running tests</a></li>
-        <li><a href="#post-processing-easy">Post-processing (easy)</a></li>
-        <li><a href="#post-processing-original">Post-processing (original)</a></li>
+        <li><a href="#installation">Installation</a></li>
+        <li><a href="#running">Running</a></li>
+      </ul>
+    </li>
+    <li><a href="#installation-of-topoptpy">Installation of TopOptpy</a>
+      <ul>
+        <li><a href="#running-1">Running</a></li>
       </ul>
     </li>
   </ul>
@@ -150,15 +147,15 @@
     </div>
 
     <div class='content  content '>
-        <h1 id="introduction">Introduction</h1>
+        <h2 id="introduction">Introduction</h2>
 <p>This article is the Usage for the two follow github projects about the use of PETSc lib.</p>
 <ul>
 <li><a href="https://github.com/topopt/TopOpt_in_PETSc">https://github.com/topopt/TopOpt_in_PETSc</a></li>
 <li><a href="https://github.com/thsmit/TopOpt_in_PETSc_wrapped_in_Python">https://github.com/thsmit/TopOpt_in_PETSc_wrapped_in_Python</a></li>
 </ul>
 <p>The first project will be called <strong>TopOpt</strong> and the second is <strong>TopOptpy</strong> in the next part.</p>
-<h1 id="installation-of-topopt">Installation of TopOpt</h1>
-<h2 id="installation">Installation</h2>
+<h2 id="installation-of-topopt">Installation of TopOpt</h2>
+<h3 id="installation">Installation</h3>
 <p>To clone the TopOpt:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone https://github.com/topopt/TopOpt_in_PETSc.git
 </span></span></code></pre></div><p>The main requirements are:</p>
@@ -196,7 +193,7 @@
 </span></span><span style="display:flex;"><span>	rm -rf topopt *.o output* binary* log* makevtu.pyc Restart* 
 </span></span></code></pre></div><p>Change the <em><strong>PETSC_DIR</strong></em> and <em><strong>PETSC_ARCH</strong></em> to your path (It can be found in the PETSc&rsquo;s <em>configure.log</em>). And then, change the <em><strong>makefile_ref</strong></em> name to <em><strong>makefile</strong></em>, so you can make the project after that:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>make check all
-</span></span></code></pre></div><h2 id="running">Running</h2>
+</span></span></code></pre></div><h3 id="running">Running</h3>
 <p>After making, you can do the following:</p>
 <ul>
 <li>Normal compilation time of framework, e.g. 4s: <em><code>make topopt -j</code>.</em></li>
@@ -206,7 +203,7 @@
 <p><em>If haven&rsquo;t Python2.6, using <code>sudo apt install python2</code> to install.</em></p>
 <p>The result (default name output_xxxxx.vtu) can be visualized through <em><strong>Paraview</strong></em>, which can be installed by: <em><code>sudo apt install paraview</code></em> or download from <a href="https://www.paraview.org/">https://www.paraview.org/</a>. Running <strong>Paraview</strong>, open the output_xxxxx.vtu (<em>File-&gt;Open</em>), turn on the <strong>eye button</strong>, and select one <strong>shader</strong>.</p>
 <p><img src="https://raw.githubusercontent.com/KKKiona/KKKiona.github.io/master/posts/images/TopOpt_in_PETSc-2022-12-29-1.png" alt="Cygwin-setup"></p>
-<h1 id="installation-of-topoptpy">Installation of TopOptpy</h1>
+<h2 id="installation-of-topoptpy">Installation of TopOptpy</h2>
 <p>o clone the TopOpt:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone https://github.com/thsmit/TopOpt_in_PETSc_wrapped_in_Python.git
 </span></span></code></pre></div><p>The main requirements are:</p>
@@ -232,14 +229,14 @@
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt search lmpi
 </span></span><span style="display:flex;"><span>...
 </span></span><span style="display:flex;"><span>sudo apt install libmkl-blacs-intelmpi-ilp64 <span style="color:#998;font-style:italic">#Choose the applicable version</span>
-</span></span></code></pre></div><h2 id="running-1">Running</h2>
-<h3 id="running-hello-world-example">Running &lsquo;hello world&rsquo; example</h3>
+</span></span></code></pre></div><h3 id="running-1">Running</h3>
+<h4 id="running-hello-world-example">Running &lsquo;hello world&rsquo; example</h4>
 <p>Running a &lsquo;hello world&rsquo; example from the command line. Generates standard cantilever beam and output .vtr files for viewing in Paraview.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">import</span> <span style="color:#555">topoptlib</span>
 </span></span><span style="display:flex;"><span>data <span style="color:#000;font-weight:bold">=</span> topoptlib<span style="color:#000;font-weight:bold">.</span>Data()
 </span></span><span style="display:flex;"><span>data<span style="color:#000;font-weight:bold">.</span>solve()
 </span></span></code></pre></div><p>The output files are named <em>TopOpt_xxx.vtr</em>, which can be read as a group by <strong>Paraview</strong> same like <strong>TopOpt</strong>.</p>
-<h3 id="running-examples">Running examples</h3>
+<h4 id="running-examples">Running examples</h4>
 <p>To run the cantilever beam example on one CPU (adjust the problem&rsquo;s mesh according to the number of available CPU&rsquo;s):</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#0086b3">cd</span> TopOpt_in_PETSc_wrapped_in_Python
 </span></span><span style="display:flex;"><span>cp examples/beam.py .
@@ -251,7 +248,7 @@
 <li>Torsion ball in <em>sphere.py</em></li>
 <li>The Jet engine bracket in <em>bracket.py</em></li>
 </ul>
-<h3 id="running-on-eth-euler-without-installing-petsc">Running on ETH Euler (without installing PETSc)</h3>
+<h4 id="running-on-eth-euler-without-installing-petsc">Running on ETH Euler (without installing PETSc)</h4>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>env2lmod
 </span></span><span style="display:flex;"><span>module load gcc/4.8.5 cmake/3.16.5 openmpi/3.0.1 petsc/3.10.5 python/3.7.4
 </span></span><span style="display:flex;"><span><span style="color:#0086b3">cd</span> TopOpt_in_PETSc_wrapped_in_Python
@@ -262,7 +259,7 @@
 </span></span><span style="display:flex;"><span><span style="color:#0086b3">cd</span> ..
 </span></span><span style="display:flex;"><span>bsub -n <span style="color:#099">8</span> mpirun -n <span style="color:#099">8</span> python3 bracket.py
 </span></span></code></pre></div><p>Or use <em><code>run_topopt.sh</code></em> for automated building and running.</p>
-<h3 id="running-tests">Running tests</h3>
+<h4 id="running-tests">Running tests</h4>
 <p>Several tests are provided to verify the proper working of the framework. To run a test using 4 CPU&rsquo;s use:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#0086b3">cd</span> TopOpt_in_PETSc_wrapped_in_Python
 </span></span><span style="display:flex;"><span>cp topoptlib/test/test_beam.py .
@@ -278,10 +275,10 @@
 <li>Testing the robust approach <em>test_michell.py</em>
 Or use <em>test_topopt.sh</em> for automated building and running the tests.</li>
 </ul>
-<h3 id="post-processing-easy">Post-processing (easy)</h3>
+<h4 id="post-processing-easy">Post-processing (easy)</h4>
 <p>The framework can write .vtr files of the designs with in point data. The designs can be viewed in Paraview. The point data can be transformed into cell data by using Paraview&rsquo;s PointToCellData filter. To generate .vtr files add the following command to the problem definition:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>vtr<span style="color:#000;font-weight:bold">(</span>20<span style="color:#000;font-weight:bold">)</span>
-</span></span></code></pre></div><h3 id="post-processing-original">Post-processing (original)</h3>
+</span></span></code></pre></div><h4 id="post-processing-original">Post-processing (original)</h4>
 <p>After solving the problem the output is written to a output.dat file. The designs can be viewed in Paraview. To generate .vtu files from the output file use post_process_topopt.sh with <strong>Python 2</strong> (with * the file path and name where the output file is stored):</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#0086b3">cd</span> TopOpt_in_PETSc_wrapped_in_Python
 </span></span><span style="display:flex;"><span>./post_process_topopt.sh *
@@ -294,7 +291,7 @@ Or use <em>test_topopt.sh</em> for automated building and running the tests.</li
 
 
     <div class="container-prevnext">
-    <div></div>
+    <div><a href="https://kkkiona.github.io/posts/starting-nodejs/">← Starting Node.js</a></div>
     <div><a href="https://kkkiona.github.io/posts/installation-petsc-2022-12-28/">Installation of PETSc  →</a></div>
 </div>
 </div>

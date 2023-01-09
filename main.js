@@ -8430,7 +8430,6 @@
     (0, import_jquery3.default)("h2, h3").addClass("headline");
     (0, import_jquery3.default)("#TableOfContents a").each(function() {
       let _id = "id-" + (0, import_jquery3.default)(this).attr("href").split("#")[1];
-      (0, import_jquery3.default)(this).attr("id", _id);
       (0, import_jquery3.default)(this).addClass("toc-link");
     });
   }
