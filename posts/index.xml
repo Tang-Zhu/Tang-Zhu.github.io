@@ -8,12 +8,12 @@
     <language>en-us</language>
     <lastBuildDate>Mon, 09 Jan 2023 16:36:38 +0800</lastBuildDate><atom:link href="https://kkkiona.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Javascript Basics</title>
-      <link>https://kkkiona.github.io/posts/javascript-basics/</link>
+      <title>Javascript Basics 1</title>
+      <link>https://kkkiona.github.io/posts/javascript-basics-1/</link>
       <pubDate>Mon, 09 Jan 2023 16:36:38 +0800</pubDate>
       
-      <guid>https://kkkiona.github.io/posts/javascript-basics/</guid>
-      <description></description>
+      <guid>https://kkkiona.github.io/posts/javascript-basics-1/</guid>
+      <description>&lt;p&gt;This chapter discusses what is JavaScript and its basic grammar, variable declarations, data types and literals.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -22,7 +22,7 @@
       <pubDate>Mon, 09 Jan 2023 11:01:14 +0800</pubDate>
       
       <guid>https://kkkiona.github.io/posts/starting-nodejs/</guid>
-      <description></description>
+      <description>&lt;p&gt;This chapter will introduce the basic concept of Node.js and preparation for using Node.js.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -31,7 +31,7 @@
       <pubDate>Thu, 29 Dec 2022 17:18:05 +0800</pubDate>
       
       <guid>https://kkkiona.github.io/posts/topopt_in_petsc-2022-12-29/</guid>
-      <description></description>
+      <description>&lt;p&gt;This article is the Usage for the two follow github projects about the use of PETSc lib.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -40,7 +40,7 @@
       <pubDate>Wed, 28 Dec 2022 18:02:29 +0800</pubDate>
       
       <guid>https://kkkiona.github.io/posts/installation-petsc-2022-12-28/</guid>
-      <description></description>
+      <description>&lt;p&gt;This article will cover the installation of the PETSc library, including the common installation for Linux and the attempt on Windows.&lt;/p&gt;</description>
     </item>
     
   </channel>

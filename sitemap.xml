@@ -11,7 +11,7 @@
     <loc>https://kkkiona.github.io/categories/javascript/</loc>
     <lastmod>2023-01-09T16:36:38+08:00</lastmod>
   </url><url>
-    <loc>https://kkkiona.github.io/posts/javascript-basics/</loc>
+    <loc>https://kkkiona.github.io/posts/javascript-basics-1/</loc>
     <lastmod>2023-01-09T16:36:38+08:00</lastmod>
   </url><url>
     <loc>https://kkkiona.github.io/</loc>
@@ -20,22 +20,25 @@
     <loc>https://kkkiona.github.io/posts/</loc>
     <lastmod>2023-01-09T16:36:38+08:00</lastmod>
   </url><url>
+    <loc>https://kkkiona.github.io/categories/program/</loc>
+    <lastmod>2023-01-09T16:36:38+08:00</lastmod>
+  </url><url>
     <loc>https://kkkiona.github.io/tags/</loc>
     <lastmod>2023-01-09T16:36:38+08:00</lastmod>
   </url><url>
-    <loc>https://kkkiona.github.io/tags/node.js-javascript/</loc>
-    <lastmod>2023-01-09T11:01:14+08:00</lastmod>
-  </url><url>
-    <loc>https://kkkiona.github.io/categories/node.js-javascript/</loc>
+    <loc>https://kkkiona.github.io/tags/node.js/</loc>
     <lastmod>2023-01-09T11:01:14+08:00</lastmod>
   </url><url>
     <loc>https://kkkiona.github.io/posts/starting-nodejs/</loc>
     <lastmod>2023-01-09T11:01:14+08:00</lastmod>
   </url><url>
-    <loc>https://kkkiona.github.io/tags/petsc-scientific-calculation/</loc>
+    <loc>https://kkkiona.github.io/categories/lib/</loc>
     <lastmod>2022-12-29T17:18:05+08:00</lastmod>
   </url><url>
-    <loc>https://kkkiona.github.io/categories/programming-scientific-calculation/</loc>
+    <loc>https://kkkiona.github.io/categories/math/</loc>
+    <lastmod>2022-12-29T17:18:05+08:00</lastmod>
+  </url><url>
+    <loc>https://kkkiona.github.io/tags/petsc/</loc>
     <lastmod>2022-12-29T17:18:05+08:00</lastmod>
   </url><url>
     <loc>https://kkkiona.github.io/posts/topopt_in_petsc-2022-12-29/</loc>

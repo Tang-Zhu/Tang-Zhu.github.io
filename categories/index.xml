@@ -17,20 +17,29 @@
     </item>
     
     <item>
-      <title>Node.js, Javascript</title>
-      <link>https://kkkiona.github.io/categories/node.js-javascript/</link>
-      <pubDate>Mon, 09 Jan 2023 11:01:14 +0800</pubDate>
+      <title>Program</title>
+      <link>https://kkkiona.github.io/categories/program/</link>
+      <pubDate>Mon, 09 Jan 2023 16:36:38 +0800</pubDate>
       
-      <guid>https://kkkiona.github.io/categories/node.js-javascript/</guid>
+      <guid>https://kkkiona.github.io/categories/program/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Programming, Scientific Calculation</title>
-      <link>https://kkkiona.github.io/categories/programming-scientific-calculation/</link>
+      <title>Lib</title>
+      <link>https://kkkiona.github.io/categories/lib/</link>
       <pubDate>Thu, 29 Dec 2022 17:18:05 +0800</pubDate>
       
-      <guid>https://kkkiona.github.io/categories/programming-scientific-calculation/</guid>
+      <guid>https://kkkiona.github.io/categories/lib/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Math</title>
+      <link>https://kkkiona.github.io/categories/math/</link>
+      <pubDate>Thu, 29 Dec 2022 17:18:05 +0800</pubDate>
+      
+      <guid>https://kkkiona.github.io/categories/math/</guid>
       <description></description>
     </item>
     
