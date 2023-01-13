@@ -94,11 +94,11 @@
         <span>
             
             <svg t="1656737548689" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="33866" width="12" height="12"><path d="M832.038608 64.662657H192.030028C121.255125 64.662657 63.940169 121.98845 63.940169 192.694717v446.793671C63.940169 710.205493 121.255125 767.643272 192.030028 767.643272h133.353183a63.940169 63.940169 0 0 1 55.219742 31.576328l76.099638 129.83828c12.358154 21.093031 33.790754 31.626903 55.216129 31.626903s42.832688-10.544709 55.198067-31.619678l76.222461-129.870792a63.940169 63.940169 0 0 1 55.212517-31.551041h133.54103c70.576219 0 127.732228-57.289669 127.732227-127.800865V192.391272C959.825022 121.85479 902.643727 64.662657 832.038608 64.662657zM895.884854 639.842407A63.85347 63.85347 0 0 1 832.092795 703.703103h-133.54103a127.753903 127.753903 0 0 0-110.349172 63.09847l-76.222461 129.856342a0.274545 0.274545 0 0 1 0-0.050574h-0.032512s-0.021675 0.061411-0.032512 0.061412l-76.1466-129.85273A127.804477 127.804477 0 0 0 325.383211 703.703103H192.030028A64.207489 64.207489 0 0 1 127.880338 639.488388V192.694717A64.102729 64.102729 0 0 1 192.030028 128.602826h640.00858A63.799284 63.799284 0 0 1 895.884854 192.391272v447.451135z" fill="#adb5bd" p-id="33867"></path><path d="M608.154093 288.092004A31.970084 31.970084 0 0 0 576.184009 320.062089v160.078006l-134.650049-179.278119A31.970084 31.970084 0 0 0 384.002258 320.062089v255.760676a31.970084 31.970084 0 0 0 63.940169 0v-159.958796l134.650048 179.274507a31.970084 31.970084 0 0 0 57.531703-19.200113V320.062089a31.970084 31.970084 0 0 0-31.970085-31.970085z" fill="#adb5bd" p-id="33868"></path></svg>
-            956 words</span>&nbsp;
+            2329 words</span>&nbsp;
         <span>
             
             <svg t="1656737462334" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="32892" width="12" height="12"><path d="M512 74.666667C270.933333 74.666667 74.666667 270.933333 74.666667 512S270.933333 949.333333 512 949.333333 949.333333 753.066667 949.333333 512 753.066667 74.666667 512 74.666667z m0 810.666666c-204.8 0-373.333333-168.533333-373.333333-373.333333S307.2 138.666667 512 138.666667 885.333333 307.2 885.333333 512 716.8 885.333333 512 885.333333z" p-id="32893" fill="#adb5bd"></path><path d="M695.466667 567.466667l-151.466667-70.4V277.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v238.933334c0 12.8 6.4 23.466667 19.2 29.866666l170.666667 81.066667c4.266667 2.133333 8.533333 2.133333 12.8 2.133333 12.8 0 23.466667-6.4 29.866666-19.2 6.4-14.933333 0-34.133333-17.066666-42.666666z" p-id="32894" fill="#adb5bd"></path></svg>
-            5 mins</span>
+            11 mins</span>
             <div class="container-ctgtag">
 	<div class="taxonomy">
 		
@@ -164,6 +164,27 @@
         <li><a href="#keyword">Keyword</a></li>
         <li><a href="#comments">Comments</a></li>
         <li><a href="#coding">Coding</a></li>
+      </ul>
+    </li>
+    <li><a href="#variable-1">Variable</a>
+      <ul>
+        <li><a href="#naming-rule">Naming rule</a></li>
+        <li><a href="#declarations">Declarations</a></li>
+        <li><a href="#initialization">Initialization</a></li>
+        <li><a href="#variable-scope">Variable Scope</a></li>
+        <li><a href="#variable-hoisting">Variable Hoisting</a></li>
+        <li><a href="#global-variables">Global Variables</a></li>
+        <li><a href="#constants">Constants</a></li>
+      </ul>
+    </li>
+    <li><a href="#data-type">Data Type</a>
+      <ul>
+        <li><a href="#string">String</a></li>
+        <li><a href="#number">Number</a></li>
+        <li><a href="#boolean">Boolean</a></li>
+        <li><a href="#array">Array</a></li>
+        <li><a href="#object">Object</a></li>
+        <li><a href="#undefined-and-null">Undefined and Null</a></li>
       </ul>
     </li>
   </ul>
@@ -332,7 +353,7 @@
 </tbody>
 </table>
 <h3 id="variable">Variable</h3>
-<p>Variable is different from literal, its value can be changed in any time. Javascript support a lot of data types (<em>int, float, double, bool, string, arr, object</em>) and you don&rsquo;t need to specify data type in declaration.</p>
+<p>Variable is different from literal, its value can be changed in any time. Javascript support a lot of data types (<em>e.g. int, float, double, string</em>) and you don&rsquo;t need to specify data type in declaration.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> length <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">16</span>;                                  
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> points <span style="color:#000;font-weight:bold">=</span> x <span style="color:#000;font-weight:bold">*</span> <span style="color:#099">10</span>;                              
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> lastName <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;Johnson&#34;</span>;                         
@@ -459,12 +480,242 @@
 </tbody>
 </table>
 <h3 id="comments">Comments</h3>
-<p>Javascript use double slash (<code>//</code> ) as the comments mark.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#998;font-style:italic">// this is the comments, which will not be considered as codes.
-</span></span></span></code></pre></div><h3 id="coding">Coding</h3>
+<p>Javascript use double slash (<code>//</code> ) as the single line comments mark, and use (<code>/* */</code>) as the multiple lines comments mark.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#998;font-style:italic">// this is the single line comments, which will not be considered as codes.
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#998;font-style:italic">/* 
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">   this is the multiple
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">   lines comments mark
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">*/</span>
+</span></span></code></pre></div><h3 id="coding">Coding</h3>
 <p>JavaScript is <em><strong>Case-sensitive</strong></em> and uses the <em><strong>Unicode</strong></em> character set, which means it can supports such like:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">const</span> Früh <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;foobar&#34;</span>;
-</span></span></code></pre></div>
+</span></span></code></pre></div><h2 id="variable-1">Variable</h2>
+<p><strong>Variable</strong> is a container for mutable values or expressions.</p>
+<h3 id="naming-rule">Naming rule</h3>
+<p>The name of variable observed  follow rules:</p>
+<ul>
+<li>Support number, alphabet, <code>$</code>, and <code>_</code>.</li>
+<li>Must start with alphabet or <code>$</code> or <code>_</code>.</li>
+<li>Support Unicode character set.</li>
+<li>Case-sensitive.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> x <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">5</span>;
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> y <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">6</span>;
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> z <span style="color:#000;font-weight:bold">=</span> x <span style="color:#000;font-weight:bold">*</span> y;
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> $name <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;Kiona&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> Früh <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;foobar&#34;</span>; 
+</span></span></code></pre></div><h3 id="declarations">Declarations</h3>
+<p>JavaScript has three kinds of variable declarations， and you don&rsquo;t have to explicitly specify data type. But you still can use <code>new</code> to specify data type manually.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> name <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">new</span> <span style="color:#0086b3">String</span>;
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> x <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">new</span> <span style="color:#0086b3">Number</span>;
+</span></span></code></pre></div><ul>
+<li><code>var</code> declares a function-scoped or globally-scoped variable, optionally initializing it to a value.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> x <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">if</span> (x <span style="color:#000;font-weight:bold">===</span> <span style="color:#099">1</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">var</span> x <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">2</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#998;font-style:italic">// if use &#39;let&#39; the second output is 1
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>  console.log(x);
+</span></span><span style="display:flex;"><span>  <span style="color:#998;font-style:italic">// expected output: 2
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>console.log(x);
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// expected output: 2
+</span></span></span></code></pre></div><ul>
+<li><code>let</code> declares a block-scoped local variable, optionally initializing it to a value.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">let</span> x <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">if</span> (x <span style="color:#000;font-weight:bold">===</span> <span style="color:#099">1</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">let</span> x <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">2</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#998;font-style:italic">/* if use var, it will result clash because of 
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">   * existing global &#39;x&#39; and local &#39;x&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">   */</span>
+</span></span><span style="display:flex;"><span>  console.log(x);
+</span></span><span style="display:flex;"><span>  <span style="color:#998;font-style:italic">// expected output: 2
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>console.log(x);
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// expected output: 1
+</span></span></span></code></pre></div><ul>
+<li><code>const</code> creates block-scoped constants, much like variables declared using the let keyword. The value of a constant can&rsquo;t be changed through reassignment (i.e. by using the assignment operator), and it can&rsquo;t be redeclared (i.e. through a variable declaration). However, if a constant is an object or array its properties or items can be updated or removed.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">const</span> number <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">42</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">try</span> {
+</span></span><span style="display:flex;"><span>  number <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">99</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#998;font-style:italic">// if add &#39;const&#39;, it can be accepted and value is 99
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>} <span style="color:#000;font-weight:bold">catch</span> (err) {
+</span></span><span style="display:flex;"><span>  console.log(err);
+</span></span><span style="display:flex;"><span>  <span style="color:#998;font-style:italic">// expected output: TypeError: invalid assignment to const `number&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>  <span style="color:#998;font-style:italic">// (Note: the exact output may be browser-dependent)
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>console.log(number);
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// expected output: 42
+</span></span></span></code></pre></div><p>You can declare variables to unpack values using the destructuring assignment syntax. For example:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">const</span> { bar } <span style="color:#000;font-weight:bold">=</span> foo
+</span></span></code></pre></div><p>This will create a variable named <code>bar</code> and assign to it the value corresponding to the key of the same name from our object <code>foo</code>.</p>
+<p>Variables should always be declared before they are used. JavaScript used to allow assigning to undeclared variables, which creates an undeclared global variable. This is an error in strict mode and should be avoided altogether.</p>
+<h3 id="initialization">Initialization</h3>
+<p>In <code>var</code> and <code>let</code> declarations, the initializer is optional. If a variable is declared without an initializer, it is assigned the value <code>undefined</code>.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">let</span> x;
+</span></span><span style="display:flex;"><span>console.log(x); <span style="color:#998;font-style:italic">// logs &#34;undefined&#34;
+</span></span></span></code></pre></div><p>const declarations always need an initializer, because they forbid any kind of assignment after declaration, and implicitly initializing it with undefined is likely a programmer mistake.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">const</span> x; <span style="color:#998;font-style:italic">// SyntaxError: Missing initializer in const declaration
+</span></span></span></code></pre></div><h3 id="variable-scope">Variable Scope</h3>
+<p>A variable may belong to one of the following scopes:</p>
+<ul>
+<li>Global scope: The default scope for all code running in script mode.</li>
+<li>Module scope: The scope for code running in module mode.</li>
+<li>Function scope: The scope created with a function.</li>
+</ul>
+<p>In addition, variables declared with <code>let</code> or <code>const</code> can belong to an additional scope:</p>
+<ul>
+<li>Block scope: The scope created with a pair of curly braces (<code>{}</code>).</li>
+</ul>
+<h3 id="variable-hoisting">Variable Hoisting</h3>
+<p><code>var</code> declared variables are hoisted, meaning you can refer to the variable anywhere in its scope, even if its declaration isn&rsquo;t reached yet. You can see <code>var</code> declarations as being &ldquo;lifted&rdquo; to the top of its function or global scope. However, if you access a variable before it&rsquo;s declared, the value is always <code>undefined</code>, because only its declaration is hoisted, but not its initialization.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>console.log(x <span style="color:#000;font-weight:bold">===</span> <span style="color:#000;font-weight:bold">undefined</span>); <span style="color:#998;font-style:italic">// true
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">var</span> x <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">3</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="color:#000;font-weight:bold">function</span>() {
+</span></span><span style="display:flex;"><span>  console.log(x); <span style="color:#998;font-style:italic">// undefined
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>  <span style="color:#000;font-weight:bold">var</span> x <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;local value&#39;</span>;
+</span></span><span style="display:flex;"><span>})();
+</span></span></code></pre></div><p>The above examples will be interpreted the same as:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> x;
+</span></span><span style="display:flex;"><span>console.log(x <span style="color:#000;font-weight:bold">===</span> <span style="color:#000;font-weight:bold">undefined</span>); <span style="color:#998;font-style:italic">// true
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>x <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">3</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="color:#000;font-weight:bold">function</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">var</span> x;
+</span></span><span style="display:flex;"><span>  console.log(x); <span style="color:#998;font-style:italic">// undefined
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>  x <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;local value&#39;</span>;
+</span></span><span style="display:flex;"><span>})();
+</span></span></code></pre></div><p>Notice if remove the sceond <code>var</code> in the first example, it will be:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>console.log(x <span style="color:#000;font-weight:bold">===</span> <span style="color:#000;font-weight:bold">undefined</span>); <span style="color:#998;font-style:italic">// true
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">var</span> x <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">3</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="color:#000;font-weight:bold">function</span>() {
+</span></span><span style="display:flex;"><span>  console.log(x); <span style="color:#998;font-style:italic">// 3
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>  <span style="color:#998;font-style:italic">// because no new decalaration to be hoisted
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>  x <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;local value&#39;</span>;
+</span></span><span style="display:flex;"><span>})();
+</span></span></code></pre></div><p>Because of hoisting, all var statements in a function should be placed as near to the top of the function as possible. This best practice increases the clarity of the code.</p>
+<p>Because the variable is in a &ldquo;temporal dead zone&rdquo; from the start of the block until the declaration is processed, same situation for <code>let</code> and <code>const</code> will cause <code>ReferenceError</code>.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>console.log(x); <span style="color:#998;font-style:italic">// ReferenceError
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">const</span> x <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">3</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>console.log(y); <span style="color:#998;font-style:italic">// ReferenceError
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">let</span> y <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">3</span>;
+</span></span></code></pre></div><p>Unlike var declarations, which only hoist the declaration but not its value, function declarations are hoisted entirely — you can safely call the function anywhere in its scope.</p>
+<h3 id="global-variables">Global Variables</h3>
+<p>Global variables are in fact properties of the global object.</p>
+<p>In web pages, the global object is <code>window</code>, so you can set and access global variables using the <code>window.variable</code> syntax. In all environments, you can use the <code>globalThis</code> variable (which itself is a global variable) to access global variables.</p>
+<p>Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the <code>window</code> or <code>frame</code> name.</p>
+<h3 id="constants">Constants</h3>
+<p>You cannot declare a constant with the same name as a function or variable in the same scope. For example:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#998;font-style:italic">// THIS WILL CAUSE AN ERROR
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">function</span> f() {};
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">const</span> f <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">5</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// THIS WILL CAUSE AN ERROR TOO
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">function</span> f() {
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">const</span> g <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">5</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">var</span> g;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#998;font-style:italic">//statements
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>}
+</span></span></code></pre></div><p>However, const only prevents re-assignments, but doesn&rsquo;t prevent mutations. The properties of objects assigned to constants are not protected, so the following statement is executed without problems.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">const</span> MY_OBJECT <span style="color:#000;font-weight:bold">=</span> { key<span style="color:#000;font-weight:bold">:</span> <span style="color:#d14">&#39;value&#39;</span> };
+</span></span><span style="display:flex;"><span>MY_OBJECT.key <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;otherValue&#39;</span>;
+</span></span></code></pre></div><p>Also, the contents of an array are not protected, so the following statement is executed without problems.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">const</span> MY_ARRAY <span style="color:#000;font-weight:bold">=</span> [<span style="color:#d14">&#39;HTML&#39;</span>,<span style="color:#d14">&#39;CSS&#39;</span>];
+</span></span><span style="display:flex;"><span>MY_ARRAY.push(<span style="color:#d14">&#39;JAVASCRIPT&#39;</span>);
+</span></span><span style="display:flex;"><span>console.log(MY_ARRAY); <span style="color:#998;font-style:italic">// [&#39;HTML&#39;, &#39;CSS&#39;, &#39;JAVASCRIPT&#39;];
+</span></span></span></code></pre></div><h2 id="data-type">Data Type</h2>
+<p>Javascript data type can be divided into two types: <em><strong>Primitive</strong></em> and <em><strong>Object</strong></em>.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>Primitive</strong></td>
+<td style="text-align:left">Boolean, Null, Undefined, Number, String, Symbol</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Object</strong></td>
+<td style="text-align:left">Array, Object, Function, Date, Regex</td>
+</tr>
+</tbody>
+</table>
+<p>Javascript have dynamic types, which means same variable can represent different data type.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> x;               <span style="color:#998;font-style:italic">// Undefined
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">var</span> x <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">5</span>;           <span style="color:#998;font-style:italic">// Number
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">var</span> x <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;John&#34;</span>;      <span style="color:#998;font-style:italic">// String
+</span></span></span></code></pre></div><p>It can use <code>typeof</code> to check the variable data type.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">typeof</span> <span style="color:#d14">&#34;John&#34;</span>                <span style="color:#998;font-style:italic">// return String
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">typeof</span> <span style="color:#099">3.14</span>                  <span style="color:#998;font-style:italic">// return Number
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">typeof</span> <span style="color:#000;font-weight:bold">false</span>                 <span style="color:#998;font-style:italic">// return Boolean
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">typeof</span> [<span style="color:#099">1</span>,<span style="color:#099">2</span>,<span style="color:#099">3</span>,<span style="color:#099">4</span>]             <span style="color:#998;font-style:italic">// return Object
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">typeof</span> {name<span style="color:#000;font-weight:bold">:</span><span style="color:#d14">&#39;John&#39;</span>, age<span style="color:#000;font-weight:bold">:</span><span style="color:#099">34</span>} <span style="color:#998;font-style:italic">// return Object
+</span></span></span></code></pre></div><h3 id="string">String</h3>
+<p><strong>String</strong> is used to contain character set. The mark is <code>&quot; &quot;</code> or <code>' '</code>.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> str <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;hello world.&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> str <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;hello world.&#39;</span>;
+</span></span></code></pre></div><p>The <code>&quot; &quot;</code> or <code>' '</code> can be nested, as long as they are pairs.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> str1<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;He is called \&#34;Kiona\&#34;&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> str2<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;He is called &#34;Kiona&#34;&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">document</span>.write(str1 <span style="color:#000;font-weight:bold">+</span> <span style="color:#d14">&#34;&lt;br&gt;&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// He is called &#34;Kiona&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#0086b3">document</span>.write(str2 <span style="color:#000;font-weight:bold">+</span> <span style="color:#d14">&#34;&lt;br&gt;&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// He is called &#34;Kiona&#34;
+</span></span></span></code></pre></div><h3 id="number">Number</h3>
+<p>Javascript have three ways to represent number.</p>
+<ul>
+<li>Integer without decimal point.</li>
+<li>Decimal with decimal point, which integer part can be omitted.</li>
+<li>Scientific Notation with exponent (<code>e</code> or <code>E</code>).</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> x <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1</span>;
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> y <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">3.14</span>;
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> m <span style="color:#000;font-weight:bold">=</span> .<span style="color:#099">325</span>; <span style="color:#998;font-style:italic">// 0.325
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">var</span> n <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">498e-4</span>; <span style="color:#998;font-style:italic">// 0.0498
+</span></span></span></code></pre></div><h3 id="boolean">Boolean</h3>
+<p>Boolean is a logical variable only support two values: <code>true</code> of <code>false</code>.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> flag <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">true</span>;
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> mark <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">false</span>;
+</span></span></code></pre></div><h3 id="array">Array</h3>
+<p>Array is used to contain a set of values, and the types of these values can be different. Array, in fact, has two different means: <strong>Array Object</strong> and <strong>Array Literal</strong>.</p>
+<p>For <strong>Array Object</strong>, you can create it by:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> arr<span style="color:#000;font-weight:bold">=</span><span style="color:#000;font-weight:bold">new</span> <span style="color:#0086b3">Array</span>();
+</span></span><span style="display:flex;"><span>arr[<span style="color:#099">0</span>]<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;Kiona&#34;</span>;
+</span></span><span style="display:flex;"><span>arr[<span style="color:#099">1</span>]<span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1</span>;
+</span></span><span style="display:flex;"><span>arr[<span style="color:#099">2</span>]<span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">true</span>;
+</span></span></code></pre></div><p>Or use condensed way:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> arr <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">new</span> Arry(<span style="color:#d14">&#34;Kiona&#34;</span>, <span style="color:#099">1</span>, <span style="color:#000;font-weight:bold">true</span>);
+</span></span></code></pre></div><p>For <strong>Array Literal</strong>, it is easy to create:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> arr <span style="color:#000;font-weight:bold">=</span> [<span style="color:#d14">&#34;Kiona&#34;</span>, <span style="color:#099">1</span>, <span style="color:#000;font-weight:bold">true</span>];
+</span></span></code></pre></div><p><strong>Arry</strong> will be discussed later for details.</p>
+<h3 id="object">Object</h3>
+<p>An <strong>Object</strong> has its <em>Property</em> and corresponding <em>Value</em>, format is (<code>Property : Value</code>).</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> person<span style="color:#000;font-weight:bold">=</span>{name<span style="color:#000;font-weight:bold">:</span><span style="color:#d14">&#34;Kiona&#34;</span>, age<span style="color:#000;font-weight:bold">:</span><span style="color:#099">25</span>, sex<span style="color:#000;font-weight:bold">:</span>male};
+</span></span></code></pre></div><p>There are two ways to access these properties:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> name <span style="color:#000;font-weight:bold">=</span> person.name;
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> age <span style="color:#000;font-weight:bold">=</span> person.age;
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> sex <span style="color:#000;font-weight:bold">=</span> person.sex;
+</span></span></code></pre></div><p><strong>Object</strong> will be discussed later for details.</p>
+<h3 id="undefined-and-null">Undefined and Null</h3>
+<p><strong>Undefined</strong> means the variable has not been assigned value. But <strong>Null</strong> means the value is null.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> x; <span style="color:#998;font-style:italic">// x is Undefined
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>x <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">null</span>; <span style="color:#998;font-style:italic">// x is null now
+</span></span></span></code></pre></div>
     </div>
 
     
