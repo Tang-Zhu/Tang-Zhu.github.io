@@ -2,8 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kkkiona.github.io/categories/_misc/</loc>
+    <lastmod>2023-03-09T15:23:49+08:00</lastmod>
+  </url><url>
+    <loc>https://kkkiona.github.io/posts/program/usage-of-language/c&#43;&#43;/c&#43;&#43;20-programming/</loc>
+    <lastmod>2023-03-09T15:23:49+08:00</lastmod>
+  </url><url>
     <loc>https://kkkiona.github.io/categories/</loc>
-    <lastmod>2023-01-12T11:42:11+08:00</lastmod>
+    <lastmod>2023-03-09T15:23:49+08:00</lastmod>
+  </url><url>
+    <loc>https://kkkiona.github.io/</loc>
+    <lastmod>2023-03-09T15:23:49+08:00</lastmod>
+  </url><url>
+    <loc>https://kkkiona.github.io/posts/</loc>
+    <lastmod>2023-03-09T15:23:49+08:00</lastmod>
   </url><url>
     <loc>https://kkkiona.github.io/tags/javascript/</loc>
     <lastmod>2023-01-12T11:42:11+08:00</lastmod>
@@ -11,13 +23,7 @@
     <loc>https://kkkiona.github.io/categories/javascript/</loc>
     <lastmod>2023-01-12T11:42:11+08:00</lastmod>
   </url><url>
-    <loc>https://kkkiona.github.io/posts/javascript-basic/</loc>
-    <lastmod>2023-01-12T11:42:11+08:00</lastmod>
-  </url><url>
-    <loc>https://kkkiona.github.io/</loc>
-    <lastmod>2023-01-12T11:42:11+08:00</lastmod>
-  </url><url>
-    <loc>https://kkkiona.github.io/posts/</loc>
+    <loc>https://kkkiona.github.io/posts/program/usage-of-language/javascript/javascript-basic/</loc>
     <lastmod>2023-01-12T11:42:11+08:00</lastmod>
   </url><url>
     <loc>https://kkkiona.github.io/categories/program/</loc>
@@ -26,13 +32,13 @@
     <loc>https://kkkiona.github.io/tags/</loc>
     <lastmod>2023-01-12T11:42:11+08:00</lastmod>
   </url><url>
-    <loc>https://kkkiona.github.io/posts/javascript-basics-1/</loc>
+    <loc>https://kkkiona.github.io/posts/program/usage-of-language/javascript/javascript-basics-1/</loc>
     <lastmod>2023-01-09T16:36:38+08:00</lastmod>
   </url><url>
     <loc>https://kkkiona.github.io/tags/node.js/</loc>
     <lastmod>2023-01-09T11:01:14+08:00</lastmod>
   </url><url>
-    <loc>https://kkkiona.github.io/posts/starting-nodejs/</loc>
+    <loc>https://kkkiona.github.io/posts/program/usage-of-language/nodejs/starting-nodejs/</loc>
     <lastmod>2023-01-09T11:01:14+08:00</lastmod>
   </url><url>
     <loc>https://kkkiona.github.io/categories/lib/</loc>
@@ -44,11 +50,15 @@
     <loc>https://kkkiona.github.io/tags/petsc/</loc>
     <lastmod>2022-12-29T17:18:05+08:00</lastmod>
   </url><url>
-    <loc>https://kkkiona.github.io/posts/topopt_in_petsc-2022-12-29/</loc>
+    <loc>https://kkkiona.github.io/posts/program/program-analysis/petsc/topopt_in_petsc-2022-12-29/</loc>
     <lastmod>2022-12-29T17:18:05+08:00</lastmod>
   </url><url>
-    <loc>https://kkkiona.github.io/posts/installation-petsc-2022-12-28/</loc>
+    <loc>https://kkkiona.github.io/posts/program/program-analysis/petsc/installation-petsc-2022-12-28/</loc>
     <lastmod>2022-12-28T18:02:29+08:00</lastmod>
+  </url><url>
+    <loc>https://kkkiona.github.io/posts/theory/theory-of-elasticity/theory-of-elasticity-note-1/</loc>
+  </url><url>
+    <loc>https://kkkiona.github.io/posts/theory/topology-optimization/topology-optimization-note-1/</loc>
   </url><url>
     <loc>https://kkkiona.github.io/archive/</loc>
   </url><url>

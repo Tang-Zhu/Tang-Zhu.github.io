@@ -94,11 +94,11 @@
         <span>
             
             <svg t="1656737548689" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="33866" width="12" height="12"><path d="M832.038608 64.662657H192.030028C121.255125 64.662657 63.940169 121.98845 63.940169 192.694717v446.793671C63.940169 710.205493 121.255125 767.643272 192.030028 767.643272h133.353183a63.940169 63.940169 0 0 1 55.219742 31.576328l76.099638 129.83828c12.358154 21.093031 33.790754 31.626903 55.216129 31.626903s42.832688-10.544709 55.198067-31.619678l76.222461-129.870792a63.940169 63.940169 0 0 1 55.212517-31.551041h133.54103c70.576219 0 127.732228-57.289669 127.732227-127.800865V192.391272C959.825022 121.85479 902.643727 64.662657 832.038608 64.662657zM895.884854 639.842407A63.85347 63.85347 0 0 1 832.092795 703.703103h-133.54103a127.753903 127.753903 0 0 0-110.349172 63.09847l-76.222461 129.856342a0.274545 0.274545 0 0 1 0-0.050574h-0.032512s-0.021675 0.061411-0.032512 0.061412l-76.1466-129.85273A127.804477 127.804477 0 0 0 325.383211 703.703103H192.030028A64.207489 64.207489 0 0 1 127.880338 639.488388V192.694717A64.102729 64.102729 0 0 1 192.030028 128.602826h640.00858A63.799284 63.799284 0 0 1 895.884854 192.391272v447.451135z" fill="#adb5bd" p-id="33867"></path><path d="M608.154093 288.092004A31.970084 31.970084 0 0 0 576.184009 320.062089v160.078006l-134.650049-179.278119A31.970084 31.970084 0 0 0 384.002258 320.062089v255.760676a31.970084 31.970084 0 0 0 63.940169 0v-159.958796l134.650048 179.274507a31.970084 31.970084 0 0 0 57.531703-19.200113V320.062089a31.970084 31.970084 0 0 0-31.970085-31.970085z" fill="#adb5bd" p-id="33868"></path></svg>
-            2329 words</span>&nbsp;
+            2638 words</span>&nbsp;
         <span>
             
             <svg t="1656737462334" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="32892" width="12" height="12"><path d="M512 74.666667C270.933333 74.666667 74.666667 270.933333 74.666667 512S270.933333 949.333333 512 949.333333 949.333333 753.066667 949.333333 512 753.066667 74.666667 512 74.666667z m0 810.666666c-204.8 0-373.333333-168.533333-373.333333-373.333333S307.2 138.666667 512 138.666667 885.333333 307.2 885.333333 512 716.8 885.333333 512 885.333333z" p-id="32893" fill="#adb5bd"></path><path d="M695.466667 567.466667l-151.466667-70.4V277.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v238.933334c0 12.8 6.4 23.466667 19.2 29.866666l170.666667 81.066667c4.266667 2.133333 8.533333 2.133333 12.8 2.133333 12.8 0 23.466667-6.4 29.866666-19.2 6.4-14.933333 0-34.133333-17.066666-42.666666z" p-id="32894" fill="#adb5bd"></path></svg>
-            11 mins</span>
+            13 mins</span>
             <div class="container-ctgtag">
 	<div class="taxonomy">
 		
@@ -126,7 +126,7 @@
         
         <div class="page-operation">
             <div><a href="#"><img src="/imgs/icons/arrow-up-circle.svg" alt=""></a></div>
-            <div></div>
+            <div><a href="https://kkkiona.github.io/posts/c&#43;&#43;/c&#43;&#43;20-programming/"><img src="/imgs/icons/arrow-left-circle.svg" alt=""></a></div>
             <div><a href="https://kkkiona.github.io/posts/javascript-basics-1/"><img src="/imgs/icons/arrow-right-circle.svg" alt=""></a></div>
         </div>
         
@@ -173,7 +173,7 @@
         <li><a href="#initialization">Initialization</a></li>
         <li><a href="#variable-scope">Variable Scope</a></li>
         <li><a href="#variable-hoisting">Variable Hoisting</a></li>
-        <li><a href="#global-variables">Global Variables</a></li>
+        <li><a href="#undeclared-variables">Undeclared Variables</a></li>
         <li><a href="#constants">Constants</a></li>
       </ul>
     </li>
@@ -185,6 +185,13 @@
         <li><a href="#array">Array</a></li>
         <li><a href="#object">Object</a></li>
         <li><a href="#undefined-and-null">Undefined and Null</a></li>
+      </ul>
+    </li>
+    <li><a href="#object-1">Object</a></li>
+    <li><a href="#function-1">Function</a>
+      <ul>
+        <li><a href="#local-variable">Local Variable</a></li>
+        <li><a href="#global-variable">Global Variable</a></li>
       </ul>
     </li>
   </ul>
@@ -342,7 +349,7 @@
 </tr>
 <tr>
 <td style="text-align:center">Object</td>
-<td style="text-align:center">Object is used to define a property and its value.</td>
+<td style="text-align:center">Object is used to define a Key and its value.</td>
 <td style="text-align:center">{<code>class:&quot;lion&quot;, color:&quot;yellow&quot;, age:5</code>}</td>
 </tr>
 <tr>
@@ -611,11 +618,22 @@
 </span></span><span style="display:flex;"><span>console.log(y); <span style="color:#998;font-style:italic">// ReferenceError
 </span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">let</span> y <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">3</span>;
 </span></span></code></pre></div><p>Unlike var declarations, which only hoist the declaration but not its value, function declarations are hoisted entirely — you can safely call the function anywhere in its scope.</p>
-<h3 id="global-variables">Global Variables</h3>
-<p>Global variables are in fact properties of the global object.</p>
-<p>In web pages, the global object is <code>window</code>, so you can set and access global variables using the <code>window.variable</code> syntax. In all environments, you can use the <code>globalThis</code> variable (which itself is a global variable) to access global variables.</p>
-<p>Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the <code>window</code> or <code>frame</code> name.</p>
-<h3 id="constants">Constants</h3>
+<h3 id="undeclared-variables">Undeclared Variables</h3>
+<p>If you try to use a variable without declaration under <strong>Nonstrict-model</strong>, this value will belong to &ldquo;<code>window</code>&quot;&rsquo;s a property to be accessed.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> var1 <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1</span>; <span style="color:#998;font-style:italic">// unable to change
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>var2 <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">2</span>; <span style="color:#998;font-style:italic">// belong to &#39;window&#39; can be changed
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>
+</span></span><span style="display:flex;"><span>console.log(<span style="color:#000;font-weight:bold">this</span>.var1); <span style="color:#998;font-style:italic">// 1
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>console.log(<span style="color:#0086b3">window</span>.var1); <span style="color:#998;font-style:italic">// 1
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>console.log(<span style="color:#0086b3">window</span>.var2); <span style="color:#998;font-style:italic">// 2
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">delete</span> var1; <span style="color:#998;font-style:italic">// false can not be deleted
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>console.log(var1); <span style="color:#998;font-style:italic">// 1
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">delete</span> var2; 
+</span></span><span style="display:flex;"><span>console.log(<span style="color:#000;font-weight:bold">delete</span> var2); <span style="color:#998;font-style:italic">// true
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>console.log(var2); <span style="color:#998;font-style:italic">// deleted, error: undefined
+</span></span></span></code></pre></div><h3 id="constants">Constants</h3>
 <p>You cannot declare a constant with the same name as a function or variable in the same scope. For example:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#998;font-style:italic">// THIS WILL CAUSE AN ERROR
 </span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">function</span> f() {};
@@ -670,8 +688,8 @@
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> str <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;hello world.&#34;</span>;
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> str <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;hello world.&#39;</span>;
 </span></span></code></pre></div><p>The <code>&quot; &quot;</code> or <code>' '</code> can be nested, as long as they are pairs.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> str1<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;He is called \&#34;Kiona\&#34;&#34;</span>;
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> str2<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;He is called &#34;Kiona&#34;&#39;</span>;
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> str1 <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;He is called \&#34;Kiona\&#34;&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> str2 <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;He is called &#34;Kiona&#34;&#39;</span>;
 </span></span><span style="display:flex;"><span><span style="color:#0086b3">document</span>.write(str1 <span style="color:#000;font-weight:bold">+</span> <span style="color:#d14">&#34;&lt;br&gt;&#34;</span>)
 </span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// He is called &#34;Kiona&#34;
 </span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#0086b3">document</span>.write(str2 <span style="color:#000;font-weight:bold">+</span> <span style="color:#d14">&#34;&lt;br&gt;&#34;</span>)
@@ -694,28 +712,74 @@
 </span></span></code></pre></div><h3 id="array">Array</h3>
 <p>Array is used to contain a set of values, and the types of these values can be different. Array, in fact, has two different means: <strong>Array Object</strong> and <strong>Array Literal</strong>.</p>
 <p>For <strong>Array Object</strong>, you can create it by:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> arr<span style="color:#000;font-weight:bold">=</span><span style="color:#000;font-weight:bold">new</span> <span style="color:#0086b3">Array</span>();
-</span></span><span style="display:flex;"><span>arr[<span style="color:#099">0</span>]<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;Kiona&#34;</span>;
-</span></span><span style="display:flex;"><span>arr[<span style="color:#099">1</span>]<span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1</span>;
-</span></span><span style="display:flex;"><span>arr[<span style="color:#099">2</span>]<span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">true</span>;
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> arr <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">new</span> <span style="color:#0086b3">Array</span>();
+</span></span><span style="display:flex;"><span>arr[<span style="color:#099">0</span>] <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;Kiona&#34;</span>;
+</span></span><span style="display:flex;"><span>arr[<span style="color:#099">1</span>] <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1</span>;
+</span></span><span style="display:flex;"><span>arr[<span style="color:#099">2</span>] <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">true</span>;
 </span></span></code></pre></div><p>Or use condensed way:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> arr <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">new</span> Arry(<span style="color:#d14">&#34;Kiona&#34;</span>, <span style="color:#099">1</span>, <span style="color:#000;font-weight:bold">true</span>);
 </span></span></code></pre></div><p>For <strong>Array Literal</strong>, it is easy to create:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> arr <span style="color:#000;font-weight:bold">=</span> [<span style="color:#d14">&#34;Kiona&#34;</span>, <span style="color:#099">1</span>, <span style="color:#000;font-weight:bold">true</span>];
 </span></span></code></pre></div><p><strong>Arry</strong> will be discussed later for details.</p>
 <h3 id="object">Object</h3>
-<p>An <strong>Object</strong> has its <em>Property</em> and corresponding <em>Value</em>, format is (<code>Property : Value</code>).</p>
+<p>An <strong>Object</strong> has its <em>Key</em> and corresponding <em>Value</em>, format is (<code>Key : Value</code>).</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> person<span style="color:#000;font-weight:bold">=</span>{name<span style="color:#000;font-weight:bold">:</span><span style="color:#d14">&#34;Kiona&#34;</span>, age<span style="color:#000;font-weight:bold">:</span><span style="color:#099">25</span>, sex<span style="color:#000;font-weight:bold">:</span>male};
 </span></span></code></pre></div><p>There are two ways to access these properties:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> name <span style="color:#000;font-weight:bold">=</span> person.name;
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> age <span style="color:#000;font-weight:bold">=</span> person.age;
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> sex <span style="color:#000;font-weight:bold">=</span> person.sex;
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> age <span style="color:#000;font-weight:bold">=</span> person[<span style="color:#d14">&#34;age&#34;</span>];
 </span></span></code></pre></div><p><strong>Object</strong> will be discussed later for details.</p>
 <h3 id="undefined-and-null">Undefined and Null</h3>
 <p><strong>Undefined</strong> means the variable has not been assigned value. But <strong>Null</strong> means the value is null.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> x; <span style="color:#998;font-style:italic">// x is Undefined
 </span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>x <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">null</span>; <span style="color:#998;font-style:italic">// x is null now
-</span></span></span></code></pre></div>
+</span></span></span></code></pre></div><h2 id="object-1">Object</h2>
+<p>For Javascript almost every can be seen as <strong>Object</strong>. An <strong>Object</strong> has its <em>Key</em> and corresponding <em>Value</em>, format is (<code>Key : Value</code>). The mainly difference between <strong>Variable</strong> and <strong>Object</strong> is <strong>Variable</strong> only has one value, but <strong>Object</strong> can have  arbitrary properties include their values.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> v1 <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">163</span>; <span style="color:#998;font-style:italic">// Variabel
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">var</span> car <span style="color:#000;font-weight:bold">=</span> {brand<span style="color:#000;font-weight:bold">:</span><span style="color:#d14">&#34;Toyota&#34;</span>, price<span style="color:#000;font-weight:bold">:</span><span style="color:#099">25e10</span>, color<span style="color:#000;font-weight:bold">:</span><span style="color:#d14">&#34;red&#34;</span>}; <span style="color:#998;font-style:italic">// Object
+</span></span></span></code></pre></div><p>It can be said <strong>Object</strong> is a container of <strong>Variable</strong>, but this variable observed format <strong>Key : Value</strong> called as <strong>Property</strong>.</p>
+<p>There are two ways to access <strong>Property</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> car <span style="color:#000;font-weight:bold">=</span> {brand<span style="color:#000;font-weight:bold">:</span><span style="color:#d14">&#34;Toyota&#34;</span>, price<span style="color:#000;font-weight:bold">:</span><span style="color:#099">25e10</span>, color<span style="color:#000;font-weight:bold">:</span><span style="color:#d14">&#34;red&#34;</span>};
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> brand <span style="color:#000;font-weight:bold">=</span> car.brand;
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> age <span style="color:#000;font-weight:bold">=</span> car[<span style="color:#d14">&#34;age&#34;</span>];
+</span></span></code></pre></div><p>Another difference is <strong>Function</strong> can be a member for <strong>Object</strong> as <strong>Property</strong>.
+You can use <code>Object.Function()</code> to access it, but if you omit &ldquo;<code>()</code>&rdquo;, it will print the code directly.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> obj <span style="color:#000;font-weight:bold">=</span> {
+</span></span><span style="display:flex;"><span>    myFunction <span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">function</span>(){
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">return</span> <span style="color:#d14">&#34;Kiona&#34;</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>console.log(obj.myFunction());
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// Kiona
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>console.log(obj.myFunction);
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// function(){ return &#34;Kiona&#34;; }
+</span></span></span></code></pre></div><h2 id="function-1">Function</h2>
+<p><strong>Function</strong> is a code block which can be reused anytime. The grammar for defining a function is as follow, the <code>ARGUMENT</code> and <code>return</code> are not necessary, or you can just <code>return</code> <strong>without value</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> FUNCTIONNAME(ARGUMENT1, ARGUMENT2,..., ARGUMENTN)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic">// code
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    <span style="color:#000;font-weight:bold">return</span> RESULT;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>The real values must strictly ordered same as the order of arguments, when call the Function.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> add(x, y){
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">return</span> x <span style="color:#000;font-weight:bold">+</span> y;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>console.log(add(<span style="color:#099">1</span>, <span style="color:#099">2</span>)); <span style="color:#998;font-style:italic">// 3
+</span></span></span></code></pre></div><h3 id="local-variable">Local Variable</h3>
+<p>The space between double <em><code>{}</code></em> of Function called <strong>Local Space</strong>. When define variable inside local space by <code>var</code>, the life of this variable will end with the end of the function.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> print(){
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">var</span> str <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;hello&#34;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">return</span> str;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>console.log(str); <span style="color:#998;font-style:italic">// error: str is undefined
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>console.log(print()); <span style="color:#998;font-style:italic">// hello
+</span></span></span></code></pre></div><h3 id="global-variable">Global Variable</h3>
+<p>On the contrary, global space means space outside the function. Global variable can be accessed anytime untill the program end.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> str <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;hello&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> print(){
+</span></span><span style="display:flex;"><span>    console.log(str);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>console.log(str);
+</span></span></code></pre></div>
     </div>
 
     
@@ -724,7 +788,7 @@
 
 
     <div class="container-prevnext">
-    <div></div>
+    <div><a href="https://kkkiona.github.io/posts/c&#43;&#43;/c&#43;&#43;20-programming/">← C&#43;&#43;20 Programming</a></div>
     <div><a href="https://kkkiona.github.io/posts/javascript-basics-1/">Javascript Basics 1  →</a></div>
 </div>
 </div>
