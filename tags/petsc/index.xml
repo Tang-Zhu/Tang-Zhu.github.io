@@ -9,19 +9,19 @@
     <lastBuildDate>Thu, 29 Dec 2022 17:18:05 +0800</lastBuildDate><atom:link href="https://kkkiona.github.io/tags/petsc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Usage of TopOpt_in_PETSc Projects</title>
-      <link>https://kkkiona.github.io/posts/petsc/topopt_in_petsc-2022-12-29/</link>
+      <link>https://kkkiona.github.io/posts/petsc/topopt_in_petsc/</link>
       <pubDate>Thu, 29 Dec 2022 17:18:05 +0800</pubDate>
       
-      <guid>https://kkkiona.github.io/posts/petsc/topopt_in_petsc-2022-12-29/</guid>
+      <guid>https://kkkiona.github.io/posts/petsc/topopt_in_petsc/</guid>
       <description>&lt;p&gt;This article is the Usage for the two follow github projects about the use of PETSc lib.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Installation of PETSc</title>
-      <link>https://kkkiona.github.io/posts/petsc/installation-petsc-2022-12-28/</link>
+      <link>https://kkkiona.github.io/posts/petsc/installation-petsc/</link>
       <pubDate>Wed, 28 Dec 2022 18:02:29 +0800</pubDate>
       
-      <guid>https://kkkiona.github.io/posts/petsc/installation-petsc-2022-12-28/</guid>
+      <guid>https://kkkiona.github.io/posts/petsc/installation-petsc/</guid>
       <description>&lt;p&gt;This article will cover the installation of the PETSc library, including the common installation for Linux and the attempt on Windows.&lt;/p&gt;</description>
     </item>
     
