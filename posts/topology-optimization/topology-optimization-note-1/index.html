@@ -1,6 +1,42 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="scroll-smooth" data-default-appearance="light"
-  data-auto-appearance="true"><head>
+  data-auto-appearance="true"><script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
+<head>
   <meta charset="utf-8" />
   
   <meta http-equiv="content-language" content="en" />
@@ -104,139 +140,6 @@
   
 
 <script src="/lib/jquery/jquery.slim.min.js" integrity=""></script>
-
-
-
-
-
-
-
-
-
-
-
-<link type="text/css" rel="stylesheet" href="/lib/katex/katex.min.b7600b193c9447a8351c98870a649381edb21ac786a1f74ef3c43ecce590c7f3748a479c570d18bb239eb7dc590d5f3e571d18d27d5addfdd0c7757d09c9ec28.css" integrity="sha512-t2ALGTyUR6g1HJiHCmSTge2yGseGofdO88Q&#43;zOWQx/N0ikecVw0YuyOet9xZDV8&#43;Vx0Y0n1a3f3Qx3V9CcnsKA==" />
-
-
-<script defer src="/lib/katex/katex.min.10a5b962f294de1a72c8e70dea34270313bf2fc82db3e61d615e98ca6b65f2993d625605b6a2608a1391b91a015caf3f70e2256a9a5d53a32cf0a74aeb204280.js" integrity="sha512-EKW5YvKU3hpyyOcN6jQnAxO/L8gts&#43;YdYV6Yymtl8pk9YlYFtqJgihORuRoBXK8/cOIlappdU6Ms8KdK6yBCgA=="></script>
-
-
-<script defer src="/lib/katex/auto-render.min.8968ae052e67b7aafad1f0b3dba35dd19a9ed276e4d594c841b9772afee462c5fec8a314147ce3687dbe02733abe9d97b3e80d99a0405562634a6b8fc3be847e.js" integrity="sha512-iWiuBS5nt6r60fCz26Nd0Zqe0nbk1ZTIQbl3Kv7kYsX&#43;yKMUFHzjaH2&#43;AnM6vp2Xs&#43;gNmaBAVWJjSmuPw76Efg=="
-  onload="renderMathInElement(document.body);"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -707,7 +610,7 @@
 <p>In the SIMP method, the structure is divided into many small elements, and each element is assigned a material density that varies continuously between 0 and 1. During the optimization process, the optimization algorithm adjusts the density of each element to achieve the best structural performance. The SIMP method typically uses penalty functions to restrict the range of material densities between $0$ and $1$, thus constraining the material density. Therefore, a penalty function is needed to constrain the range of material density to avoid non-physical material density distributions.</p>
 <p>One common penalty function is the Power Law Function, which is typically written as:
 $$ \rho^{p} $$</p>
-<p>Here, \(\rho\) represents material density, and $p$ is a positive real number. When $p$ is larger, the penalty function has a more significant effect. This penalty function can constrain the values of material density between $0$ and $1$, avoiding non-physical material density distributions and improving the reliability of the optimization results.</p>
+<p>Here, $\rho$ represents material density, and $p$ is a positive real number. When $p$ is larger, the penalty function has a more significant effect. This penalty function can constrain the values of material density between $0$ and $1$, avoiding non-physical material density distributions and improving the reliability of the optimization results.</p>
 <p>The SIMP method also uses the equivalent Young&rsquo;s modulus to represent the stiffness of the material. The equivalent Young&rsquo;s modulus is a function of density that represents the effect of material density on stiffness. Typically, the equivalent Young&rsquo;s modulus increases as material density increases, as higher density materials have higher stiffness.</p>
 <p>During the optimization process, the SIMP method calculates the equivalent Young&rsquo;s modulus of the material and uses it to calculate the stiffness matrix of the entire structure. By considering the equivalent Young&rsquo;s modulus of the material, the SIMP method can automatically consider the effect of the material&rsquo;s topology on the stiffness of the structure.</p>
 <p>One important application of the SIMP method is to achieve lightweight design in structural design. By using the SIMP method, the optimal material distribution can be found to minimize the total mass of the structure while satisfying the given performance indicators and constraints. The SIMP method has been widely used in structural optimization in aerospace, automotive, and mechanical engineering, and has been widely applied in material design.</p>
