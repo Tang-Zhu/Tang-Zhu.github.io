@@ -1,90 +1,90 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Kiona</title>
-    <link>https://kkkiona.github.io/categories/</link>
-    <description>Recent content in Categories on Kiona</description>
+    <title>Categories on KKKiona</title>
+    <link>https://kkkiona.gihgub.io/categories/</link>
+    <description>Recent content in Categories on KKKiona</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 29 May 2023 17:18:05 +0800</lastBuildDate><atom:link href="https://kkkiona.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Mon, 29 May 2023 17:18:05 +0800</lastBuildDate><atom:link href="https://kkkiona.gihgub.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Code Analysis</title>
-      <link>https://kkkiona.github.io/categories/code-analysis/</link>
+      <link>https://kkkiona.gihgub.io/categories/code-analysis/</link>
       <pubDate>Mon, 29 May 2023 17:18:05 +0800</pubDate>
       
-      <guid>https://kkkiona.github.io/categories/code-analysis/</guid>
+      <guid>https://kkkiona.gihgub.io/categories/code-analysis/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Program</title>
-      <link>https://kkkiona.github.io/categories/program/</link>
+      <link>https://kkkiona.gihgub.io/categories/program/</link>
       <pubDate>Mon, 29 May 2023 17:18:05 +0800</pubDate>
       
-      <guid>https://kkkiona.github.io/categories/program/</guid>
+      <guid>https://kkkiona.gihgub.io/categories/program/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Elasticity</title>
-      <link>https://kkkiona.github.io/categories/elasticity/</link>
+      <link>https://kkkiona.gihgub.io/categories/elasticity/</link>
       <pubDate>Tue, 23 May 2023 17:18:05 +0800</pubDate>
       
-      <guid>https://kkkiona.github.io/categories/elasticity/</guid>
+      <guid>https://kkkiona.gihgub.io/categories/elasticity/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Optimization</title>
-      <link>https://kkkiona.github.io/categories/optimization/</link>
+      <link>https://kkkiona.gihgub.io/categories/optimization/</link>
       <pubDate>Tue, 23 May 2023 17:18:05 +0800</pubDate>
       
-      <guid>https://kkkiona.github.io/categories/optimization/</guid>
+      <guid>https://kkkiona.gihgub.io/categories/optimization/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Theory</title>
-      <link>https://kkkiona.github.io/categories/theory/</link>
+      <link>https://kkkiona.gihgub.io/categories/theory/</link>
       <pubDate>Tue, 23 May 2023 17:18:05 +0800</pubDate>
       
-      <guid>https://kkkiona.github.io/categories/theory/</guid>
+      <guid>https://kkkiona.gihgub.io/categories/theory/</guid>
       <description></description>
     </item>
     
     <item>
       <title>_Misc</title>
-      <link>https://kkkiona.github.io/categories/_misc/</link>
+      <link>https://kkkiona.gihgub.io/categories/_misc/</link>
       <pubDate>Thu, 09 Mar 2023 15:23:49 +0800</pubDate>
       
-      <guid>https://kkkiona.github.io/categories/_misc/</guid>
+      <guid>https://kkkiona.gihgub.io/categories/_misc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Javascript</title>
-      <link>https://kkkiona.github.io/categories/javascript/</link>
+      <link>https://kkkiona.gihgub.io/categories/javascript/</link>
       <pubDate>Thu, 12 Jan 2023 11:42:11 +0800</pubDate>
       
-      <guid>https://kkkiona.github.io/categories/javascript/</guid>
+      <guid>https://kkkiona.gihgub.io/categories/javascript/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Lib</title>
-      <link>https://kkkiona.github.io/categories/lib/</link>
+      <link>https://kkkiona.gihgub.io/categories/lib/</link>
       <pubDate>Thu, 29 Dec 2022 17:18:05 +0800</pubDate>
       
-      <guid>https://kkkiona.github.io/categories/lib/</guid>
+      <guid>https://kkkiona.gihgub.io/categories/lib/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Math</title>
-      <link>https://kkkiona.github.io/categories/math/</link>
+      <link>https://kkkiona.gihgub.io/categories/math/</link>
       <pubDate>Thu, 29 Dec 2022 17:18:05 +0800</pubDate>
       
-      <guid>https://kkkiona.github.io/categories/math/</guid>
+      <guid>https://kkkiona.gihgub.io/categories/math/</guid>
       <description></description>
     </item>
     

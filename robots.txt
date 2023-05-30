@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kkkiona.gihgub.io/sitemap.xml
