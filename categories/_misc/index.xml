@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>_Misc on </title>
+    <title>_Misc on Kiona</title>
     <link>https://kkkiona.gihgub.io/categories/_misc/</link>
-    <description>Recent content in _Misc on </description>
+    <description>Recent content in _Misc on Kiona</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 09 Mar 2023 15:23:49 +0800</lastBuildDate><atom:link href="https://kkkiona.gihgub.io/categories/_misc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>C&#43;&#43;20 Programming</title>
-      <link>https://kkkiona.gihgub.io/posts/c&#43;&#43;/c&#43;&#43;20-programming/</link>
+      <link>https://kkkiona.gihgub.io/posts/cxx/cxx-20-programming/</link>
       <pubDate>Thu, 09 Mar 2023 15:23:49 +0800</pubDate>
       
-      <guid>https://kkkiona.gihgub.io/posts/c&#43;&#43;/c&#43;&#43;20-programming/</guid>
+      <guid>https://kkkiona.gihgub.io/posts/cxx/cxx-20-programming/</guid>
       <description>&lt;p&gt;This article will introduce the programming of &lt;strong&gt;C++20&lt;/strong&gt;, mainly focus on the &lt;strong&gt;Differences&lt;/strong&gt; between &lt;strong&gt;C++ early version&lt;/strong&gt; and the &lt;strong&gt;C++20&lt;/strong&gt;, also including some basic concepts of C++.&lt;/p&gt;</description>
     </item>
     
