@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class="scroll-smooth" data-default-appearance="dark"
-  data-auto-appearance="true"><style>
+<html class="scroll-smooth" data-auto-appearance="true" data-default-appearance="dark" dir="ltr" lang="en"><head><style>
 code.has-jax {
     font: inherit;
     font-size: 100%;
@@ -9,82 +8,33 @@ code.has-jax {
     color: #515151;
 }
 </style>
-
-<head>
-  <meta charset="utf-8" />
-  
-  <meta http-equiv="content-language" content="en" />
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  
-  <title>C&#43;&#43;20 Programming &middot; Kiona</title>
-  <meta name="title" content="C&#43;&#43;20 Programming &middot; Kiona" />
-  
-  <meta name="description" content="My awesome website" />
-  
-  
-  
-  <link rel="canonical" href="https://kkkiona.gihgub.io/posts/cxx/cxx-20-programming/" />
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.55800f303ced971710fcec8763e3a2eb63b3fb2606988f7139a956fe0aea85d71ed6a30e6173ab797d2f7ffa06850e79622ce5d198b483b0c942f51afefdd89f.css"
-    integrity="sha512-VYAPMDztlxcQ/OyHY&#43;Oi62Oz&#43;yYGmI9xOalW/grqhdce1qMOYXOreX0vf/oGhQ55Yizl0Zi0g7DJQvUa/v3Ynw==" />
-  
-  
-  <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
-    integrity="sha512-UWoWdFvqWpvQERONJUzA/TlzzVXObhXz3sdj58fCx0SPj&#43;e1TMqBHLghsMfhLNFhyqzh3XlKw9NNQJN8vMnuEg=="></script>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.3ddcf04f5b0d4c32f72e726d3c12eebccd8c3c9f9daa9a13414808895de0ae1e1cdddda6849680d5bd96dbb60d0b1e0b24c29f5c83e5631e55e7e6bc02015490.js"
-    integrity="sha512-PdzwT1sNTDL3LnJtPBLuvM2MPJ&#43;dqpoTQUgIiV3grh4c3d2mhJaA1b2W27YNCx4LJMKfXIPlYx5V5&#43;a8AgFUkA==" data-copy="" data-copied=""></script>
-  
-  <script src="/js/zoom.min.js"></script>
-  
-  
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-  <link rel="manifest" href="/site.webmanifest" />
-  
-  
-  
-  
-  
-  
-  
-  <meta property="og:title" content="C&#43;&#43;20 Programming" />
-<meta property="og:description" content="This article will introduce the programming of C&#43;&#43;20, mainly focus on the Differences between C&#43;&#43; early version and the C&#43;&#43;20, also including some basic concepts of C&#43;&#43;." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://kkkiona.gihgub.io/posts/cxx/cxx-20-programming/" /><meta property="og:image" content="https://kkkiona.gihgub.io/posts/cxx/cxx-20-programming/feature.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-03-09T15:23:49+08:00" />
-<meta property="article:modified_time" content="2023-03-09T15:23:49+08:00" />
-
-  <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://kkkiona.gihgub.io/posts/cxx/cxx-20-programming/feature.png"/>
-<meta name="twitter:title" content="C&#43;&#43;20 Programming"/>
-<meta name="twitter:description" content="This article will introduce the programming of C&#43;&#43;20, mainly focus on the Differences between C&#43;&#43; early version and the C&#43;&#43;20, also including some basic concepts of C&#43;&#43;."/>
-
-  
-  <script type="application/ld+json">
+<meta charset="utf-8"/>
+<meta content="en" http-equiv="content-language"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+<title>C++20 Programming · Kiona</title>
+<meta content="C++20 Programming · Kiona" name="title"/>
+<meta content="My awesome website" name="description"/>
+<link href="https://kkkiona.gihgub.io/posts/cxx/cxx-20-programming/" rel="canonical"/>
+<link href="/css/main.bundle.min.55800f303ced971710fcec8763e3a2eb63b3fb2606988f7139a956fe0aea85d71ed6a30e6173ab797d2f7ffa06850e79622ce5d198b483b0c942f51afefdd89f.css" integrity="sha512-VYAPMDztlxcQ/OyHY+Oi62Oz+yYGmI9xOalW/grqhdce1qMOYXOreX0vf/oGhQ55Yizl0Zi0g7DJQvUa/v3Ynw==" rel="stylesheet" type="text/css"/>
+<script integrity="sha512-UWoWdFvqWpvQERONJUzA/TlzzVXObhXz3sdj58fCx0SPj+e1TMqBHLghsMfhLNFhyqzh3XlKw9NNQJN8vMnuEg==" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js" type="text/javascript"></script>
+<script data-copied="" data-copy="" defer="" id="script-bundle" integrity="sha512-PdzwT1sNTDL3LnJtPBLuvM2MPJ+dqpoTQUgIiV3grh4c3d2mhJaA1b2W27YNCx4LJMKfXIPlYx5V5+a8AgFUkA==" src="/js/main.bundle.min.3ddcf04f5b0d4c32f72e726d3c12eebccd8c3c9f9daa9a13414808895de0ae1e1cdddda6849680d5bd96dbb60d0b1e0b24c29f5c83e5631e55e7e6bc02015490.js" type="text/javascript"></script>
+<script src="/js/zoom.min.js"></script>
+<link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="/site.webmanifest" rel="manifest"/>
+<meta content="C++20 Programming" property="og:title"/>
+<meta content="This article will introduce the programming of C++20, mainly focus on the Differences between C++ early version and the C++20, also including some basic concepts of C++." property="og:description"/>
+<meta content="article" property="og:type"/>
+<meta content="https://kkkiona.gihgub.io/posts/cxx/cxx-20-programming/" property="og:url"/><meta content="https://kkkiona.gihgub.io/posts/cxx/cxx-20-programming/feature.png" property="og:image"/><meta content="posts" property="article:section"/>
+<meta content="2023-03-09T15:23:49+08:00" property="article:published_time"/>
+<meta content="2023-03-09T15:23:49+08:00" property="article:modified_time"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="https://kkkiona.gihgub.io/posts/cxx/cxx-20-programming/feature.png" name="twitter:image"/>
+<meta content="C++20 Programming" name="twitter:title"/>
+<meta content="This article will introduce the programming of C++20, mainly focus on the Differences between C++ early version and the C++20, also including some basic concepts of C++." name="twitter:description"/>
+<script type="application/ld+json">
   [{
     "@context": "https://schema.org",
     "@type": "Article",
@@ -108,281 +58,125 @@ code.has-jax {
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "450"
+    "wordCount": "457"
   }]
   </script>
-
-
-  
-  
-  <meta name="author" content="Kiona" />
-  
-  
-  
-  <link href="cs_hao_du@163.com" rel="me" />
-  
-  
-  
-  
-
-<script src="/lib/jquery/jquery.slim.min.js" integrity=""></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-
-
-  
-  
-  <script type="text/javascript"
-        async
-        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-MathJax.Hub.Config({
-  tex2jax: {
-    inlineMath: [['$','$'], ['\\(','\\)']],
-    displayMath: [['$$','$$'], ['\[\[','\]\]']],
-    processEscapes: true,
-    processEnvironments: true,
-    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-    TeX: { equationNumbers: { autoNumber: "AMS" },
-         extensions: ["AMSmath.js", "AMSsymbols.js"] }
-  }
-});
-
-MathJax.Hub.Queue(function() {
-    
-    
-    
-    var all = MathJax.Hub.getAllJax(), i;
-    for(i = 0; i < all.length; i += 1) {
-        all[i].SourceElement().parentNode.className += ' has-jax';
-    }
-});
+<meta content="Kiona" name="author"/>
+<link href="cs_hao_du@163.com" rel="me"/>
+<script integrity="" src="/lib/jquery/jquery.slim.min.js"></script>
+<script async="" src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
 </script>
-
-<div class="post-password">
-    
+<meta name="theme-color"/>
+</head><body class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32">
+<div class="absolute flex self-center" id="the-top">
+<a class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600" href="#main-content"><span class="font-bold text-primary-600 ltr:pr-2 rtl:pl-2 dark:text-primary-400">↓</span>Skip to main content</a>
 </div>
-
-
-
-  
-  <meta name="theme-color"/>
-  
-  
-</head>
-<body
-  class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32">
-  <div id="the-top" class="absolute flex self-center">
-    <a class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
-      href="#main-content"><span
-        class="font-bold text-primary-600 ltr:pr-2 rtl:pl-2 dark:text-primary-400">&darr;</span>Skip to main content</a>
-  </div>
-  
-  
-  <div class="min-h-[148px]"></div>
+<div class="min-h-[148px]"></div>
 <div class="fixed inset-x-0 pl-[24px] pr-[24px]" style="z-index:100">
-  <div id="menu-blur" class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl shadow-2xl"></div>
-  <div class="relative max-w-[64rem] ml-auto mr-auto">
-    <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
-    class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start space-x-3">
-    
-    <div class="flex flex-1 items-center justify-between">
-        <nav class="flex space-x-3">
-
-            <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">Kiona</a>
-
-
-        </nav>
-        <nav class="hidden md:flex items-center space-x-5 md:ml-12">
-
-            
-            
-            
-  <a href="/posts/"  class="flex items-center">
-    
-    <p class="text-base font-medium text-gray-500 hover:text-gray-900" title="Posts">
+<div class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl shadow-2xl" id="menu-blur"></div>
+<div class="relative max-w-[64rem] ml-auto mr-auto">
+<div class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start space-x-3" style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px">
+<div class="flex flex-1 items-center justify-between">
+<nav class="flex space-x-3">
+<a class="text-base font-medium text-gray-500 hover:text-gray-900" href="/">Kiona</a>
+</nav>
+<nav class="hidden md:flex items-center space-x-5 md:ml-12">
+<a class="flex items-center" href="/posts/">
+<p class="text-base font-medium text-gray-500 hover:text-gray-900" title="Posts">
         Post
     </p>
 </a>
-
-
-            
-            
-
-            
-
-
-            
-            <button id="search-button" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400"
-                title="">
-                
-
-  <span class="relative block icon">
-    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
-
-  </span>
-
-
-            </button>
-            
-
-
-            
-            
-            <div
-                class="ltr:mr-14 rtl:ml-14 cursor-pointer text-sm text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400">
-                <button id="appearance-switcher" aria-label="Dark mode switcher" type="button">
-                    <div class="flex items-center justify-center h-12 dark:hidden">
-                        
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
-
-  </span>
-
-
-                    </div>
-                    <div class="items-center justify-center hidden h-12 dark:flex">
-                        
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
-
-  </span>
-
-
-                    </div>
-                </button>
-            </div>
-            
-
-        </nav>
-        <div class="flex md:hidden items-center space-x-5 md:ml-12">
-
-            <span></span>
-
-            
-
-
-            
-            <button id="search-button-mobile" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400"
-                title="">
-                
-
-  <span class="relative block icon">
-    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
-
-  </span>
-
-
-            </button>
-            
-
-            
-            
-            <button id="appearance-switcher-mobile" aria-label="Dark mode switcher" type="button" style="margin-right:5px">
-                <div class="flex items-center justify-center h-12 dark:hidden">
-                    
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
-
-  </span>
-
-
-                </div>
-                <div class="items-center justify-center hidden h-12 dark:flex">
-                    
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
-
-  </span>
-
-
-                </div>
-            </button>
-            
-
-        </div>
-    </div>
-    <div class="-my-2 -mr-2 md:hidden">
-
-        <label id="menu-button" for="menu-controller" class="block">
-            <input type="checkbox" id="menu-controller" class="hidden" />
-            <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
-                
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
-
-  </span>
-
-
-            </div>
-            <div id="menu-wrapper" style="padding-top:5px;"
-                class="fixed inset-0 z-30 invisible w-screen h-screen m-auto overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50">
-                <ul
-                    class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
-
-                    <li>
-                        <span
-                            class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
-
-  </span>
-
+<button aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400" id="search-button" title="">
+<span class="relative block icon">
+<svg aria-hidden="true" class="svg-inline--fa fa-search fa-w-16" data-icon="search" data-prefix="fas" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" fill="currentColor"></path></svg>
 </span>
-                    </li>
-
-                    
-                    
-
-                    
-  <li class="mt-1">
-    <a href="/posts/"  class="flex items-center">
-        
-        <p class="text-bg font-bg text-gray-500 hover:text-gray-900" title="Posts">
+</button>
+<div class="ltr:mr-14 rtl:ml-14 cursor-pointer text-sm text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400">
+<button aria-label="Dark mode switcher" id="appearance-switcher" type="button">
+<div class="flex items-center justify-center h-12 dark:hidden">
+<span class="relative block icon">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z" fill="currentColor"></path></svg>
+</span>
+</div>
+<div class="items-center justify-center hidden h-12 dark:flex">
+<span class="relative block icon">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z" fill="currentColor"></path></svg>
+</span>
+</div>
+</button>
+</div>
+</nav>
+<div class="flex md:hidden items-center space-x-5 md:ml-12">
+<span></span>
+<button aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400" id="search-button-mobile" title="">
+<span class="relative block icon">
+<svg aria-hidden="true" class="svg-inline--fa fa-search fa-w-16" data-icon="search" data-prefix="fas" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" fill="currentColor"></path></svg>
+</span>
+</button>
+<button aria-label="Dark mode switcher" id="appearance-switcher-mobile" style="margin-right:5px" type="button">
+<div class="flex items-center justify-center h-12 dark:hidden">
+<span class="relative block icon">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z" fill="currentColor"></path></svg>
+</span>
+</div>
+<div class="items-center justify-center hidden h-12 dark:flex">
+<span class="relative block icon">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z" fill="currentColor"></path></svg>
+</span>
+</div>
+</button>
+</div>
+</div>
+<div class="-my-2 -mr-2 md:hidden">
+<label class="block" for="menu-controller" id="menu-button">
+<input class="hidden" id="menu-controller" type="checkbox"/>
+<div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+<span class="relative block icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z" fill="currentColor"></path></svg>
+</span>
+</div>
+<div class="fixed inset-0 z-30 invisible w-screen h-screen m-auto overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50" id="menu-wrapper" style="padding-top:5px;">
+<ul class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
+<li>
+<span class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
+<span class="relative block icon">
+<svg viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z" fill="currentColor"></path></svg>
+</span>
+</span>
+</li>
+<li class="mt-1">
+<a class="flex items-center" href="/posts/">
+<p class="text-bg font-bg text-gray-500 hover:text-gray-900" title="Posts">
             Post
         </p>
-    </a>
+</a>
 </li>
-
-
-
-                    
-                    
-
-                </ul>
-                
-
-            </div>
-        </label>
-    </div>
+</ul>
 </div>
-
-
-
-
+</label>
+</div>
+</div>
 <script>
     (function () {
         var $mainmenu = $('.main-menu');
@@ -392,9 +186,7 @@ MathJax.Hub.Queue(function() {
         });
     })();
 </script>
-
-
-  </div>
+</div>
 </div>
 <script>
   window.addEventListener('scroll', function (e) {
@@ -403,37 +195,17 @@ MathJax.Hub.Queue(function() {
     background_blur.style.opacity = (scroll / 300);
   });
 </script>
-
-  
-  <div class="relative flex flex-col grow">
-    <main id="main-content" class="grow">
-      
-
-
+<div class="relative flex flex-col grow">
+<main class="grow" id="main-content">
 <article>
-  
-  
-  
-  
-  
-  
-
-
-
 <div class="w-full rounded-md h-36 md:h-56 lg:h-72 single_hero_basic nozoom" style="background-image:url(/img/bg5_hu7a2d1d81d248594a2ca5403f7c401424_5380560_1200x0_resize_box_3.png);"></div>
-
-
-
-<div class="fixed inset-x-0 top-0 h-[800px] single_hero_background nozoom"
-    style="background-image:url(/img/bg1_hu4e15315029eec73a23b6c6212c804792_5214796_1200x0_resize_box_3.png);">
-    <div class="absolute inset-0 bg-gradient-to-t from-neutral dark:from-neutral-800 to-transparent mix-blend-normal">
-    </div>
-    <div
-        class="absolute inset-0 opacity-30 dark:opacity-60 bg-gradient-to-t from-neutral dark:from-neutral-800 to-neutral dark:to-neutral-800 mix-blend-normal">
-    </div>
+<div class="fixed inset-x-0 top-0 h-[800px] single_hero_background nozoom" style="background-image:url(/img/bg1_hu4e15315029eec73a23b6c6212c804792_5214796_1200x0_resize_box_3.png);">
+<div class="absolute inset-0 bg-gradient-to-t from-neutral dark:from-neutral-800 to-transparent mix-blend-normal">
 </div>
-
-<div id="background-blur" class="fixed opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl"></div>
+<div class="absolute inset-0 opacity-30 dark:opacity-60 bg-gradient-to-t from-neutral dark:from-neutral-800 to-neutral dark:to-neutral-800 mix-blend-normal">
+</div>
+</div>
+<div class="fixed opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl" id="background-blur"></div>
 <script>
     window.addEventListener('scroll', function (e) {
         var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
@@ -441,1010 +213,261 @@ MathJax.Hub.Queue(function() {
         background_blur.style.opacity = (scroll / 300)
     });
 </script>
-
-
-<div class="post-password">
-    
-    <script>
-        (function(){
-            if (prompt('Please input password') != "123"){
-                    alert('Password wrong!');
-                    if (history.length === 1) {
-                        window.opener = null;
-                        window.open('', '_self');
-                        window.close();
-                    } else {
-                        history.back();
-                    }
-                }
-        })();
-    </script>
-    
-</div>
-
-  
-  
-
-  <header id="single_header" class="mt-5 max-w-prose">
-    
-    <ol class="text-sm text-neutral-500 dark:text-neutral-400 print:hidden">
-  
-  
-    
-  
-    
-  
-  <li class="inline hidden">
-    <a
-      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
-      href="/"
-      >Kiona</a
-    ><span class="px-1 text-primary-500">/</span>
-  </li>
-
-  
-  <li class="inline ">
-    <a
-      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
-      href="/posts/"
-      >Posts</a
-    ><span class="px-1 text-primary-500">/</span>
-  </li>
-
-  
-  <li class="inline hidden">
-    <a
-      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
-      href="/posts/cxx/cxx-20-programming/"
-      >C&#43;&#43;20 Programming</a
-    ><span class="px-1 text-primary-500">/</span>
-  </li>
-
+<header class="mt-5 max-w-prose" id="single_header">
+<ol class="text-sm text-neutral-500 dark:text-neutral-400 print:hidden">
+<li class="inline hidden">
+<a class="hover:underline decoration-neutral-300 dark:underline-neutral-600" href="/">Kiona</a><span class="px-1 text-primary-500">/</span>
+</li>
+<li class="inline">
+<a class="hover:underline decoration-neutral-300 dark:underline-neutral-600" href="/posts/">Posts</a><span class="px-1 text-primary-500">/</span>
+</li>
+<li class="inline hidden">
+<a class="hover:underline decoration-neutral-300 dark:underline-neutral-600" href="/posts/cxx/cxx-20-programming/">C++20 Programming</a><span class="px-1 text-primary-500">/</span>
+</li>
 </ol>
-
-
-    
-    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+<h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
       C++20 Programming
     </h1>
-    <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
 <div class="flex flex-row flex-wrap items-center">
-  
-  
-  <time datetime="2023-03-09 15:23:49 &#43;0800 CST">9 March 2023</time><span class="px-2 text-primary-500">&middot;</span><span>450 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">3 mins</span>
-  
-
-  
-  
+<time datetime="2023-03-09 15:23:49 +0800 CST">9 March 2023</time><span class="px-2 text-primary-500">·</span><span>457 words</span><span class="px-2 text-primary-500">·</span><span title="Reading time">3 mins</span>
 </div>
-
-
-
-
-
 <div class="flex flex-row flex-wrap items-center">
-  
-  
-  
-  
-  
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/_misc/&#34;,'_self');">
-    <span class="flex">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
-  >
+<span class="mr-2" onclick="window.open(&quot;/categories/_misc/&quot;,'_self');" style="margin-top:0.5rem">
+<span class="flex">
+<span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
     _Misc
   </span>
 </span>
-
-  </span>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+</span>
 </div>
-
-
-
-    </div>
-  </header>
-  <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
-     <div
-      class="order-first sm:max-w-prose lg:ml-auto px-0 lg:order-last lg:max-w-xs ltr:lg:pl-8 rtl:lg:pr-8">
-      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky  lg:top-10 ">
-
-         <details open class="mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
-  <summary
-    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
-    Table of Contents
-  </summary>
-  <div
-    class="min-w-[220px] py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#basic-programming">Basic Programming</a>
-      <ul>
-        <li><a href="#importing-modules">Importing Modules</a></li>
-        <li><a href="#preprocessor-directives">Preprocessor Directives</a></li>
-        <li><a href="#nested-namesapce">Nested Namesapce</a></li>
-        <li><a href="#namespace-alias">Namespace Alias</a></li>
-        <li><a href="#numeric-literals">Numeric literals</a></li>
-        <li><a href="#variables">Variables</a></li>
-        <li><a href="#numerical-limits">Numerical Limits</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-  </div>
-</details>
-<details class="mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:hidden">
-  <summary
-    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
-    Table of Contents
-  </summary>
-  <div
-    class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#basic-programming">Basic Programming</a>
-      <ul>
-        <li><a href="#importing-modules">Importing Modules</a></li>
-        <li><a href="#preprocessor-directives">Preprocessor Directives</a></li>
-        <li><a href="#nested-namesapce">Nested Namesapce</a></li>
-        <li><a href="#namespace-alias">Namespace Alias</a></li>
-        <li><a href="#numeric-literals">Numeric literals</a></li>
-        <li><a href="#variables">Variables</a></li>
-        <li><a href="#numerical-limits">Numerical Limits</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-  </div>
-</details>
-
- 
+</div>
+</header>
+<section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+<div class="min-w-0 min-h-0 max-w-prose">
+<p>This article will introduce the programming of <strong>C++20</strong>, mainly focus on the <strong>Differences</strong> between <strong>C++ early version</strong> and the <strong>C++20</strong>, also including some basic concepts of C++.</p>
+<div class="hugo-encryptor-container">
+<div class="hugo-encryptor-prompt">
+<p>文章的部分内容被密码保护：</p>
+</div>
+<div class="hugo-encryptor-form">
+<input class="hugo-encryptor-input" placeholder="请输入密码"/>
+<input class="hugo-encryptor-button" onclick="_click_handler(this)" type="button" value="点击验证"/>
+</div>
+<div class="hugo-encryptor-cipher-text" style="display: none;">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</div>
+</div>
+</div>
 <script>
-  (function () {
-    var $toc = $('#TableOfContents');
-    if ($toc.length > 0) {
-      var $window = $(window);
-
-      function onScroll() {
-        var currentScroll = $window.scrollTop();
-        var h = $('.anchor');
-        var id = "";
-        h.each(function (i, e) {
-          e = $(e);
-          if (e.offset().top - $(window).height()/3 <= currentScroll) {
-            id = e.attr('id');
-          }
-        });
-        var active = $toc.find('a.active');      
-        if (active.length == 1 && active.eq(0).attr('href') == '#' + id) return true;
-
-        active.each(function (i, e) {
-           
-            $(e).removeClass('active').siblings('ul').hide();
-          
-        });
-        $toc.find('a[href="#' + id + '"]').addClass('active')
-        $toc.find('a[href="#' + id + '"]').parentsUntil('#TableOfContents').each(function (i, e) {
-          $(e).children('a').parents('ul').show();          
-        });
-      }
-
-      $window.on('scroll', onScroll);
-      $(document).ready(function () {
-         
-          $toc.find('a').parent('li').find('ul').hide();
-        
-        onScroll();
-      });
-    }
-  })();
-</script>
-   </div>
-      </div>
-      
-      <div class="min-w-0 min-h-0 max-w-prose">
-        
-
-        <p>This article will introduce the programming of <strong>C++20</strong>, mainly focus on the <strong>Differences</strong> between <strong>C++ early version</strong> and the <strong>C++20</strong>, also including some basic concepts of C++.</p>
-<p><em>To read this article, you need prepare some basic programming knowledge of C++.</em></p>
-<div id="basic-programming" class="anchor"></div>
-<h2 class="relative group">Basic Programming 
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#basic-programming" aria-label="Anchor">#</a></span>        
-    
-</h2>
-<div id="importing-modules" class="anchor"></div>
-<h3 class="relative group">Importing Modules 
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#importing-modules" aria-label="Anchor">#</a></span>        
-    
-</h3>
-<p><strong>C++20</strong> uses <code>import</code> declaration end with <code>';'</code> to instead of <code>#include</code> preprocessor directive in early version.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="line"><span class="cl"><span class="n">import</span> <span class="o">&lt;</span><span class="n">iostream</span><span class="o">&gt;</span><span class="p">;</span> <span class="c1">//C++20
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
-</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt; //early version</span><span class="cp">
-</span></span></span></code></pre></div><div id="preprocessor-directives" class="anchor"></div>
-<h3 class="relative group">Preprocessor Directives 
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#preprocessor-directives" aria-label="Anchor">#</a></span>        
-    
-</h3>
-<p><strong>C++20</strong> uses <code>#pragma once</code> to instead of <code>#ifndef...#endif</code> to avoid re-importing the same module.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="line"><span class="cl"><span class="c1">//C++20
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="cp">#pragma once
-</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="c1">//... codes
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
-</span></span><span class="line"><span class="cl"><span class="c1">//early version
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="cp">#ifndef MYCODE
-</span></span></span><span class="line"><span class="cl"><span class="cp">#define MYCODE
-</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="c1">//..codes
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="cp">#endif
-</span></span></span></code></pre></div><div id="nested-namesapce" class="anchor"></div>
-<h3 class="relative group">Nested Namesapce 
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#nested-namesapce" aria-label="Anchor">#</a></span>        
-    
-</h3>
-<p>A nested namespace is a namespace inside another one. Each namespace is separated by a double
-colon. Here the difference after and before <strong>C++17</strong></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="line"><span class="cl"><span class="c1">//after C++17
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">namespace</span> <span class="n">MyLibraries</span><span class="o">::</span><span class="n">Networking</span><span class="o">::</span><span class="n">FTP</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="cm">/* ... */</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">//early version
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">namespace</span> <span class="n">MyLibraries</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">namespace</span> <span class="n">Networking</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">namespace</span> <span class="n">FTP</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="cm">/* ... */</span>
-</span></span><span class="line"><span class="cl">        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><div id="namespace-alias" class="anchor"></div>
-<h3 class="relative group">Namespace Alias 
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#namespace-alias" aria-label="Anchor">#</a></span>        
-    
-</h3>
-<p>A namespace alias can be used to give a new and possibly shorter name to another namespace. Here’s
-an example:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="line"><span class="cl"><span class="k">namespace</span> <span class="n">MyFTP</span> <span class="o">=</span> <span class="n">MyLibraries</span><span class="o">::</span><span class="n">Networking</span><span class="o">::</span><span class="n">FTP</span><span class="p">;</span>
-</span></span></code></pre></div><div id="numeric-literals" class="anchor"></div>
-<h3 class="relative group">Numeric literals 
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#numeric-literals" aria-label="Anchor">#</a></span>        
-    
-</h3>
-<p>Digits separators can be used in numeric literals. A digits separator is a single quote character.
-For example:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="line"><span class="cl"><span class="mi">23&#39;456&#39;789</span>
-</span></span><span class="line"><span class="cl"><span class="mf">0.123</span><span class="err">&#39;</span><span class="mf">456f</span>
-</span></span></code></pre></div><div id="variables" class="anchor"></div>
-<h3 class="relative group">Variables 
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#variables" aria-label="Anchor">#</a></span>        
-    
-</h3>
-<p><em>Uniform initialization</em> <code>'{}'</code> was introduced with the <strong>C++11</strong> standard instead of using assignment synatx <code>'='</code>.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">v</span> <span class="p">{</span><span class="mi">7</span><span class="p">};</span> <span class="c1">//C++11
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">int</span> <span class="n">v</span> <span class="o">=</span> <span class="mi">7</span><span class="p">;</span> <span class="c1">//early version
-</span></span></span></code></pre></div><p><strong>C++20</strong> provides <code>char8_t</code>, <code>char16_t</code>, <code>char32_t</code> to represent A single n-bit UTF-n-encoded Unicode character where n can be 8, 16, or 32.</p>
-<p>*Before C++20 <code>wchar_t</code> was used to process Unicode character.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="line"><span class="cl"><span class="c1">//C++
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">char8_t</span> <span class="n">c8</span> <span class="p">{</span><span class="n">u8</span><span class="sc">&#39;m&#39;</span><span class="p">};</span>
-</span></span><span class="line"><span class="cl"><span class="kt">char16_t</span> <span class="n">c16</span> <span class="p">{</span><span class="n">u</span><span class="sc">&#39;m&#39;</span><span class="p">};</span>
-</span></span><span class="line"><span class="cl"><span class="kt">char32_t</span> <span class="n">c32</span> <span class="p">{</span><span class="n">U</span><span class="sc">&#39;m&#39;</span><span class="p">};</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">//early version
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">wchar_t</span> <span class="n">w</span> <span class="p">{</span><span class="sa">L</span><span class="sc">&#39;m&#39;</span><span class="p">};</span>
-</span></span></code></pre></div><p><strong>C++17</strong> provides <code>std::byte</code> to handle byte type instead of using <code>char</code> type.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="line"><span class="cl"><span class="n">std</span><span class="o">::</span><span class="n">byte</span> <span class="n">b</span> <span class="p">{</span> <span class="mi">42</span> <span class="p">};</span>
-</span></span></code></pre></div><div id="numerical-limits" class="anchor"></div>
-<h3 class="relative group">Numerical Limits 
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#numerical-limits" aria-label="Anchor">#</a></span>        
-    
-</h3>
-<p><strong>C++</strong> it’s recommended to use the <code>std::numeric_limits</code> class tem-
-plate defined in <code>&lt;limits&gt;</code>, instead of using <code>#defines</code> such as <code>INT_MAX</code> in <strong>C</strong>.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="line"><span class="cl"><span class="c1">//C++ standard
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;int:</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">format</span><span class="p">(</span><span class="s">&#34;Max int value: {}</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">numeric_limits</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;::</span><span class="n">max</span><span class="p">());</span>
-</span></span><span class="line"><span class="cl"><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">format</span><span class="p">(</span><span class="s">&#34;Min int value: {}</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">numeric_limits</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;::</span><span class="n">min</span><span class="p">());</span>
-</span></span><span class="line"><span class="cl"><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">format</span><span class="p">(</span><span class="s">&#34;Lowest int value: {}</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">numeric_limits</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;::</span><span class="n">lowest</span><span class="p">());</span>
-</span></span><span class="line"><span class="cl"><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;</span><span class="se">\n</span><span class="s">double:</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">format</span><span class="p">(</span><span class="s">&#34;Max double value: {}</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">numeric_limits</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;::</span><span class="n">max</span><span class="p">());</span>
-</span></span><span class="line"><span class="cl"><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">format</span><span class="p">(</span><span class="s">&#34;Min double value: {}</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">numeric_limits</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;::</span><span class="n">min</span><span class="p">());</span>
-</span></span><span class="line"><span class="cl"><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">format</span><span class="p">(</span><span class="s">&#34;Lowest double value: {}</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">numeric_limits</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;::</span><span class="n">lowest</span><span class="p">());</span>
-</span></span></code></pre></div><p>The output of this code snippet on my system is as follows:</p>
-<pre tabindex="0"><code>int:
-Max int value: 2147483647
-Min int value: -2147483648
-Lowest int value: -2147483648
-double:
-Max double value: 1.79769e+308
-Min double value: 2.22507e-308
-Lowest double value: -1.79769e+308
-</code></pre><p><em>Note the differences between <code>min()</code> and <code>lowest()</code>. For an <strong>integer</strong>, the minimum value equals the
-lowest value. However, for <strong>floating-point</strong> types, the minimum value is the smallest positive value
-that can be represented, while the lowest value is the most negative value representable, which
-equals <code>-max()</code>.</em></p>
-        </br></br>
-        
-
-      </div>
-     
-     <script>
         var oid = "views_posts\\cxx\\cxx-20-programming\\index.md"
         var oid_likes = "likes_posts\\cxx\\cxx-20-programming\\index.md"
       </script>
-      
-      
-      <script type="text/javascript" src="/js/page.min.0e49973b4ad0a382c7c6012d8bff8226316642daabc4f8a20477bd08674f3da6e2fa993bc20ad4f51e7c5bb68e6f913a207a7c4fe37ea0e7b806894afce0a64e.js" integrity="sha512-DkmXO0rQo4LHxgEti/&#43;CJjFmQtqrxPiiBHe9CGdPPabi&#43;pk7wgrU9R58W7aOb5E6IHp8T&#43;N&#43;oOe4BolK/OCmTg=="></script>
-  
-    </section>
-  <footer class="pt-8 max-w-prose print:hidden">
-
-    
-  <div class="flex">
-    
-      
-      
-        
-        <img
-          class="!mt-0 !mb-0 h-24 w-24 rounded-full ltr:mr-4 rtl:ml-4"
-          width="96"
-          height="96"
-          alt="Kiona"
-          src="/img/nkll_huea3899db0523bbff4375211cff76243e_1388610_192x192_fill_box_center_3.png"
-        />
-      
-    
-    <div class="place-self-center">
-      
-        <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+<script integrity="sha512-DkmXO0rQo4LHxgEti/+CJjFmQtqrxPiiBHe9CGdPPabi+pk7wgrU9R58W7aOb5E6IHp8T+N+oOe4BolK/OCmTg==" src="/js/page.min.0e49973b4ad0a382c7c6012d8bff8226316642daabc4f8a20477bd08674f3da6e2fa993bc20ad4f51e7c5bb68e6f913a207a7c4fe37ea0e7b806894afce0a64e.js" type="text/javascript"></script>
+</section>
+<footer class="pt-8 max-w-prose print:hidden">
+<div class="flex">
+<img alt="Kiona" class="!mt-0 !mb-0 h-24 w-24 rounded-full ltr:mr-4 rtl:ml-4" height="96" src="/img/nkll_huea3899db0523bbff4375211cff76243e_1388610_192x192_fill_box_center_3.png" width="96"/>
+<div class="place-self-center">
+<div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
           Author
         </div>
-        <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+<div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
           Kiona
         </div>
-      
-      
-        <div class="text-sm text-neutral-700 dark:text-neutral-400">In me the tiger, sniffs the rose</div>
-      
-      <div class="text-2xl sm:text-lg">
-  <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500">
-    
-      
-        <a
-          class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
-          href="cs_hao_du@163.com"
-          target="_blank"
-          aria-label="Email"
-          rel="me noopener noreferrer"
-          ><span class="inline-block align-text-bottom">
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M207.8 20.73c-93.45 18.32-168.7 93.66-187 187.1c-27.64 140.9 68.65 266.2 199.1 285.1c19.01 2.888 36.17-12.26 36.17-31.49l.0001-.6631c0-15.74-11.44-28.88-26.84-31.24c-84.35-12.98-149.2-86.13-149.2-174.2c0-102.9 88.61-185.5 193.4-175.4c91.54 8.869 158.6 91.25 158.6 183.2l0 16.16c0 22.09-17.94 40.05-40 40.05s-40.01-17.96-40.01-40.05v-120.1c0-8.847-7.161-16.02-16.01-16.02l-31.98 .0036c-7.299 0-13.2 4.992-15.12 11.68c-24.85-12.15-54.24-16.38-86.06-5.106c-38.75 13.73-68.12 48.91-73.72 89.64c-9.483 69.01 43.81 128 110.9 128c26.44 0 50.43-9.544 69.59-24.88c24 31.3 65.23 48.69 109.4 37.49C465.2 369.3 496 324.1 495.1 277.2V256.3C495.1 107.1 361.2-9.332 207.8 20.73zM239.1 304.3c-26.47 0-48-21.56-48-48.05s21.53-48.05 48-48.05s48 21.56 48 48.05S266.5 304.3 239.1 304.3z"/></svg>
-
-  </span>
-
-</span></a
-        >
-      
-    
-  </div>
-
+<div class="text-sm text-neutral-700 dark:text-neutral-400">In me the tiger, sniffs the rose</div>
+<div class="text-2xl sm:text-lg">
+<div class="flex flex-wrap text-neutral-400 dark:text-neutral-500">
+<a aria-label="Email" class="px-1 hover:text-primary-700 dark:hover:text-primary-400" href="cs_hao_du@163.com" rel="me noopener noreferrer" target="_blank"><span class="inline-block align-text-bottom">
+<span class="relative block icon">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M207.8 20.73c-93.45 18.32-168.7 93.66-187 187.1c-27.64 140.9 68.65 266.2 199.1 285.1c19.01 2.888 36.17-12.26 36.17-31.49l.0001-.6631c0-15.74-11.44-28.88-26.84-31.24c-84.35-12.98-149.2-86.13-149.2-174.2c0-102.9 88.61-185.5 193.4-175.4c91.54 8.869 158.6 91.25 158.6 183.2l0 16.16c0 22.09-17.94 40.05-40 40.05s-40.01-17.96-40.01-40.05v-120.1c0-8.847-7.161-16.02-16.01-16.02l-31.98 .0036c-7.299 0-13.2 4.992-15.12 11.68c-24.85-12.15-54.24-16.38-86.06-5.106c-38.75 13.73-68.12 48.91-73.72 89.64c-9.483 69.01 43.81 128 110.9 128c26.44 0 50.43-9.544 69.59-24.88c24 31.3 65.23 48.69 109.4 37.49C465.2 369.3 496 324.1 495.1 277.2V256.3C495.1 107.1 361.2-9.332 207.8 20.73zM239.1 304.3c-26.47 0-48-21.56-48-48.05s21.53-48.05 48-48.05s48 21.56 48 48.05S266.5 304.3 239.1 304.3z" fill="currentColor"></path></svg>
+</span>
+</span></a>
 </div>
-    </div>
-  </div>
-
-
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-
-    
-
-
+</div>
+</div>
+</div>
 <h2 class="mt-8 text-2xl font-extrabold mb-10">Related</h2>
 <section class="w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3">
-  
-  
-
-  <a href="/posts/javascript/javascript-basics-1/" class="min-w-full">
-    
-    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative backdrop-blur">
-        
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/javascript/javascript-basics-1/feature_hu9ea3e4668ef42e66b2789f9a6b527add_5104_600x0_resize_box_3.png);"></div>
-        
-      
-
-      <div class="px-6 py-4">
-
-        
-        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/posts/javascript/javascript-basics-1/">Javascript Basics 1</div>
-        
-
-        <div class="text-sm text-neutral-500 dark:text-neutral-400">
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<a class="min-w-full" href="/posts/javascript/javascript-basic/">
+<div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative backdrop-blur">
+<div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/javascript/javascript-basic/feature_hu9ea3e4668ef42e66b2789f9a6b527add_5104_600x0_resize_box_3.png);"></div>
+<div class="px-6 py-4">
+<div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral" href="/posts/javascript/javascript-basic/">Javascript Basic</div>
+<div class="text-sm text-neutral-500 dark:text-neutral-400">
 <div class="flex flex-row flex-wrap items-center">
-  
-  
-  <time datetime="2023-01-09 16:36:38 &#43;0800 CST">9 January 2023</time><span class="px-2 text-primary-500">&middot;</span><span>3275 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">16 mins</span>
-  
-
-  
-  
+<time datetime="2023-01-12 11:42:11 +0800 CST">12 January 2023</time><span class="px-2 text-primary-500">·</span><span>2679 words</span><span class="px-2 text-primary-500">·</span><span title="Reading time">13 mins</span>
 </div>
-
-
-
-
-
 <div class="flex flex-row flex-wrap items-center">
-  
-  
-  
-  
-  
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/program/&#34;,'_self');">
-    <span class="flex">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
-  >
+<span class="mr-2" onclick="window.open(&quot;/categories/program/&quot;,'_self');" style="margin-top:0.5rem">
+<span class="flex">
+<span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
     Program
   </span>
 </span>
-
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/javascript/&#34;,'_self');">
-    <span class="flex">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
-  >
+</span>
+<span class="mr-2" onclick="window.open(&quot;/categories/javascript/&quot;,'_self');" style="margin-top:0.5rem">
+<span class="flex">
+<span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
     Javascript
   </span>
 </span>
-
-  </span>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/javascript/&#34;,'_self');">
-    <span class="flex">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
-  >
+</span>
+<span class="mr-2" onclick="window.open(&quot;/tags/javascript/&quot;,'_self');" style="margin-top:0.5rem">
+<span class="flex">
+<span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
     Javascript
   </span>
 </span>
-
-  </span>
-  
-  
-  
-  
+</span>
 </div>
-
-
-
-        </div>
-
-        
-        <div class="py-1 prose dark:prose-invert">
-          <p>This chapter discusses what is JavaScript and its basic grammar, variable declarations, data types and literals.</p>
-        </div>
-        
-      </div>
-      <div class="px-6 pt-4 pb-2">
-
-      </div>
-    </div>
-  </a>
-  
-  
-
-  <a href="/posts/javascript/javascript-basic/" class="min-w-full">
-    
-    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative backdrop-blur">
-        
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/javascript/javascript-basic/feature_hu9ea3e4668ef42e66b2789f9a6b527add_5104_600x0_resize_box_3.png);"></div>
-        
-      
-
-      <div class="px-6 py-4">
-
-        
-        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/posts/javascript/javascript-basic/">Javascript Basic</div>
-        
-
-        <div class="text-sm text-neutral-500 dark:text-neutral-400">
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  <time datetime="2023-01-12 11:42:11 &#43;0800 CST">12 January 2023</time><span class="px-2 text-primary-500">&middot;</span><span>2679 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">13 mins</span>
-  
-
-  
-  
 </div>
-
-
-
-
-
+<div class="py-1 prose dark:prose-invert">
+<p>This chapter will introduce the basic concept of Javascript and basic rules include grammar, variable, function and so on.</p>
+</div>
+</div>
+<div class="px-6 pt-4 pb-2">
+</div>
+</div>
+</a>
+<a class="min-w-full" href="/posts/javascript/javascript-basics-1/">
+<div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative backdrop-blur">
+<div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/javascript/javascript-basics-1/feature_hu9ea3e4668ef42e66b2789f9a6b527add_5104_600x0_resize_box_3.png);"></div>
+<div class="px-6 py-4">
+<div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral" href="/posts/javascript/javascript-basics-1/">Javascript Basics 1</div>
+<div class="text-sm text-neutral-500 dark:text-neutral-400">
 <div class="flex flex-row flex-wrap items-center">
-  
-  
-  
-  
-  
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/program/&#34;,'_self');">
-    <span class="flex">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
-  >
+<time datetime="2023-01-09 16:36:38 +0800 CST">9 January 2023</time><span class="px-2 text-primary-500">·</span><span>3275 words</span><span class="px-2 text-primary-500">·</span><span title="Reading time">16 mins</span>
+</div>
+<div class="flex flex-row flex-wrap items-center">
+<span class="mr-2" onclick="window.open(&quot;/categories/program/&quot;,'_self');" style="margin-top:0.5rem">
+<span class="flex">
+<span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
     Program
   </span>
 </span>
-
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/javascript/&#34;,'_self');">
-    <span class="flex">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
-  >
+</span>
+<span class="mr-2" onclick="window.open(&quot;/categories/javascript/&quot;,'_self');" style="margin-top:0.5rem">
+<span class="flex">
+<span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
     Javascript
   </span>
 </span>
-
-  </span>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/javascript/&#34;,'_self');">
-    <span class="flex">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
-  >
+</span>
+<span class="mr-2" onclick="window.open(&quot;/tags/javascript/&quot;,'_self');" style="margin-top:0.5rem">
+<span class="flex">
+<span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
     Javascript
   </span>
 </span>
-
-  </span>
-  
-  
-  
-  
+</span>
 </div>
-
-
-
-        </div>
-
-        
-        <div class="py-1 prose dark:prose-invert">
-          <p>This chapter will introduce the basic concept of Javascript and basic rules include grammar, variable, function and so on.</p>
-        </div>
-        
-      </div>
-      <div class="px-6 pt-4 pb-2">
-
-      </div>
-    </div>
-  </a>
-  
-  
-
-  <a href="/posts/nodejs/starting-nodejs/" class="min-w-full">
-    
-    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative backdrop-blur">
-        
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/nodejs/starting-nodejs/feature_hu43b1e526ffdccaa61c3fce7246b43bb5_63574_600x0_resize_box_3.png);"></div>
-        
-      
-
-      <div class="px-6 py-4">
-
-        
-        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/posts/nodejs/starting-nodejs/">Starting Node.js</div>
-        
-
-        <div class="text-sm text-neutral-500 dark:text-neutral-400">
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  <time datetime="2023-01-09 11:01:14 &#43;0800 CST">9 January 2023</time><span class="px-2 text-primary-500">&middot;</span><span>251 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">2 mins</span>
-  
-
-  
-  
 </div>
-
-
-
-
-
+<div class="py-1 prose dark:prose-invert">
+<p>This chapter discusses what is JavaScript and its basic grammar, variable declarations, data types and literals.</p>
+</div>
+</div>
+<div class="px-6 pt-4 pb-2">
+</div>
+</div>
+</a>
+<a class="min-w-full" href="/posts/nodejs/starting-nodejs/">
+<div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative backdrop-blur">
+<div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/nodejs/starting-nodejs/feature_hu43b1e526ffdccaa61c3fce7246b43bb5_63574_600x0_resize_box_3.png);"></div>
+<div class="px-6 py-4">
+<div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral" href="/posts/nodejs/starting-nodejs/">Starting Node.js</div>
+<div class="text-sm text-neutral-500 dark:text-neutral-400">
 <div class="flex flex-row flex-wrap items-center">
-  
-  
-  
-  
-  
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/program/&#34;,'_self');">
-    <span class="flex">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
-  >
+<time datetime="2023-01-09 11:01:14 +0800 CST">9 January 2023</time><span class="px-2 text-primary-500">·</span><span>251 words</span><span class="px-2 text-primary-500">·</span><span title="Reading time">2 mins</span>
+</div>
+<div class="flex flex-row flex-wrap items-center">
+<span class="mr-2" onclick="window.open(&quot;/categories/program/&quot;,'_self');" style="margin-top:0.5rem">
+<span class="flex">
+<span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
     Program
   </span>
 </span>
-
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/javascript/&#34;,'_self');">
-    <span class="flex">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
-  >
+</span>
+<span class="mr-2" onclick="window.open(&quot;/categories/javascript/&quot;,'_self');" style="margin-top:0.5rem">
+<span class="flex">
+<span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
     Javascript
   </span>
 </span>
-
-  </span>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/node.js/&#34;,'_self');">
-    <span class="flex">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
-  >
+</span>
+<span class="mr-2" onclick="window.open(&quot;/tags/node.js/&quot;,'_self');" style="margin-top:0.5rem">
+<span class="flex">
+<span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
     Node.js
   </span>
 </span>
-
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/javascript/&#34;,'_self');">
-    <span class="flex">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
-  >
+</span>
+<span class="mr-2" onclick="window.open(&quot;/tags/javascript/&quot;,'_self');" style="margin-top:0.5rem">
+<span class="flex">
+<span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
     Javascript
   </span>
 </span>
-
-  </span>
-  
-  
-  
-  
+</span>
 </div>
-
-
-
-        </div>
-
-        
-        <div class="py-1 prose dark:prose-invert">
-          <p>This chapter will introduce the basic concept of Node.js and preparation for using Node.js.</p>
-        </div>
-        
-      </div>
-      <div class="px-6 pt-4 pb-2">
-
-      </div>
-    </div>
-  </a>
-  
+</div>
+<div class="py-1 prose dark:prose-invert">
+<p>This chapter will introduce the basic concept of Node.js and preparation for using Node.js.</p>
+</div>
+</div>
+<div class="px-6 pt-4 pb-2">
+</div>
+</div>
+</a>
 </section>
-
-
-
-    
-  
-    
-    
-    
-    <div class="pt-8">
-      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
-      <div class="flex justify-between pt-3">
-        <span>
-          
-            <a class="flex group mr-3" href="/posts/javascript/javascript-basic/">
-              <span
-                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
-                >&larr;</span
-              >
-              <span
-                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
-                >&rarr;</span
-              >
-              <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Javascript Basic</span
-                >
-                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-                  
-                    <time datetime="2023-01-12 11:42:11 &#43;0800 CST">12 January 2023</time>
-                  
-                </span>
-              </span>
-            </a>
-          
-        </span>
-        <span>
-          
-            <a class="flex text-right group ml-3" href="/posts/topology-optimization/topology-optimization-note-1/">
-              <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Topology Optimization Note 1</span
-                >
-                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-                  
-                    <time datetime="2023-05-23 17:18:05 &#43;0800 CST">23 May 2023</time>
-                  
-                </span>
-              </span>
-              <span
-                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
-                >&rarr;</span
-              >
-              <span
-                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
-                >&larr;</span
-              >
-            </a>
-          
-        </span>
-      </div>
-    </div>
-  
-
-
-    
-  </footer>
+<div class="pt-8">
+<hr class="border-dotted border-neutral-300 dark:border-neutral-600"/>
+<div class="flex justify-between pt-3">
+<span>
+<a class="flex group mr-3" href="/posts/javascript/javascript-basic/">
+<span class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400">←</span>
+<span class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400">→</span>
+<span class="flex flex-col">
+<span class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500">Javascript Basic</span>
+<span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+<time datetime="2023-01-12 11:42:11 +0800 CST">12 January 2023</time>
+</span>
+</span>
+</a>
+</span>
+<span>
+<a class="flex text-right group ml-3" href="/posts/topology-optimization/topology-optimization-note-1/">
+<span class="flex flex-col">
+<span class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500">Topology Optimization Note 1</span>
+<span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+<time datetime="2023-05-23 17:18:05 +0800 CST">23 May 2023</time>
+</span>
+</span>
+<span class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400">→</span>
+<span class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400">←</span>
+</a>
+</span>
+</div>
+</div>
+</footer>
 </article>
-
-      <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0">
-  <a href="#the-top"
-    class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 backdrop-blur hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
-    aria-label="Scroll to top" title="Scroll to top">
-    &uarr;
+<div class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0" id="top-scroller">
+<a aria-label="Scroll to top" class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 backdrop-blur hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400" href="#the-top" title="Scroll to top">
+    ↑
   </a>
 </div>
-    </main><footer id="site-footer" class="py-10 print:hidden">
-  
-  
-    
-  
-  <div class="flex items-center justify-between">
-
-    
-    
-    <p class="text-sm text-neutral-500 dark:text-neutral-400">
-      &copy;
+</main><footer class="py-10 print:hidden" id="site-footer">
+<div class="flex items-center justify-between">
+<p class="text-sm text-neutral-500 dark:text-neutral-400">
+      ©
       2023
       Kiona
     </p>
-    
-
-    
-    
-    <p class="text-xs text-neutral-500 dark:text-neutral-400">
+<p class="text-xs text-neutral-500 dark:text-neutral-400">
       
       
-      Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
-        href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
-        href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a>
-    </p>
-    
-
-  </div>
-  <script>
+      Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="https://blowfish.page/" rel="noopener noreferrer" target="_blank">Blowfish</a>
+</p>
+</div>
+<script>
     
     mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
       margin: 24,
@@ -1453,65 +476,30 @@ equals <code>-max()</code>.</em></p>
     })
     
   </script>
-  
-  
-  <script type="text/javascript" src="/js/process.min.35c1113bcc16c5a59bf031082f9e63822aa95280423881a7847a7ff33a16e6299ce6a840d9ef4e10d947e030a18f3f20359afb2ec0f35967484b9a9360ac3145.js" integrity="sha512-NcERO8wWxaWb8DEIL55jgiqpUoBCOIGnhHp/8zoW5imc5qhA2e9OENlH4DChjz8gNZr7LsDzWWdIS5qTYKwxRQ=="></script>
-  
-  
-</footer><div
-  id="search-wrapper"
-  class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
-  data-url="https://kkkiona.gihgub.io/"
-  style="z-index:500"
->
-  <div
-    id="search-modal"
-    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800"
-  >
-    <header class="relative z-10 flex items-center justify-between flex-none px-2">
-      <form class="flex items-center flex-auto min-w-0">
-        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
-          
-
-  <span class="relative block icon">
-    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
-
-  </span>
-
-
-        </div>
-        <input
-          type="search"
-          id="search-query"
-          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
-          placeholder="Search"
-          tabindex="0"
-        />
-      </form>
-      <button
-        id="close-search-button"
-        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
-        title="Close (Esc)"
-      >
-        
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
-
-  </span>
-
-
-      </button>
-    </header>
-    <section class="flex-auto px-2 overflow-auto">
-      <ul id="search-results">
-        
-      </ul>
-    </section>
-  </div>
+<script integrity="sha512-NcERO8wWxaWb8DEIL55jgiqpUoBCOIGnhHp/8zoW5imc5qhA2e9OENlH4DChjz8gNZr7LsDzWWdIS5qTYKwxRQ==" src="/js/process.min.35c1113bcc16c5a59bf031082f9e63822aa95280423881a7847a7ff33a16e6299ce6a840d9ef4e10d947e030a18f3f20359afb2ec0f35967484b9a9360ac3145.js" type="text/javascript"></script>
+</footer><div class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]" data-url="https://kkkiona.gihgub.io/" id="search-wrapper" style="z-index:500">
+<div class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800" id="search-modal">
+<header class="relative z-10 flex items-center justify-between flex-none px-2">
+<form class="flex items-center flex-auto min-w-0">
+<div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+<span class="relative block icon">
+<svg aria-hidden="true" class="svg-inline--fa fa-search fa-w-16" data-icon="search" data-prefix="fas" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" fill="currentColor"></path></svg>
+</span>
 </div>
-
-  </div>
-</body>
-
+<input class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent" id="search-query" placeholder="Search" tabindex="0" type="search"/>
+</form>
+<button class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400" id="close-search-button" title="Close (Esc)">
+<span class="relative block icon">
+<svg viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z" fill="currentColor"></path></svg>
+</span>
+</button>
+</header>
+<section class="flex-auto px-2 overflow-auto">
+<ul id="search-results">
+</ul>
+</section>
+</div>
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script><script src="/decrypt.js"></script></body>
 </html>
