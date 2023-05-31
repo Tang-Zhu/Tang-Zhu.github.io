@@ -443,6 +443,24 @@ MathJax.Hub.Queue(function() {
 </script>
 
 
+<div class="post-password">
+    
+    <script>
+        (function(){
+            if (prompt('Please input password') != "123"){
+                    alert('Password wrong!');
+                    if (history.length === 1) {
+                        window.opener = null;
+                        window.open('', '_self');
+                        window.close();
+                    } else {
+                        history.back();
+                    }
+                }
+        })();
+    </script>
+    
+</div>
 
   
   
