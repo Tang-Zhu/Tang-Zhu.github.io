@@ -88,6 +88,9 @@ MathJax.Hub.Queue(function() {
     }
 });
 </script>
+<script src="https://kkkiona.github.io/live2d/jquery.min.js"></script>
+<link href="https://kkkiona.github.io/live2d/font-awesome.min.css" rel="stylesheet"/>
+<script src="/https://kkkiona.github.io/live2d/autoload.js"></script>
 <meta name="theme-color"/>
 </head><body class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32">
 <div class="absolute flex self-center" id="the-top">
@@ -199,8 +202,8 @@ MathJax.Hub.Queue(function() {
 <div class="relative flex flex-col grow">
 <main class="grow" id="main-content">
 <article>
-<div class="w-full rounded-md h-36 md:h-56 lg:h-72 single_hero_basic nozoom" style="background-image:url(/img/bg5_hu7a2d1d81d248594a2ca5403f7c401424_5380560_1200x0_resize_box_3.png);"></div>
-<div class="fixed inset-x-0 top-0 h-[800px] single_hero_background nozoom" style="background-image:url(/img/bg1_hu4e15315029eec73a23b6c6212c804792_5214796_1200x0_resize_box_3.png);">
+<div class="w-full rounded-md h-36 md:h-56 lg:h-72 single_hero_basic nozoom" style="background-image:url(/img/bg5.png);"></div>
+<div class="fixed inset-x-0 top-0 h-[800px] single_hero_background nozoom" style="background-image:url(/img/bg1.png);">
 <div class="absolute inset-0 bg-gradient-to-t from-neutral dark:from-neutral-800 to-transparent mix-blend-normal">
 </div>
 <div class="absolute inset-0 opacity-30 dark:opacity-60 bg-gradient-to-t from-neutral dark:from-neutral-800 to-neutral dark:to-neutral-800 mix-blend-normal">
@@ -273,85 +276,20 @@ MathJax.Hub.Queue(function() {
 </div>
 </header>
 <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
-<div class="order-first sm:max-w-prose lg:ml-auto px-0 lg:order-last lg:max-w-xs ltr:lg:pl-8 rtl:lg:pr-8">
-<div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-10">
-<details class="mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block" open="">
-<summary class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
-    Table of Contents
-  </summary>
-<div class="min-w-[220px] py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-<nav id="TableOfContents">
-<ul>
-<li><a href="#futtopc">futtop.c</a></li>
-</ul>
-</nav>
-</div>
-</details>
-<details class="mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:hidden">
-<summary class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
-    Table of Contents
-  </summary>
-<div class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-<nav id="TableOfContents">
-<ul>
-<li><a href="#futtopc">futtop.c</a></li>
-</ul>
-</nav>
-</div>
-</details>
-<script>
-  (function () {
-    var $toc = $('#TableOfContents');
-    if ($toc.length > 0) {
-      var $window = $(window);
-
-      function onScroll() {
-        var currentScroll = $window.scrollTop();
-        var h = $('.anchor');
-        var id = "";
-        h.each(function (i, e) {
-          e = $(e);
-          if (e.offset().top - $(window).height()/3 <= currentScroll) {
-            id = e.attr('id');
-          }
-        });
-        var active = $toc.find('a.active');      
-        if (active.length == 1 && active.eq(0).attr('href') == '#' + id) return true;
-
-        active.each(function (i, e) {
-           
-            $(e).removeClass('active').siblings('ul').hide();
-          
-        });
-        $toc.find('a[href="#' + id + '"]').addClass('active')
-        $toc.find('a[href="#' + id + '"]').parentsUntil('#TableOfContents').each(function (i, e) {
-          $(e).children('a').parents('ul').show();          
-        });
-      }
-
-      $window.on('scroll', onScroll);
-      $(document).ready(function () {
-         
-          $toc.find('a').parent('li').find('ul').hide();
-        
-        onScroll();
-      });
-    }
-  })();
-</script>
-</div>
-</div>
 <div class="min-w-0 min-h-0 max-w-prose">
 <p>
 <figure>
-<img alt="Mindmap" class="my-0 rounded-md" src="https://raw.githubusercontent.com/KKKiona/KKKiona.github.io/master/posts/topopt-futtop/code-analysis-topopt-futtop/images/mindmap.svg"/>
+<img alt="Mindmap" class="my-0 rounded-md" src="/posts/topopt-futtop/code-analysis-topopt-futtop/images/program-structure.png"/>
+</figure>
+<figure>
+<img alt="Mindmap" class="my-0 rounded-md" src="/posts/topopt-futtop/code-analysis-topopt-futtop/images/main-structure.svg"/>
 </figure>
 </p>
 <div class="anchor" id="futtopc"></div>
-<h2 class="relative group">futtop.c 
+<h1 class="relative group">futtop.c 
     <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
 <a aria-label="Anchor" class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" href="#futtopc" style="text-decoration-line: none !important;">#</a></span>
-</h2>
+</h1>
 <p>Entrance of the whole program, and includes fellow functions:</p>
 <ul>
 <li>Setup OpenMP and futhark backends (<strong>Multicore</strong>, <strong>OpenCL</strong> or <strong>CUDA</strong>).</li>
@@ -392,7 +330,7 @@ MathJax.Hub.Queue(function() {
 <section class="w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3">
 <a class="min-w-full" href="/posts/javascript/javascript-basic/">
 <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative backdrop-blur">
-<div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/javascript/javascript-basic/feature_hu9ea3e4668ef42e66b2789f9a6b527add_5104_600x0_resize_box_3.png);"></div>
+<div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/javascript/javascript-basic/feature.png);"></div>
 <div class="px-6 py-4">
 <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral" href="/posts/javascript/javascript-basic/">Javascript Basic</div>
 <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -433,7 +371,7 @@ MathJax.Hub.Queue(function() {
 </a>
 <a class="min-w-full" href="/posts/javascript/javascript-basics-1/">
 <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative backdrop-blur">
-<div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/javascript/javascript-basics-1/feature_hu9ea3e4668ef42e66b2789f9a6b527add_5104_600x0_resize_box_3.png);"></div>
+<div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/javascript/javascript-basics-1/feature.png);"></div>
 <div class="px-6 py-4">
 <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral" href="/posts/javascript/javascript-basics-1/">Javascript Basics 1</div>
 <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -474,7 +412,7 @@ MathJax.Hub.Queue(function() {
 </a>
 <a class="min-w-full" href="/posts/nodejs/starting-nodejs/">
 <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative backdrop-blur">
-<div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/nodejs/starting-nodejs/feature_hu43b1e526ffdccaa61c3fce7246b43bb5_63574_600x0_resize_box_3.png);"></div>
+<div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/nodejs/starting-nodejs/feature.png);"></div>
 <div class="px-6 py-4">
 <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral" href="/posts/nodejs/starting-nodejs/">Starting Node.js</div>
 <div class="text-sm text-neutral-500 dark:text-neutral-400">

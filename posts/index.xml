@@ -88,5 +88,23 @@
       <description>&lt;p&gt;This article will cover the installation of the PETSc library, including the common installation for Linux and the attempt on Windows.&lt;/p&gt;</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://kkkiona.gihgub.io/posts/futhark/futhark-note-1/futhark-note-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kkkiona.gihgub.io/posts/futhark/futhark-note-1/futhark-note-1/</guid>
+      <description>Parallelism # The Futhark compiler only generates parallel code for explicitly parallel constructs such as map and reduce.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kkkiona.gihgub.io/posts/taichi/taichi-note-1/taichi-note-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kkkiona.gihgub.io/posts/taichi/taichi-note-1/taichi-note-1/</guid>
+      <description>taichi目前可以自动并行嵌套循环，同时对于ti.</description>
+    </item>
+    
   </channel>
 </rss>

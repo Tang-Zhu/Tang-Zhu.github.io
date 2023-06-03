@@ -143,6 +143,22 @@
   
     
       <url>
+            <loc>https://kkkiona.gihgub.io/posts/futhark/futhark-note-1/futhark-note-1/</loc>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://kkkiona.gihgub.io/posts/taichi/taichi-note-1/taichi-note-1/</loc>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
             <loc>https://kkkiona.gihgub.io/archive/</loc>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
