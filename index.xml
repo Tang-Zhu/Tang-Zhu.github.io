@@ -1,117 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-<title>Kiona</title>
-<link>https://kkkiona.gihgub.io/</link>
-<description>Recent content on Kiona</description>
+<title>Tang-Zhu</title>
+<link>https://Tang-Zhu.gihgub.io/</link>
+<description>Recent content on Tang-Zhu</description>
 <generator>Hugo -- gohugo.io</generator>
 <language>en</language>
-<lastBuildDate>Mon, 29 May 2023 17:18:05 +0800</lastBuildDate><atom:link href="https://kkkiona.gihgub.io/index.xml" rel="self" type="application/rss+xml"/>
+<lastBuildDate>Mon, 29 May 2023 17:18:05 +0800</lastBuildDate><atom:link href="https://Tang-Zhu.gihgub.io/index.xml" rel="self" type="application/rss+xml"/>
 <item>
 <title>Code Analysis topopt-futtop</title>
-<link>https://kkkiona.gihgub.io/posts/topopt-futtop/code-analysis-topopt-futtop/</link>
+<link>https://Tang-Zhu.gihgub.io/posts/topopt-futtop/code-analysis-topopt-futtop/</link>
 <pubDate>Mon, 29 May 2023 17:18:05 +0800</pubDate>
-<guid>https://kkkiona.gihgub.io/posts/topopt-futtop/code-analysis-topopt-futtop/</guid>
+<guid>https://Tang-Zhu.gihgub.io/posts/topopt-futtop/code-analysis-topopt-futtop/</guid>
 <description/>
-<media:content url="https://kkkiona.gihgub.io/posts/topopt-futtop/code-analysis-topopt-futtop/feature.png" xmlns:media="http://search.yahoo.com/mrss/"/>
+<media:content url="https://Tang-Zhu.gihgub.io/posts/topopt-futtop/code-analysis-topopt-futtop/feature.png" xmlns:media="http://search.yahoo.com/mrss/"/>
 </item>
 <item>
 <title>Theory of Elasticity Note 1</title>
-<link>https://kkkiona.gihgub.io/posts/theory-of-elasticity/theory-of-elasticity-note-1/</link>
+<link>https://Tang-Zhu.gihgub.io/posts/theory-of-elasticity/theory-of-elasticity-note-1/</link>
 <pubDate>Tue, 23 May 2023 17:18:05 +0800</pubDate>
-<guid>https://kkkiona.gihgub.io/posts/theory-of-elasticity/theory-of-elasticity-note-1/</guid>
+<guid>https://Tang-Zhu.gihgub.io/posts/theory-of-elasticity/theory-of-elasticity-note-1/</guid>
 <description>&lt;p&gt;&lt;strong&gt;Items&lt;/strong&gt;: Stress, Stress tensor, Strain, Strain tensor, Strain energy, Elastic deformation, Plastic deformation, Small strain linear elasticity, Elastic modulus (or Young&amp;rsquo;s modulus), Strain energy density,  Lamé parameters.&lt;/p&gt;</description>
-<media:content url="https://kkkiona.gihgub.io/posts/theory-of-elasticity/theory-of-elasticity-note-1/feature.png" xmlns:media="http://search.yahoo.com/mrss/"/>
+<media:content url="https://Tang-Zhu.gihgub.io/posts/theory-of-elasticity/theory-of-elasticity-note-1/feature.png" xmlns:media="http://search.yahoo.com/mrss/"/>
 </item>
 <item>
 <title>Topology Optimization Note 1</title>
-<link>https://kkkiona.gihgub.io/posts/topology-optimization/topology-optimization-note-1/</link>
+<link>https://Tang-Zhu.gihgub.io/posts/topology-optimization/topology-optimization-note-1/</link>
 <pubDate>Tue, 23 May 2023 17:18:05 +0800</pubDate>
-<guid>https://kkkiona.gihgub.io/posts/topology-optimization/topology-optimization-note-1/</guid>
+<guid>https://Tang-Zhu.gihgub.io/posts/topology-optimization/topology-optimization-note-1/</guid>
 <description>&lt;p&gt;&lt;strong&gt;Items&lt;/strong&gt;: Compliance minimization, Density filtering, Volume constraint, Non-physical phenomena, Chequer-boarding, Stiffness interpolation, Solid Isotropic Material Penalisation (SIMP), Optimality Criteria (OC), Linear system, Matrix-free operator, Aassembly of coarse operators.&lt;/p&gt;</description>
-<media:content url="https://kkkiona.gihgub.io/posts/topology-optimization/topology-optimization-note-1/feature.png" xmlns:media="http://search.yahoo.com/mrss/"/>
+<media:content url="https://Tang-Zhu.gihgub.io/posts/topology-optimization/topology-optimization-note-1/feature.png" xmlns:media="http://search.yahoo.com/mrss/"/>
 </item>
 <item>
 <title>C++20 Programming</title>
-<link>https://kkkiona.gihgub.io/posts/cxx/cxx-20-programming/</link>
+<link>https://Tang-Zhu.gihgub.io/posts/cxx/cxx-20-programming/</link>
 <pubDate>Thu, 09 Mar 2023 15:23:49 +0800</pubDate>
-<guid>https://kkkiona.gihgub.io/posts/cxx/cxx-20-programming/</guid>
+<guid>https://Tang-Zhu.gihgub.io/posts/cxx/cxx-20-programming/</guid>
 <description>&lt;p&gt;This article will introduce the programming of &lt;strong&gt;C++20&lt;/strong&gt;, mainly focus on the &lt;strong&gt;Differences&lt;/strong&gt; between &lt;strong&gt;C++ early version&lt;/strong&gt; and the &lt;strong&gt;C++20&lt;/strong&gt;, also including some basic concepts of C++.&lt;/p&gt;</description>
-<media:content url="https://kkkiona.gihgub.io/posts/cxx/cxx-20-programming/feature.png" xmlns:media="http://search.yahoo.com/mrss/"/>
+<media:content url="https://Tang-Zhu.gihgub.io/posts/cxx/cxx-20-programming/feature.png" xmlns:media="http://search.yahoo.com/mrss/"/>
 </item>
 <item>
 <title>Javascript Basic</title>
-<link>https://kkkiona.gihgub.io/posts/javascript/javascript-basic/</link>
+<link>https://Tang-Zhu.gihgub.io/posts/javascript/javascript-basic/</link>
 <pubDate>Thu, 12 Jan 2023 11:42:11 +0800</pubDate>
-<guid>https://kkkiona.gihgub.io/posts/javascript/javascript-basic/</guid>
+<guid>https://Tang-Zhu.gihgub.io/posts/javascript/javascript-basic/</guid>
 <description>&lt;p&gt;This chapter will introduce the basic concept of Javascript and basic rules include grammar, variable, function and so on.&lt;/p&gt;</description>
-<media:content url="https://kkkiona.gihgub.io/posts/javascript/javascript-basic/feature.png" xmlns:media="http://search.yahoo.com/mrss/"/>
+<media:content url="https://Tang-Zhu.gihgub.io/posts/javascript/javascript-basic/feature.png" xmlns:media="http://search.yahoo.com/mrss/"/>
 </item>
 <item>
 <title>Javascript Basics 1</title>
-<link>https://kkkiona.gihgub.io/posts/javascript/javascript-basics-1/</link>
+<link>https://Tang-Zhu.gihgub.io/posts/javascript/javascript-basics-1/</link>
 <pubDate>Mon, 09 Jan 2023 16:36:38 +0800</pubDate>
-<guid>https://kkkiona.gihgub.io/posts/javascript/javascript-basics-1/</guid>
+<guid>https://Tang-Zhu.gihgub.io/posts/javascript/javascript-basics-1/</guid>
 <description>&lt;p&gt;This chapter discusses what is JavaScript and its basic grammar, variable declarations, data types and literals.&lt;/p&gt;</description>
-<media:content url="https://kkkiona.gihgub.io/posts/javascript/javascript-basics-1/feature.png" xmlns:media="http://search.yahoo.com/mrss/"/>
+<media:content url="https://Tang-Zhu.gihgub.io/posts/javascript/javascript-basics-1/feature.png" xmlns:media="http://search.yahoo.com/mrss/"/>
 </item>
 <item>
 <title>Starting Node.js</title>
-<link>https://kkkiona.gihgub.io/posts/nodejs/starting-nodejs/</link>
+<link>https://Tang-Zhu.gihgub.io/posts/nodejs/starting-nodejs/</link>
 <pubDate>Mon, 09 Jan 2023 11:01:14 +0800</pubDate>
-<guid>https://kkkiona.gihgub.io/posts/nodejs/starting-nodejs/</guid>
+<guid>https://Tang-Zhu.gihgub.io/posts/nodejs/starting-nodejs/</guid>
 <description>&lt;p&gt;This chapter will introduce the basic concept of Node.js and preparation for using Node.js.&lt;/p&gt;</description>
-<media:content url="https://kkkiona.gihgub.io/posts/nodejs/starting-nodejs/feature.png" xmlns:media="http://search.yahoo.com/mrss/"/>
+<media:content url="https://Tang-Zhu.gihgub.io/posts/nodejs/starting-nodejs/feature.png" xmlns:media="http://search.yahoo.com/mrss/"/>
 </item>
 <item>
 <title>Usage of TopOpt-in-PETSc Projects</title>
-<link>https://kkkiona.gihgub.io/posts/petsc/topopt-in-petsc/</link>
+<link>https://Tang-Zhu.gihgub.io/posts/petsc/topopt-in-petsc/</link>
 <pubDate>Thu, 29 Dec 2022 17:18:05 +0800</pubDate>
-<guid>https://kkkiona.gihgub.io/posts/petsc/topopt-in-petsc/</guid>
+<guid>https://Tang-Zhu.gihgub.io/posts/petsc/topopt-in-petsc/</guid>
 <description>&lt;p&gt;This article is the Usage for the two follow github projects about the use of PETSc lib.&lt;/p&gt;</description>
-<media:content url="https://kkkiona.gihgub.io/posts/petsc/topopt-in-petsc/feature.png" xmlns:media="http://search.yahoo.com/mrss/"/>
+<media:content url="https://Tang-Zhu.gihgub.io/posts/petsc/topopt-in-petsc/feature.png" xmlns:media="http://search.yahoo.com/mrss/"/>
 </item>
 <item>
 <title>Installation of PETSc</title>
-<link>https://kkkiona.gihgub.io/posts/petsc/installation-petsc/</link>
+<link>https://Tang-Zhu.gihgub.io/posts/petsc/installation-petsc/</link>
 <pubDate>Wed, 28 Dec 2022 18:02:29 +0800</pubDate>
-<guid>https://kkkiona.gihgub.io/posts/petsc/installation-petsc/</guid>
+<guid>https://Tang-Zhu.gihgub.io/posts/petsc/installation-petsc/</guid>
 <description>&lt;p&gt;This article will cover the installation of the PETSc library, including the common installation for Linux and the attempt on Windows.&lt;/p&gt;</description>
-<media:content url="https://kkkiona.gihgub.io/posts/petsc/installation-petsc/feature.png" xmlns:media="http://search.yahoo.com/mrss/"/>
+<media:content url="https://Tang-Zhu.gihgub.io/posts/petsc/installation-petsc/feature.png" xmlns:media="http://search.yahoo.com/mrss/"/>
 </item>
 <item>
 <title/>
-<link>https://kkkiona.gihgub.io/posts/futhark/futhark-note-1/futhark-note-1/</link>
+<link>https://Tang-Zhu.gihgub.io/posts/futhark/futhark-note-1/futhark-note-1/</link>
 <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-<guid>https://kkkiona.gihgub.io/posts/futhark/futhark-note-1/futhark-note-1/</guid>
+<guid>https://Tang-Zhu.gihgub.io/posts/futhark/futhark-note-1/futhark-note-1/</guid>
 <description>Parallelism # The Futhark compiler only generates parallel code for explicitly parallel constructs such as map and reduce.</description>
 </item>
 <item>
 <title/>
-<link>https://kkkiona.gihgub.io/posts/taichi/taichi-note-1/taichi-note-1/</link>
+<link>https://Tang-Zhu.gihgub.io/posts/taichi/taichi-note-1/taichi-note-1/</link>
 <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-<guid>https://kkkiona.gihgub.io/posts/taichi/taichi-note-1/taichi-note-1/</guid>
+<guid>https://Tang-Zhu.gihgub.io/posts/taichi/taichi-note-1/taichi-note-1/</guid>
 <description>taichi目前可以自动并行嵌套循环，同时对于ti.</description>
 </item>
 <item>
-<title>Archive</title>
-<link>https://kkkiona.gihgub.io/archive/</link>
+<title/>
+<link>https://Tang-Zhu.gihgub.io/posts/untitled/drawing-2023-06-04-21.11.06.excalidraw/</link>
 <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-<guid>https://kkkiona.gihgub.io/archive/</guid>
+<guid>https://Tang-Zhu.gihgub.io/posts/untitled/drawing-2023-06-04-21.11.06.excalidraw/</guid>
+<description>==⚠ Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document.</description>
+</item>
+<item>
+<title>Archive</title>
+<link>https://Tang-Zhu.gihgub.io/archive/</link>
+<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+<guid>https://Tang-Zhu.gihgub.io/archive/</guid>
 <description/>
 </item>
 <item>
 <title>Nav</title>
-<link>https://kkkiona.gihgub.io/nav/</link>
+<link>https://Tang-Zhu.gihgub.io/nav/</link>
 <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-<guid>https://kkkiona.gihgub.io/nav/</guid>
+<guid>https://Tang-Zhu.gihgub.io/nav/</guid>
 <description>⚓ # ⚓ O virgo, just do the right thing S.</description>
 </item>
 <item>
 <title>Search</title>
-<link>https://kkkiona.gihgub.io/search/</link>
+<link>https://Tang-Zhu.gihgub.io/search/</link>
 <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-<guid>https://kkkiona.gihgub.io/search/</guid>
+<guid>https://Tang-Zhu.gihgub.io/search/</guid>
 <description/>
 </item>
 </channel>
