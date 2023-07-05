@@ -59,7 +59,7 @@ code.has-jax {
     "keywords": ["PETSc"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "1273"
+    "wordCount": "1287"
   }]
   </script>
 <meta content="Tang Zhu" name="author"/>
@@ -233,7 +233,7 @@ MathJax.Hub.Queue(function() {
     </h1>
 <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
 <div class="flex flex-row flex-wrap items-center">
-<time datetime="2022-12-28 18:02:29 +0800 CST">28 December 2022</time><span class="px-2 text-primary-500">·</span><span>1273 words</span><span class="px-2 text-primary-500">·</span><span title="Reading time">6 mins</span>
+<time datetime="2022-12-28 18:02:29 +0800 CST">28 December 2022</time><span class="px-2 text-primary-500">·</span><span>1287 words</span><span class="px-2 text-primary-500">·</span><span title="Reading time">7 mins</span>
 </div>
 <div class="flex flex-row flex-wrap items-center">
 <span class="mr-2" onclick="window.open(&quot;/categories/program/&quot;,'_self');" style="margin-top:0.5rem">
@@ -268,305 +268,17 @@ MathJax.Hub.Queue(function() {
 </div>
 </header>
 <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
-<div class="order-first sm:max-w-prose lg:ml-auto px-0 lg:order-last lg:max-w-xs ltr:lg:pl-8 rtl:lg:pr-8">
-<div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-10">
-<details class="mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block" open="">
-<summary class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
-    Table of Contents
-  </summary>
-<div class="min-w-[220px] py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-<nav id="TableOfContents">
-<ul>
-<li><a href="#installation-for-linux">Installation for Linux</a>
-<ul>
-<li><a href="#environment">Environment</a></li>
-<li><a href="#installation">Installation</a></li>
-</ul>
-</li>
-<li><a href="#installation-for-windows">Installation for Windows</a>
-<ul>
-<li><a href="#environment-1">Environment</a></li>
-<li><a href="#test-in-msys2">Test in MSYS2</a></li>
-<li><a href="#test-in-cygwin">Test in Cygwin</a></li>
-<li><a href="#conclusion">Conclusion</a></li>
-</ul>
-</li>
-</ul>
-</nav>
-</div>
-</details>
-<details class="mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:hidden">
-<summary class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
-    Table of Contents
-  </summary>
-<div class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-<nav id="TableOfContents">
-<ul>
-<li><a href="#installation-for-linux">Installation for Linux</a>
-<ul>
-<li><a href="#environment">Environment</a></li>
-<li><a href="#installation">Installation</a></li>
-</ul>
-</li>
-<li><a href="#installation-for-windows">Installation for Windows</a>
-<ul>
-<li><a href="#environment-1">Environment</a></li>
-<li><a href="#test-in-msys2">Test in MSYS2</a></li>
-<li><a href="#test-in-cygwin">Test in Cygwin</a></li>
-<li><a href="#conclusion">Conclusion</a></li>
-</ul>
-</li>
-</ul>
-</nav>
-</div>
-</details>
-<script>
-  (function () {
-    var $toc = $('#TableOfContents');
-    if ($toc.length > 0) {
-      var $window = $(window);
-
-      function onScroll() {
-        var currentScroll = $window.scrollTop();
-        var h = $('.anchor');
-        var id = "";
-        h.each(function (i, e) {
-          e = $(e);
-          if (e.offset().top - $(window).height()/3 <= currentScroll) {
-            id = e.attr('id');
-          }
-        });
-        var active = $toc.find('a.active');      
-        if (active.length == 1 && active.eq(0).attr('href') == '#' + id) return true;
-
-        active.each(function (i, e) {
-           
-            $(e).removeClass('active').siblings('ul').hide();
-          
-        });
-        $toc.find('a[href="#' + id + '"]').addClass('active')
-        $toc.find('a[href="#' + id + '"]').parentsUntil('#TableOfContents').each(function (i, e) {
-          $(e).children('a').parents('ul').show();          
-        });
-      }
-
-      $window.on('scroll', onScroll);
-      $(document).ready(function () {
-         
-          $toc.find('a').parent('li').find('ul').hide();
-        
-        onScroll();
-      });
-    }
-  })();
-</script>
-</div>
-</div>
 <div class="min-w-0 min-h-0 max-w-prose">
 <p>This article will cover the installation of the PETSc library, including the common installation for Linux and the attempt on Windows.</p>
-<div class="anchor" id="installation-for-linux"></div>
-<h2 class="relative group">Installation for Linux 
-    <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-<a aria-label="Anchor" class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" href="#installation-for-linux" style="text-decoration-line: none !important;">#</a></span>
-</h2>
-<p>This article is applicable to the building of <strong>PETSc-3.14.1</strong>. You can download the newest version by:</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone -b release https://gitlab.com/petsc/petsc.git
-</span></span><span class="line"><span class="cl"><span class="c1">#If haven't the git tool, you can install it through 'apt'.</span>
-</span></span><span class="line"><span class="cl"><span class="c1">#Follow steps will show how to use 'apt'.</span>
-</span></span></code></pre></div><p>or search the applicable version through the link:</p>
-<p><a href="https://gitlab.com/petsc/petsc" target="_blank">
-    https://gitlab.com/petsc/petsc</a></p>
-<div class="anchor" id="environment"></div>
-<h3 class="relative group">Environment 
-    <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-<a aria-label="Anchor" class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" href="#environment" style="text-decoration-line: none !important;">#</a></span>
-</h3>
-<p>Building PETSc relies on the following environments：</p>
-<ul>
-<li><strong>Ubuntu</strong> (Linux system, tested in 22.04.1 version)</li>
-<li><strong>gcc/g++/gfrotran</strong> (C/C++/Frotran compiler, tested in 11.3.0 version)</li>
-<li><strong>Python3</strong> (tested in 3.10.6)</li>
-<li><strong>LAPACK/BLAS</strong> (Scientific computing library, tested in 3,4,2 version)</li>
-<li><strong>MPICH</strong> (Realization of MPI, tested in 4.0.2 version)</li>
-</ul>
-<div class="anchor" id="installation"></div>
-<h3 class="relative group">Installation 
-    <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-<a aria-label="Anchor" class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" href="#installation" style="text-decoration-line: none !important;">#</a></span>
-</h3>
-<p>The first step is installing <strong>Ubuntu</strong> system, you can install it on your PC or virtual machine (e.g.VMware).</p>
-<ul>
-<li><em>Please choose <strong>English</strong> as the system language if you can accpet, which is convenient for programming.</em></li>
-<li><em>You can choose the minimal installation and don’t choose any third-part software and updating opeions when installing, if you internet is not good enough.</em></li>
-</ul>
-<p>After Ubuntu installation, the first thing you need to do is updating software. Ubuntu uses <strong>apt</strong> gizmo to manage software, the updating command:</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Using 'apt-get' to instead 'apt', If your system doesn't support 'apt' </span>
-</span></span><span class="line"><span class="cl">sudo apt update <span class="c1"># update 'apt' itself</span>
-</span></span><span class="line"><span class="cl">sudo apt upgrade <span class="c1"># update software</span>
-</span></span></code></pre></div><p>If the origin software mirror source is too late, you can change it by:</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cp /etc/apt/sources.list /etc/apt/sources.list.bak <span class="c1"># Copy old version</span>
-</span></span><span class="line"><span class="cl">sudo vi /etc/apt/sources.list
-</span></span><span class="line"><span class="cl">deb http://mirrors.aliyun.com/ubuntu/ xxxx main restricted universe multiverse
-</span></span><span class="line"><span class="cl"><span class="c1"># Change all the link, notice keep 'xxxx' with your own Codename</span>
-</span></span></code></pre></div><p>Some recommended sources are follows:</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Aliyun</span>
-</span></span><span class="line"><span class="cl">deb http://mirrors.aliyun.com/ubuntu/ xenial main restricted universe multiverse
-</span></span><span class="line"><span class="cl">deb http://mirrors.aliyun.com/ubuntu/ xenial-security main restricted universe multiverse
-</span></span><span class="line"><span class="cl">deb http://mirrors.aliyun.com/ubuntu/ xenial-updates main restricted universe multiverse
-</span></span><span class="line"><span class="cl">deb http://mirrors.aliyun.com/ubuntu/ xenial-backports main restricted universe multiverse
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># Tsinghua</span>
-</span></span><span class="line"><span class="cl">deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial main restricted universe multiverse
-</span></span><span class="line"><span class="cl">deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-security main restricted universe multiverse
-</span></span><span class="line"><span class="cl">deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-updates main restricted universe multiverse
-</span></span><span class="line"><span class="cl">deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-backports main restricted universe multiverse
-</span></span></code></pre></div><p>The next step is installing <strong>gcc/g++/gfrotran</strong> and <strong>Python3</strong>, you can directly install them with <strong>apt</strong>:</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt install gcc
-</span></span><span class="line"><span class="cl">sudo apt install g++
-</span></span><span class="line"><span class="cl">sudo apt install gfortran
-</span></span><span class="line"><span class="cl">sudo apt install python3
-</span></span></code></pre></div><p>If can’t find the package, you can use <em><code>apt search</code></em> to search it and choose the right version for installing.</p>
-<p>In some situation, you might meet error:
-<em><code>configure: error: no acceptable C compiler found in $PATH</code></em>, especially choosing minimal version when installing Ubuntu. You can fix it by:<em><code>sudo apt-get install -y build-essential</code></em>.</p>
-<p>There are two different ways about installing <strong>LAPACK/BLAS</strong> and  <strong>MPICH</strong>. The first is installing during the PETSc configuring, which recommended by PETSc official. The other is using <strong>apt</strong>.</p>
-<p>For the first way, <em><code>cd</code></em> into the PETSc’s root directory and configure with follow command:</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">./configure --with-cc<span class="o">=</span>gcc --with-cxx<span class="o">=</span>g++ --with-fc<span class="o">=</span>gfortran --download-mpich --download-fblaslapack
-</span></span></code></pre></div><p>If download fails, you can download these packages mannually from the given link in the configure message. Then, indicate the download directory:</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">./configure --with-cc<span class="o">=</span>gcc --with-cxx<span class="o">=</span>g++ --with-fc<span class="o">=</span>gfortran --download-mpich --download-fblaslapack --with-download-dir<span class="o">=</span>&lt;xxxxx&gt;
-</span></span></code></pre></div><p>After configuration, make the project:</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">make all check
-</span></span></code></pre></div><p>If you don’t have the <em><code>make</code></em> tool, install it by <em><code>apt</code></em>.</p>
-<p>The second way is installing <strong>LAPACK/BLAS</strong> and  <strong>MPICH</strong> mannually. <strong>LAPACK/BLAS</strong> are easily to install:</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt search lapack-dev
-</span></span><span class="line"><span class="cl">...
-</span></span><span class="line"><span class="cl">sudo apt install liblapack64-dev <span class="c1">#Choose the applicable version</span>
-</span></span><span class="line"><span class="cl">sudo apt search blas-dev
-</span></span><span class="line"><span class="cl">...
-</span></span><span class="line"><span class="cl">sudo apt install libblas64-dev <span class="c1">#Choose the applicable version</span>
-</span></span></code></pre></div><p><strong>MPI</strong> is a cross-language communication protocol for parallel programming. <strong>MPICH</strong> is one of realizations of MPI, and you can also choose <strong>OpenMPI</strong> to instead it:</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt install mpich
-</span></span><span class="line"><span class="cl"><span class="c1">#sudo apt install openmpi</span>
-</span></span></code></pre></div><p>After that, if the <strong>$PATH</strong> is correct you can configure PETSc directly, otherwise you need indicate the directory:</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">./configure --with-cc<span class="o">=</span>gcc --with-cxx<span class="o">=</span>g++ --with-fc<span class="o">=</span>gfortran
-</span></span><span class="line"><span class="cl"><span class="c1">#./configure --with-cc=gcc --with-cxx=g++ --with-fc=gfortran --with--mpich-dir=&lt;xxxx&gt; --with--fblaslapack-dir=&lt;xxxx&gt;</span>
-</span></span></code></pre></div><p>After configuration, make the project:</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">make all check
-</span></span></code></pre></div><p>During the making process, some errors might occur such as <em><code>/usr/bin/ld: cannot find -lmpi_cxx</code></em>, which means lack of depended libs. You need to use <strong>apt</strong> to install them for example:</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt search lmpi
-</span></span><span class="line"><span class="cl">...
-</span></span><span class="line"><span class="cl">sudo apt install libmkl-blacs-intelmpi-ilp64 <span class="c1">#Choose the applicable version</span>
-</span></span></code></pre></div><p>After making, the message will show follows. You can re-check this information through configure.log, the <strong>PETSC_DIR</strong> and <strong>PETSC_ARCH</strong> will be used in your project.</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">-----------------------------------------
-</span></span><span class="line"><span class="cl">PETSC_VERSION_RELEASE
-</span></span><span class="line"><span class="cl">.
-</span></span><span class="line"><span class="cl">.
-</span></span><span class="line"><span class="cl">.
-</span></span><span class="line"><span class="cl">-----------------------------------------
-</span></span><span class="line"><span class="cl"><span class="c1">#define SOME_PETSC_VARIABLE</span>
-</span></span><span class="line"><span class="cl">.
-</span></span><span class="line"><span class="cl">.
-</span></span><span class="line"><span class="cl">.
-</span></span><span class="line"><span class="cl">-----------------------------------------
-</span></span><span class="line"><span class="cl">Installed Compiler, Package, and Library Information
-</span></span><span class="line"><span class="cl">.
-</span></span><span class="line"><span class="cl">.
-</span></span><span class="line"><span class="cl">.
-</span></span><span class="line"><span class="cl"><span class="o">=========================================</span>
-</span></span><span class="line"><span class="cl">       FC arch-darwin-c-debug/obj/sys/f90-mod/petscsysmod.o
-</span></span><span class="line"><span class="cl">       FC arch-darwin-c-debug/obj/sys/fsrc/somefort.o
-</span></span><span class="line"><span class="cl">       FC arch-darwin-c-debug/obj/sys/f90-src/fsrc/f90_fwrap.o
-</span></span><span class="line"><span class="cl">       CC arch-darwin-c-debug/obj/sys/info/verboseinfo.o
-</span></span><span class="line"><span class="cl">       CC arch-darwin-c-debug/obj/sys/info/ftn-auto/verboseinfof.o
-</span></span><span class="line"><span class="cl">       CC arch-darwin-c-debug/obj/sys/info/ftn-custom/zverboseinfof.o
-</span></span><span class="line"><span class="cl">       .
-</span></span><span class="line"><span class="cl">       .
-</span></span><span class="line"><span class="cl">       .
-</span></span><span class="line"><span class="cl">       FC arch-darwin-c-debug/obj/snes/f90-mod/petscsnesmod.o
-</span></span><span class="line"><span class="cl">       FC arch-darwin-c-debug/obj/ts/f90-mod/petsctsmod.o
-</span></span><span class="line"><span class="cl">       FC arch-darwin-c-debug/obj/tao/f90-mod/petsctaomod.o
-</span></span><span class="line"><span class="cl">  CLINKER arch-darwin-c-debug/lib/libpetsc.PETSC_MAJOR.PETSC_MINOR.PETSC_PATCH.dylib
-</span></span><span class="line"><span class="cl"> DSYMUTIL arch-darwin-c-debug/lib/libpetsc.PETSC_MAJOR.PETSC_MINOR.PETSC_PATCH.dylib
-</span></span><span class="line"><span class="cl">gmake<span class="o">[</span>2<span class="o">]</span>: Leaving directory <span class="s1">'/your/petsc/dir'</span>
-</span></span><span class="line"><span class="cl">gmake<span class="o">[</span>1<span class="o">]</span>: Leaving directory <span class="s1">'/your/petsc/dir'</span>
-</span></span><span class="line"><span class="cl"><span class="o">=========================================</span>
-</span></span><span class="line"><span class="cl">Running <span class="nb">test</span> examples to verify correct installation
-</span></span><span class="line"><span class="cl">Using <span class="nv">PETSC_DIR</span><span class="o">=</span>/your/petsc/dir and <span class="nv">PETSC_ARCH</span><span class="o">=</span>your-petsc-arch
-</span></span><span class="line"><span class="cl">C/C++ example src/snes/examples/tutorials/ex19 run successfully with <span class="m">1</span> MPI process
-</span></span><span class="line"><span class="cl">C/C++ example src/snes/examples/tutorials/ex19 run successfully with <span class="m">2</span> MPI processes
-</span></span><span class="line"><span class="cl">Fortran example src/snes/examples/tutorials/ex5f run successfully with <span class="m">1</span> MPI process
-</span></span><span class="line"><span class="cl">Completed <span class="nb">test</span> examples
-</span></span></code></pre></div><div class="anchor" id="installation-for-windows"></div>
-<h2 class="relative group">Installation for Windows 
-    <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-<a aria-label="Anchor" class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" href="#installation-for-windows" style="text-decoration-line: none !important;">#</a></span>
-</h2>
-<p>The installation of PETSc for <strong>Windows</strong> is not successful yet, this is just a record for the works.</p>
-<div class="anchor" id="environment-1"></div>
-<h3 class="relative group">Environment 
-    <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-<a aria-label="Anchor" class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" href="#environment-1" style="text-decoration-line: none !important;">#</a></span>
-</h3>
-<p>This article try <strong>MSYS2</strong> and <strong>Cygwin</strong> separately to build PETSc：</p>
-<ul>
-<li><strong>MSYS2</strong> (Linux environment in Windows, tested in 20221216.0.0 version)</li>
-<li><strong>Cygwin</strong> (Linux environment in Windows, tested in 1.2.1 version)</li>
-</ul>
-<div class="anchor" id="test-in-msys2"></div>
-<h3 class="relative group">Test in MSYS2 
-    <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-<a aria-label="Anchor" class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" href="#test-in-msys2" style="text-decoration-line: none !important;">#</a></span>
-</h3>
-<p>The <strong>MSYS2</strong> system uses <em><code>pacman</code></em> to manage packages such like <em><code>apt</code></em>. You need to install all the same packages in <strong>Linux</strong> to <strong>MSYS2</strong> by <em><code>pacman</code></em>. <strong>MSYS2</strong> doesn’t have some base packages (e.g.<em><code>make</code></em>), which you also need to install. Usage of <em><code>pacman</code></em>:</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pacman -Ss <span class="o">[</span>package name<span class="o">]</span> <span class="c1">#Search package</span>
-</span></span><span class="line"><span class="cl">pacman -S <span class="o">[</span>package name<span class="o">]</span> <span class="c1">#Install package</span>
-</span></span></code></pre></div><p>The problem is when trying to configure PETSc after installing all the packages, it will meet error:</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">Could not execute <span class="s2">"['/bin/rpm -q diffutils']"</span>: 
-</span></span><span class="line"><span class="cl">    /bin/sh: line 1: /bin/rpm: No such file or directory.
-</span></span></code></pre></div><p>The <strong>MSYS2</strong> is a simple Linux environment running on Windows, which doesn’t support enough to run this command.</p>
-<div class="anchor" id="test-in-cygwin"></div>
-<h3 class="relative group">Test in Cygwin 
-    <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-<a aria-label="Anchor" class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" href="#test-in-cygwin" style="text-decoration-line: none !important;">#</a></span>
-</h3>
-<p>The <strong>Cygwin</strong> system doesn’t have such as <em><code>pacman</code></em> or <em><code>apt</code></em> tool to manage packages. One of the way to get package is to re-run the <strong>Cygwin-setup</strong> and to choose the needed package.</p>
-<p>
-<figure>
-<img alt="Cygwin-setup" class="my-0 rounded-md" src="https://raw.githubusercontent.com/KKKiona/KKKiona.github.io/master/posts/petsc/installation-petsc/images/cygwin-setup.png"/>
-</figure>
-</p>
-<p>The other way to get the package is use <em><code>apt-cyg</code></em>. <em><code>apt-cyg</code></em> is similar to <em><code>apt</code></em>, but need be installed mannually:</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">lynx -source rawgit.com/transcode-open/apt-cyg/master/apt-cyg &gt; apt-cyg
-</span></span><span class="line"><span class="cl">install apt-cyg /bin
-</span></span></code></pre></div><p>Or you can copy the <em>apt-cyg</em>’s content through <a href="https://github.com/transcode-open/apt-cyg" target="_blank">
-    https://github.com/transcode-open/apt-cyg</a> to <em><strong>Cygwin:</strong></em>/bin to creat the same file and run:</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">chmod +x apt-cyg
-</span></span></code></pre></div><p>The first problem except installing the base packages is <strong>Cygwin</strong> can’t install <strong>MPICH</strong> successfully through above ways. So I try to build it mannualy.</p>
-<p>Firstly, download the source of <strong>MPICH</strong> from <a href="https://www.mpich.org/downloads/" target="_blank">
-    https://www.mpich.org/downloads/</a> and unpack the tar file (If doesn’t have <strong>tar</strong> or other tools, just install them by <strong>Cygwin-setup</strong> or <em><code>apt-cyg</code></em>):</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">tar xfz mpich.tar.gz
-</span></span><span class="line"><span class="cl"><span class="c1">#If tar doesn’t accept the z option, use</span>
-</span></span><span class="line"><span class="cl"><span class="c1">#gunzip -c mpich.tar.gz | tar xf -</span>
-</span></span></code></pre></div><p>Let us assume that the directory where you do this is <em>/home/you/libraries</em>. It will now contain a subdirectory named <em>mpich-x.x.x</em>. Choose an installation directory (the default is <em>/usr/local/bin</em>):</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mkdir /home/you/mpich-install
-</span></span></code></pre></div><p>Choose a build directory:</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mkdir /tmp/you/mpich-x.x.x
-</span></span></code></pre></div><p>Configure <strong>MPICH</strong>, specifying the installation directory, and running the configure script in the source directory:</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> /tmp/you/mpich-x.x.x
-</span></span><span class="line"><span class="cl">/home/you/libraries/mpich-x.x.x/configure -prefix<span class="o">=</span>/home/you/mpich-install <span class="p">|&amp;</span> tee c.txt
-</span></span></code></pre></div><p>For the <strong>Cygwin</strong>’s <em>gfortran</em>, it will meet error:</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">configure: error: The Fortran compiler gfortran does not accept programs that call the same routine with arguments of different types without the option -fallow-argument-mismatch.  Rerun configure with <span class="nv">FFLAGS</span><span class="o">=</span>-fallow-argument-mismatch and <span class="nv">FCFLAGS</span><span class="o">=</span>-fallow-argument-mismatch
-</span></span></code></pre></div><p>Change the command:</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">/home/you/libraries/mpich-x.x.x/configure -prefix<span class="o">=</span>/home/you/mpich-install <span class="nv">FFLAGS</span><span class="o">=</span>-fallow-argument-mismatch <span class="nv">FCFLAGS</span><span class="o">=</span>-fallow-argument-mismatch <span class="p">|&amp;</span> tee c.txt
-</span></span></code></pre></div><p>The error change to:</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">configure: error: libfabric only builds on Linux, OS X, and FreeBSD
-</span></span><span class="line"><span class="cl">configure: error: libfabric configure failed
-</span></span></code></pre></div><p>It seems <strong>Cygwin</strong> can not support <strong>MPICH</strong> yet.</p>
-<div class="anchor" id="conclusion"></div>
-<h3 class="relative group">Conclusion 
-    <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-<a aria-label="Anchor" class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" href="#conclusion" style="text-decoration-line: none !important;">#</a></span>
-</h3>
-<p>It is not to hard to and possible to change the code to Windows version, because of the similarity between <strong>gcc</strong> and <strong>MSVC</strong>。So the best way is to rewrite the full code instead of using virtual Linux environment.</p>
+<div class="hugo-encryptor-container">
+<div class="hugo-encryptor-prompt">
+<p>Part of this article is encrypted with password:</p>
+</div>
+<div class="hugo-encryptor-form">
+<input class="hugo-encryptor-input" onkeydown="if(event.keyCode==13) {_click_handler(this)}" placeholder="Password and Enter" style="border-radius: 5px; text-align: center;" type="password"/>
+</div>
+<div class="hugo-encryptor-cipher-text" style="display: none;">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</div>
+</div>
 </div>
 <script>
         var oid = "views_posts\\petsc\\installation-petsc\\index.md"
@@ -684,5 +396,5 @@ MathJax.Hub.Queue(function() {
 </div>
 </div>
 </div>
-</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script><script src="/decrypt.js"></script></body>
 </html>
