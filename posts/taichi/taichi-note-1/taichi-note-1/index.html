@@ -247,25 +247,25 @@ MathJax.Hub.Queue(function() {
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">m</span> <span class="p">:</span> <span class="n">ti</span><span class="o">.</span><span class="n">int64</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ti</span><span class="o">.</span><span class="n">int64</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="err"> </span> <span class="err"> </span> <span class="n">res</span> <span class="o">=</span> <span class="n">ti</span><span class="o">.</span><span class="n">int64</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">res</span> <span class="o">=</span> <span class="n">ti</span><span class="o">.</span><span class="n">int64</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="err"> </span> <span class="err"> </span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">m</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">m</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="n">res</span><span class="o">+=</span><span class="n">i</span>
+</span></span><span class="line"><span class="cl">        <span class="n">res</span><span class="o">+=</span><span class="n">i</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="err"> </span> <span class="err"> </span> <span class="k">return</span> <span class="n">res</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">res</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">addcpu</span><span class="p">(</span><span class="n">m</span> <span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">int64</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">int64</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="err"> </span> <span class="err"> </span> <span class="n">res</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">int64</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">res</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">int64</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="err"> </span> <span class="err"> </span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">m</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">m</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="n">res</span><span class="o">+=</span><span class="n">i</span>
+</span></span><span class="line"><span class="cl">        <span class="n">res</span><span class="o">+=</span><span class="n">i</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="err"> </span> <span class="err"> </span> <span class="k">return</span> <span class="n">res</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">res</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  
 </span></span><span class="line"><span class="cl">
@@ -273,15 +273,15 @@ MathJax.Hub.Queue(function() {
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">test</span><span class="p">(</span><span class="n">n</span> <span class="p">:</span> <span class="n">ti</span><span class="o">.</span><span class="n">int64</span><span class="p">,</span> <span class="n">m</span><span class="p">:</span><span class="n">ti</span><span class="o">.</span><span class="n">int64</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ti</span><span class="o">.</span><span class="n">int64</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="err"> </span> <span class="err"> </span> <span class="n">res</span> <span class="o">=</span> <span class="n">ti</span><span class="o">.</span><span class="n">int64</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">res</span> <span class="o">=</span> <span class="n">ti</span><span class="o">.</span><span class="n">int64</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="err"> </span> <span class="err"> </span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>      
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="n">res</span> <span class="o">+=</span> <span class="n">add</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">res</span> <span class="o">+=</span> <span class="n">add</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="err"> </span> <span class="err"> </span> <span class="k">return</span> <span class="n">res</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">res</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  
 </span></span><span class="line"><span class="cl">
@@ -348,9 +348,9 @@ MathJax.Hub.Queue(function() {
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># 为数组a和b赋值</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="err"> </span> <span class="err"> </span> <span class="n">a</span> <span class="o">=</span> <span class="n">ti</span><span class="o">.</span><span class="n">Vector</span><span class="p">([</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">size</span><span class="p">)])</span>
+</span></span><span class="line"><span class="cl">    <span class="n">a</span> <span class="o">=</span> <span class="n">ti</span><span class="o">.</span><span class="n">Vector</span><span class="p">([</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">size</span><span class="p">)])</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="err"> </span> <span class="err"> </span> <span class="k">return</span> <span class="n">a</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">a</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  
 </span></span><span class="line"><span class="cl">
@@ -419,7 +419,7 @@ MathJax.Hub.Queue(function() {
 <span>
 </span>
 <span>
-<a class="flex text-right group ml-3" href="/posts/futhark/futhark-note-1/futhark-note-1/">
+<a class="flex text-right group ml-3" href="/posts/graphics/mesh-to-sdf/images/mesh-to-sdf-python/">
 <span class="flex flex-col">
 <span class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"></span>
 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">

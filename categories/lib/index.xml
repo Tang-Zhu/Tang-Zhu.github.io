@@ -6,7 +6,16 @@
     <description>Recent content in Lib on Tang Zhu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 29 Dec 2022 17:18:05 +0800</lastBuildDate><atom:link href="https://Tang-Zhu.gihgub.io/categories/lib/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Sep 2023 14:40:05 +0800</lastBuildDate><atom:link href="https://Tang-Zhu.gihgub.io/categories/lib/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Point sampling of triangle mesh</title>
+      <link>https://Tang-Zhu.gihgub.io/posts/python/lib-trimesh/</link>
+      <pubDate>Mon, 11 Sep 2023 14:40:05 +0800</pubDate>
+      
+      <guid>https://Tang-Zhu.gihgub.io/posts/python/lib-trimesh/</guid>
+      <description>sample() # Sample the surface of a mesh, returning the specified number of points.</description>
+    </item>
+    
     <item>
       <title>Usage of TopOpt-in-PETSc Projects</title>
       <link>https://Tang-Zhu.gihgub.io/posts/petsc/topopt-in-petsc/</link>

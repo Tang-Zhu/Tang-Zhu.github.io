@@ -6,7 +6,30 @@
 <description>Recent content on Tang Zhu</description>
 <generator>Hugo -- gohugo.io</generator>
 <language>en</language>
-<lastBuildDate>Mon, 29 May 2023 17:18:05 +0800</lastBuildDate><atom:link href="https://Tang-Zhu.gihgub.io/index.xml" rel="self" type="application/rss+xml"/>
+<lastBuildDate>Mon, 11 Sep 2023 14:40:05 +0800</lastBuildDate><atom:link href="https://Tang-Zhu.gihgub.io/index.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>Point sampling of triangle mesh</title>
+<link>https://Tang-Zhu.gihgub.io/posts/python/lib-trimesh/</link>
+<pubDate>Mon, 11 Sep 2023 14:40:05 +0800</pubDate>
+<guid>https://Tang-Zhu.gihgub.io/posts/python/lib-trimesh/</guid>
+<description>sample() # Sample the surface of a mesh, returning the specified number of points.</description>
+<media:content url="https://Tang-Zhu.gihgub.io/posts/python/lib-trimesh/feature.png" xmlns:media="http://search.yahoo.com/mrss/"/>
+</item>
+<item>
+<title>Point sampling of triangle mesh</title>
+<link>https://Tang-Zhu.gihgub.io/posts/graphics/point-sampling-of-triangle-mesh/</link>
+<pubDate>Sun, 10 Sep 2023 14:40:05 +0800</pubDate>
+<guid>https://Tang-Zhu.gihgub.io/posts/graphics/point-sampling-of-triangle-mesh/</guid>
+<description>&lt;div id="triangle-point-picking" class="anchor"&gt;&lt;/div&gt;
+&lt;h1 class="relative group"&gt;Triangle Point Picking 
+    &lt;span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"&gt;
+        &lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#triangle-point-picking" aria-label="Anchor"&gt;#&lt;/a&gt;&lt;/span&gt;        
+    
+&lt;/h1&gt;</description>
+<media:content url="https://Tang-Zhu.gihgub.io/posts/graphics/point-sampling-of-triangle-mesh/feature.png" xmlns:media="http://search.yahoo.com/mrss/"/>
+</item>
 <item>
 <title>Code Analysis topopt-futtop</title>
 <link>https://Tang-Zhu.gihgub.io/posts/topopt-futtop/code-analysis-topopt-futtop/</link>
@@ -17,11 +40,11 @@
 </item>
 <item>
 <title>Theory of Elasticity Note 1</title>
-<link>https://Tang-Zhu.gihgub.io/posts/theory-of-elasticity/theory-of-elasticity-note-1/</link>
+<link>https://Tang-Zhu.gihgub.io/posts/elastodynamics/elastodynamics-note-1/</link>
 <pubDate>Tue, 23 May 2023 17:18:05 +0800</pubDate>
-<guid>https://Tang-Zhu.gihgub.io/posts/theory-of-elasticity/theory-of-elasticity-note-1/</guid>
+<guid>https://Tang-Zhu.gihgub.io/posts/elastodynamics/elastodynamics-note-1/</guid>
 <description>&lt;p&gt;&lt;strong&gt;Items&lt;/strong&gt;: Stress, Stress tensor, Strain, Strain tensor, Strain energy, Elastic deformation, Plastic deformation, Small strain linear elasticity, Elastic modulus (or Young&amp;rsquo;s modulus), Strain energy density,  Lamé parameters.&lt;/p&gt;</description>
-<media:content url="https://Tang-Zhu.gihgub.io/posts/theory-of-elasticity/theory-of-elasticity-note-1/feature.png" xmlns:media="http://search.yahoo.com/mrss/"/>
+<media:content url="https://Tang-Zhu.gihgub.io/posts/elastodynamics/elastodynamics-note-1/feature.png" xmlns:media="http://search.yahoo.com/mrss/"/>
 </item>
 <item>
 <title>Topology Optimization Note 1</title>
@@ -85,6 +108,13 @@
 <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
 <guid>https://Tang-Zhu.gihgub.io/posts/futhark/futhark-note-1/futhark-note-1/</guid>
 <description>Parallelism # The Futhark compiler only generates parallel code for explicitly parallel constructs such as map and reduce.</description>
+</item>
+<item>
+<title/>
+<link>https://Tang-Zhu.gihgub.io/posts/graphics/mesh-to-sdf/images/mesh-to-sdf-python/</link>
+<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+<guid>https://Tang-Zhu.gihgub.io/posts/graphics/mesh-to-sdf/images/mesh-to-sdf-python/</guid>
+<description>==⚠ Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document.</description>
 </item>
 <item>
 <title/>
