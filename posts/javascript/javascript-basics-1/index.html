@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html class="scroll-smooth" data-auto-appearance="true" data-default-appearance="dark" dir="ltr" lang="en"><head><style>
+<html lang="en" dir="ltr" class="scroll-smooth" data-default-appearance="dark"
+  data-auto-appearance="true"><style>
 code.has-jax {
     font: inherit;
     font-size: 100%;
@@ -8,34 +9,82 @@ code.has-jax {
     color: #515151;
 }
 </style>
-<meta charset="utf-8"/>
-<meta content="en" http-equiv="content-language"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="ie=edge" http-equiv="X-UA-Compatible"/>
-<title>Javascript Basics 1 · Tang Zhu</title>
-<meta content="Javascript Basics 1 · Tang Zhu" name="title"/>
-<meta content="My awesome website" name="description"/>
-<meta content="Javascript, " name="keywords"/>
-<link href="https://Tang-Zhu.gihgub.io/posts/javascript/javascript-basics-1/" rel="canonical"/>
-<link href="/css/main.bundle.min.55800f303ced971710fcec8763e3a2eb63b3fb2606988f7139a956fe0aea85d71ed6a30e6173ab797d2f7ffa06850e79622ce5d198b483b0c942f51afefdd89f.css" integrity="sha512-VYAPMDztlxcQ/OyHY+Oi62Oz+yYGmI9xOalW/grqhdce1qMOYXOreX0vf/oGhQ55Yizl0Zi0g7DJQvUa/v3Ynw==" rel="stylesheet" type="text/css"/>
-<script integrity="sha512-UWoWdFvqWpvQERONJUzA/TlzzVXObhXz3sdj58fCx0SPj+e1TMqBHLghsMfhLNFhyqzh3XlKw9NNQJN8vMnuEg==" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js" type="text/javascript"></script>
-<script data-copied="" data-copy="" defer="" id="script-bundle" integrity="sha512-PdzwT1sNTDL3LnJtPBLuvM2MPJ+dqpoTQUgIiV3grh4c3d2mhJaA1b2W27YNCx4LJMKfXIPlYx5V5+a8AgFUkA==" src="/js/main.bundle.min.3ddcf04f5b0d4c32f72e726d3c12eebccd8c3c9f9daa9a13414808895de0ae1e1cdddda6849680d5bd96dbb60d0b1e0b24c29f5c83e5631e55e7e6bc02015490.js" type="text/javascript"></script>
-<script src="/js/zoom.min.js"></script>
-<link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
-<link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
-<link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
-<link href="/site.webmanifest" rel="manifest"/>
-<meta content="Javascript Basics 1" property="og:title"/>
-<meta content="This chapter discusses what is JavaScript and its basic grammar, variable declarations, data types and literals." property="og:description"/>
-<meta content="article" property="og:type"/>
-<meta content="https://Tang-Zhu.gihgub.io/posts/javascript/javascript-basics-1/" property="og:url"/><meta content="https://Tang-Zhu.gihgub.io/posts/javascript/javascript-basics-1/feature.png" property="og:image"/><meta content="posts" property="article:section"/>
-<meta content="2023-01-09T16:36:38+08:00" property="article:published_time"/>
-<meta content="2023-01-09T16:36:38+08:00" property="article:modified_time"/>
-<meta content="summary_large_image" name="twitter:card"/>
-<meta content="https://Tang-Zhu.gihgub.io/posts/javascript/javascript-basics-1/feature.png" name="twitter:image"/>
-<meta content="Javascript Basics 1" name="twitter:title"/>
-<meta content="This chapter discusses what is JavaScript and its basic grammar, variable declarations, data types and literals." name="twitter:description"/>
-<script type="application/ld+json">
+
+<head>
+  <meta charset="utf-8" />
+  
+  <meta http-equiv="content-language" content="en" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+  <title>Javascript Basics 1 &middot; Tang Zhu</title>
+  <meta name="title" content="Javascript Basics 1 &middot; Tang Zhu" />
+  
+  <meta name="description" content="My awesome website" />
+  <meta name="keywords" content="Javascript, " />
+  
+  
+  <link rel="canonical" href="https://Tang-Zhu.gihgub.io/posts/javascript/javascript-basics-1/" />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.55800f303ced971710fcec8763e3a2eb63b3fb2606988f7139a956fe0aea85d71ed6a30e6173ab797d2f7ffa06850e79622ce5d198b483b0c942f51afefdd89f.css"
+    integrity="sha512-VYAPMDztlxcQ/OyHY&#43;Oi62Oz&#43;yYGmI9xOalW/grqhdce1qMOYXOreX0vf/oGhQ55Yizl0Zi0g7DJQvUa/v3Ynw==" />
+  
+  
+  <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
+    integrity="sha512-UWoWdFvqWpvQERONJUzA/TlzzVXObhXz3sdj58fCx0SPj&#43;e1TMqBHLghsMfhLNFhyqzh3XlKw9NNQJN8vMnuEg=="></script>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.3ddcf04f5b0d4c32f72e726d3c12eebccd8c3c9f9daa9a13414808895de0ae1e1cdddda6849680d5bd96dbb60d0b1e0b24c29f5c83e5631e55e7e6bc02015490.js"
+    integrity="sha512-PdzwT1sNTDL3LnJtPBLuvM2MPJ&#43;dqpoTQUgIiV3grh4c3d2mhJaA1b2W27YNCx4LJMKfXIPlYx5V5&#43;a8AgFUkA==" data-copy="" data-copied=""></script>
+  
+  <script src="/js/zoom.min.js"></script>
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="Javascript Basics 1" />
+<meta property="og:description" content="This chapter discusses what is JavaScript and its basic grammar, variable declarations, data types and literals." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://Tang-Zhu.gihgub.io/posts/javascript/javascript-basics-1/" /><meta property="og:image" content="https://Tang-Zhu.gihgub.io/posts/javascript/javascript-basics-1/feature.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-01-09T16:36:38+08:00" />
+<meta property="article:modified_time" content="2023-01-09T16:36:38+08:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://Tang-Zhu.gihgub.io/posts/javascript/javascript-basics-1/feature.png"/>
+<meta name="twitter:title" content="Javascript Basics 1"/>
+<meta name="twitter:description" content="This chapter discusses what is JavaScript and its basic grammar, variable declarations, data types and literals."/>
+
+  
+  <script type="application/ld+json">
   [{
     "@context": "https://schema.org",
     "@type": "Article",
@@ -62,123 +111,276 @@ code.has-jax {
     "wordCount": "3275"
   }]
   </script>
-<meta content="Tang Zhu" name="author"/>
-<link href="mailto:tang_zhu_mail@163.com" rel="me"/>
-<link href="https://github.com/tang-zhu" rel="me"/>
-<script integrity="" src="/lib/jquery/jquery.slim.min.js"></script>
-<script async="" src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
-MathJax.Hub.Config({
-  tex2jax: {
-    inlineMath: [['$','$'], ['\\(','\\)']],
-    displayMath: [['$$','$$'], ['\[\[','\]\]']],
-    processEscapes: true,
-    processEnvironments: true,
-    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-    TeX: { equationNumbers: { autoNumber: "AMS" },
-         extensions: ["AMSmath.js", "AMSsymbols.js"] }
-  }
-});
-
-MathJax.Hub.Queue(function() {
-    
-    
-    
-    var all = MathJax.Hub.getAllJax(), i;
-    for(i = 0; i < all.length; i += 1) {
-        all[i].SourceElement().parentNode.className += ' has-jax';
-    }
-});
+
+
+  
+  
+  <meta name="author" content="Tang Zhu" />
+  
+  
+  
+  <link href="mailto:tang_zhu_mail@163.com" rel="me" />
+  
+  
+  <link href="https://github.com/tang-zhu" rel="me" />
+  
+  
+  
+  
+
+<script src="/lib/jquery/jquery.slim.min.js" integrity=""></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+  
+  
+  <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
 </script>
-<meta name="theme-color"/>
-</head><body class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32">
-<div class="absolute flex self-center" id="the-top">
-<a class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600" href="#main-content"><span class="font-bold text-primary-600 ltr:pr-2 rtl:pl-2 dark:text-primary-400">↓</span>Skip to main content</a>
-</div>
-<div class="min-h-[148px]"></div>
+
+
+  
+  <meta name="theme-color"/>
+  
+  
+</head>
+<body
+  class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32">
+  <div id="the-top" class="absolute flex self-center">
+    <a class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+      href="#main-content"><span
+        class="font-bold text-primary-600 ltr:pr-2 rtl:pl-2 dark:text-primary-400">&darr;</span>Skip to main content</a>
+  </div>
+  
+  
+  <div class="min-h-[148px]"></div>
 <div class="fixed inset-x-0 pl-[24px] pr-[24px]" style="z-index:100">
-<div class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl shadow-2xl" id="menu-blur"></div>
-<div class="relative max-w-[64rem] ml-auto mr-auto">
-<div class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start space-x-3" style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px">
-<div class="flex flex-1 items-center justify-between">
-<nav class="flex space-x-3">
-<a class="text-base font-medium text-gray-500 hover:text-gray-900" href="/">Tang Zhu</a>
-</nav>
-<nav class="hidden md:flex items-center space-x-5 md:ml-12">
-<a class="flex items-center" href="/posts/">
-<p class="text-base font-medium text-gray-500 hover:text-gray-900" title="Posts">
+  <div id="menu-blur" class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl shadow-2xl"></div>
+  <div class="relative max-w-[64rem] ml-auto mr-auto">
+    <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
+    class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start space-x-3">
+    
+    <div class="flex flex-1 items-center justify-between">
+        <nav class="flex space-x-3">
+
+            <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">Tang Zhu</a>
+
+
+        </nav>
+        <nav class="hidden md:flex items-center space-x-5 md:ml-12">
+
+            
+            
+            
+  <a href="/posts/"  class="flex items-center">
+    
+    <p class="text-base font-medium text-gray-500 hover:text-gray-900" title="Posts">
         Post
     </p>
 </a>
-<button aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400" id="search-button" title="">
-<span class="relative block icon">
-<svg aria-hidden="true" class="svg-inline--fa fa-search fa-w-16" data-icon="search" data-prefix="fas" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" fill="currentColor"></path></svg>
+
+
+            
+            
+
+            
+
+
+            
+            <button id="search-button" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+                title="">
+                
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+            </button>
+            
+
+
+            
+            
+            <div
+                class="ltr:mr-14 rtl:ml-14 cursor-pointer text-sm text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400">
+                <button id="appearance-switcher" aria-label="Dark mode switcher" type="button">
+                    <div class="flex items-center justify-center h-12 dark:hidden">
+                        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+
+  </span>
+
+
+                    </div>
+                    <div class="items-center justify-center hidden h-12 dark:flex">
+                        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+
+  </span>
+
+
+                    </div>
+                </button>
+            </div>
+            
+
+        </nav>
+        <div class="flex md:hidden items-center space-x-5 md:ml-12">
+
+            <span></span>
+
+            
+
+
+            
+            <button id="search-button-mobile" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+                title="">
+                
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+            </button>
+            
+
+            
+            
+            <button id="appearance-switcher-mobile" aria-label="Dark mode switcher" type="button" style="margin-right:5px">
+                <div class="flex items-center justify-center h-12 dark:hidden">
+                    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+
+  </span>
+
+
+                </div>
+                <div class="items-center justify-center hidden h-12 dark:flex">
+                    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+
+  </span>
+
+
+                </div>
+            </button>
+            
+
+        </div>
+    </div>
+    <div class="-my-2 -mr-2 md:hidden">
+
+        <label id="menu-button" for="menu-controller" class="block">
+            <input type="checkbox" id="menu-controller" class="hidden" />
+            <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+                
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+
+  </span>
+
+
+            </div>
+            <div id="menu-wrapper" style="padding-top:5px;"
+                class="fixed inset-0 z-30 invisible w-screen h-screen m-auto overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50">
+                <ul
+                    class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
+
+                    <li>
+                        <span
+                            class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
 </span>
-</button>
-<div class="ltr:mr-14 rtl:ml-14 cursor-pointer text-sm text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400">
-<button aria-label="Dark mode switcher" id="appearance-switcher" type="button">
-<div class="flex items-center justify-center h-12 dark:hidden">
-<span class="relative block icon">
-<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z" fill="currentColor"></path></svg>
-</span>
-</div>
-<div class="items-center justify-center hidden h-12 dark:flex">
-<span class="relative block icon">
-<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z" fill="currentColor"></path></svg>
-</span>
-</div>
-</button>
-</div>
-</nav>
-<div class="flex md:hidden items-center space-x-5 md:ml-12">
-<span></span>
-<button aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400" id="search-button-mobile" title="">
-<span class="relative block icon">
-<svg aria-hidden="true" class="svg-inline--fa fa-search fa-w-16" data-icon="search" data-prefix="fas" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" fill="currentColor"></path></svg>
-</span>
-</button>
-<button aria-label="Dark mode switcher" id="appearance-switcher-mobile" style="margin-right:5px" type="button">
-<div class="flex items-center justify-center h-12 dark:hidden">
-<span class="relative block icon">
-<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z" fill="currentColor"></path></svg>
-</span>
-</div>
-<div class="items-center justify-center hidden h-12 dark:flex">
-<span class="relative block icon">
-<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z" fill="currentColor"></path></svg>
-</span>
-</div>
-</button>
-</div>
-</div>
-<div class="-my-2 -mr-2 md:hidden">
-<label class="block" for="menu-controller" id="menu-button">
-<input class="hidden" id="menu-controller" type="checkbox"/>
-<div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
-<span class="relative block icon">
-<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z" fill="currentColor"></path></svg>
-</span>
-</div>
-<div class="fixed inset-0 z-30 invisible w-screen h-screen m-auto overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50" id="menu-wrapper" style="padding-top:5px;">
-<ul class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
-<li>
-<span class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
-<span class="relative block icon">
-<svg viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z" fill="currentColor"></path></svg>
-</span>
-</span>
-</li>
-<li class="mt-1">
-<a class="flex items-center" href="/posts/">
-<p class="text-bg font-bg text-gray-500 hover:text-gray-900" title="Posts">
+                    </li>
+
+                    
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/posts/"  class="flex items-center">
+        
+        <p class="text-bg font-bg text-gray-500 hover:text-gray-900" title="Posts">
             Post
         </p>
-</a>
+    </a>
 </li>
-</ul>
+
+
+
+                    
+                    
+
+                </ul>
+                
+
+            </div>
+        </label>
+    </div>
 </div>
-</label>
-</div>
-</div>
+
+
+
+
 <script>
     (function () {
         var $mainmenu = $('.main-menu');
@@ -188,7 +390,9 @@ MathJax.Hub.Queue(function() {
         });
     })();
 </script>
-</div>
+
+
+  </div>
 </div>
 <script>
   window.addEventListener('scroll', function (e) {
@@ -197,18 +401,45 @@ MathJax.Hub.Queue(function() {
     background_blur.style.opacity = (scroll / 300);
   });
 </script>
-<div class="relative flex flex-col grow">
-<main class="grow" id="main-content">
+
+  
+  <div class="relative flex flex-col grow">
+    <main id="main-content" class="grow">
+      
+
+
 <article>
-<div class="h-[150px] md:h-[200px]" id="hero"></div>
-<div class="fixed w-full inset-x-0 top-0 h-[1000px] object-cover m-0 single_hero_background nozoom" style="background-image:url(/img/bg.png);">
-<video autoplay="" class="w-full inset-x-0 top-0 h-[1000px] object-cover m-0 single_hero_background nozoom" loop="" muted="" playsinline="" poster="/img/bg.png" src="/img/bg.mp4"></video>
-<div class="absolute inset-0 h-[1000px] bg-gradient-to-t from-neutral dark:from-neutral-800 to-transparent mix-blend-normal">
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+<div id="hero" class="h-[150px] md:h-[200px]"></div>
+
+
+    
+    <div class="fixed w-full inset-x-0 top-0 h-[1000px] object-cover m-0 single_hero_background nozoom"
+    style="background-image:url(/img/bg.png);">
+    
+            <video  poster="/img/bg.png" src="/img/bg.mp4" autoplay loop playsinline muted class="w-full inset-x-0 top-0 h-[1000px] object-cover m-0 single_hero_background nozoom"></video>
+        
+    
+
+
+    <div class="absolute inset-0 h-[1000px] bg-gradient-to-t from-neutral dark:from-neutral-800 to-transparent mix-blend-normal">
+    </div>
+    <div
+        class="absolute inset-0 h-[1000px] opacity-60 bg-gradient-to-t from-neutral dark:from-neutral-800 to-neutral-100 dark:to-neutral-800 mix-blend-normal">
+    </div>
 </div>
-<div class="absolute inset-0 h-[1000px] opacity-60 bg-gradient-to-t from-neutral dark:from-neutral-800 to-neutral-100 dark:to-neutral-800 mix-blend-normal">
-</div>
-</div>
-<div class="fixed opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl" id="background-blur"></div>
+
+<div id="background-blur" class="fixed opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl"></div>
 <script>
     window.addEventListener('scroll', function (e) {
         var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
@@ -216,151 +447,270 @@ MathJax.Hub.Queue(function() {
         background_blur.style.opacity = (scroll / 300)
     });
 </script>
-<header class="mt-5 max-w-prose" id="single_header">
-<ol class="text-sm text-neutral-500 dark:text-neutral-400 print:hidden">
-<li class="inline hidden">
-<a class="hover:underline decoration-neutral-300 dark:underline-neutral-600" href="/">Tang Zhu</a><span class="px-1 text-primary-500">/</span>
-</li>
-<li class="inline">
-<a class="hover:underline decoration-neutral-300 dark:underline-neutral-600" href="/posts/">Posts</a><span class="px-1 text-primary-500">/</span>
-</li>
-<li class="inline hidden">
-<a class="hover:underline decoration-neutral-300 dark:underline-neutral-600" href="/posts/javascript/javascript-basics-1/">Javascript Basics 1</a><span class="px-1 text-primary-500">/</span>
-</li>
+
+  
+  
+
+  <header id="single_header" class="mt-5 max-w-prose">
+    
+    <ol class="text-sm text-neutral-500 dark:text-neutral-400 print:hidden">
+  
+  
+    
+  
+    
+  
+  <li class="inline hidden">
+    <a
+      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
+      href="/"
+      >Tang Zhu</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class="inline ">
+    <a
+      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
+      href="/posts/"
+      >Posts</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class="inline hidden">
+    <a
+      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
+      href="/posts/javascript/javascript-basics-1/"
+      >Javascript Basics 1</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
 </ol>
-<h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+
+
+    
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
       Javascript Basics 1
     </h1>
-<div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+    <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="flex flex-row flex-wrap items-center">
-<time datetime="2023-01-09 16:36:38 +0800 CST">9 January 2023</time><span class="px-2 text-primary-500">·</span><span>3275 words</span><span class="px-2 text-primary-500">·</span><span title="Reading time">16 mins</span>
+  
+  
+  <time datetime="2023-01-09 16:36:38 &#43;0800 CST">9 January 2023</time><span class="px-2 text-primary-500">&middot;</span><span>3275 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">16 mins</span>
+  
+
+  
+  
 </div>
+
+
+
+
+
 <div class="flex flex-row flex-wrap items-center">
-<span class="mr-2" onclick="window.open(&quot;/categories/program/&quot;,'_self');" style="margin-top:0.5rem">
-<span class="flex">
-<span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/program/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
     Program
   </span>
 </span>
-</span>
-<span class="mr-2" onclick="window.open(&quot;/categories/javascript/&quot;,'_self');" style="margin-top:0.5rem">
-<span class="flex">
-<span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/javascript/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
     Javascript
   </span>
 </span>
-</span>
-<span class="mr-2" onclick="window.open(&quot;/tags/javascript/&quot;,'_self');" style="margin-top:0.5rem">
-<span class="flex">
-<span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+
+  </span>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/javascript/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
     Javascript
   </span>
 </span>
-</span>
+
+  </span>
+  
+  
+  
+  
 </div>
-</div>
-</header>
-<section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
-<div class="order-first sm:max-w-prose lg:ml-auto px-0 lg:order-last lg:max-w-xs ltr:lg:pl-8 rtl:lg:pr-8">
-<div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-10">
-<details class="mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block" open="">
-<summary class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+
+
+
+    </div>
+  </header>
+  <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+     <div
+      class="order-first sm:max-w-prose lg:ml-auto px-0 lg:order-last lg:max-w-xs ltr:lg:pl-8 rtl:lg:pr-8">
+      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky  lg:top-10 ">
+
+         <details open class="mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
     Table of Contents
   </summary>
-<div class="min-w-[220px] py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-<nav id="TableOfContents">
-<ul>
-<li><a href="#javascript">Javascript</a></li>
-<li><a href="#coding">Coding</a></li>
-<li><a href="#comments">Comments</a></li>
-<li><a href="#variables">Variables</a></li>
-<li><a href="#declarations">Declarations</a></li>
-<li><a href="#initialization">Initialization</a></li>
-<li><a href="#variable-scope">Variable scope</a></li>
-<li><a href="#variable-hoisting">Variable hoisting</a></li>
-<li><a href="#global-variables">Global variables</a></li>
-<li><a href="#constants">Constants</a></li>
-<li><a href="#data-types">Data types</a></li>
-<li><a href="#data-type-conversion">Data type conversion</a>
-<ul>
-<li><a href="#numbers-and-the--operator">Numbers and the ‘+’ operator</a></li>
-<li><a href="#converting-strings-to-numbers">Converting strings to numbers</a></li>
-</ul>
-</li>
-<li><a href="#array">Array</a></li>
-<li><a href="#literals">Literals</a>
-<ul>
-<li><a href="#array-literals">Array literals</a></li>
-<li><a href="#extra-commas-in-array-literals">Extra commas in array literals</a></li>
-<li><a href="#boolean-literals">Boolean literals</a></li>
-<li><a href="#numeric-literals">Numeric literals</a></li>
-<li><a href="#integer-literals">Integer literals</a></li>
-<li><a href="#floating-point-literals">Floating-point literals</a></li>
-<li><a href="#object-literals">Object literals</a>
-<ul>
-<li><a href="#enhanced-object-literals">Enhanced Object literals</a></li>
-</ul>
-</li>
-<li><a href="#regexp-literals">RegExp literals</a></li>
-<li><a href="#string-literals">String literals</a></li>
-<li><a href="#template-literals">Template literals</a></li>
-<li><a href="#tagged-templates">Tagged templates</a></li>
-<li><a href="#escape-character">Escape character</a></li>
-</ul>
-</li>
-</ul>
+  <div
+    class="min-w-[220px] py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#javascript">Javascript</a></li>
+    <li><a href="#coding">Coding</a></li>
+    <li><a href="#comments">Comments</a></li>
+    <li><a href="#variables">Variables</a></li>
+    <li><a href="#declarations">Declarations</a></li>
+    <li><a href="#initialization">Initialization</a></li>
+    <li><a href="#variable-scope">Variable scope</a></li>
+    <li><a href="#variable-hoisting">Variable hoisting</a></li>
+    <li><a href="#global-variables">Global variables</a></li>
+    <li><a href="#constants">Constants</a></li>
+    <li><a href="#data-types">Data types</a></li>
+    <li><a href="#data-type-conversion">Data type conversion</a>
+      <ul>
+        <li><a href="#numbers-and-the--operator">Numbers and the &lsquo;+&rsquo; operator</a></li>
+        <li><a href="#converting-strings-to-numbers">Converting strings to numbers</a></li>
+      </ul>
+    </li>
+    <li><a href="#array">Array</a></li>
+    <li><a href="#literals">Literals</a>
+      <ul>
+        <li><a href="#array-literals">Array literals</a></li>
+        <li><a href="#extra-commas-in-array-literals">Extra commas in array literals</a></li>
+        <li><a href="#boolean-literals">Boolean literals</a></li>
+        <li><a href="#numeric-literals">Numeric literals</a></li>
+        <li><a href="#integer-literals">Integer literals</a></li>
+        <li><a href="#floating-point-literals">Floating-point literals</a></li>
+        <li><a href="#object-literals">Object literals</a>
+          <ul>
+            <li><a href="#enhanced-object-literals">Enhanced Object literals</a></li>
+          </ul>
+        </li>
+        <li><a href="#regexp-literals">RegExp literals</a></li>
+        <li><a href="#string-literals">String literals</a></li>
+        <li><a href="#template-literals">Template literals</a></li>
+        <li><a href="#tagged-templates">Tagged templates</a></li>
+        <li><a href="#escape-character">Escape character</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
-</div>
+  </div>
 </details>
 <details class="mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:hidden">
-<summary class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
     Table of Contents
   </summary>
-<div class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-<nav id="TableOfContents">
-<ul>
-<li><a href="#javascript">Javascript</a></li>
-<li><a href="#coding">Coding</a></li>
-<li><a href="#comments">Comments</a></li>
-<li><a href="#variables">Variables</a></li>
-<li><a href="#declarations">Declarations</a></li>
-<li><a href="#initialization">Initialization</a></li>
-<li><a href="#variable-scope">Variable scope</a></li>
-<li><a href="#variable-hoisting">Variable hoisting</a></li>
-<li><a href="#global-variables">Global variables</a></li>
-<li><a href="#constants">Constants</a></li>
-<li><a href="#data-types">Data types</a></li>
-<li><a href="#data-type-conversion">Data type conversion</a>
-<ul>
-<li><a href="#numbers-and-the--operator">Numbers and the ‘+’ operator</a></li>
-<li><a href="#converting-strings-to-numbers">Converting strings to numbers</a></li>
-</ul>
-</li>
-<li><a href="#array">Array</a></li>
-<li><a href="#literals">Literals</a>
-<ul>
-<li><a href="#array-literals">Array literals</a></li>
-<li><a href="#extra-commas-in-array-literals">Extra commas in array literals</a></li>
-<li><a href="#boolean-literals">Boolean literals</a></li>
-<li><a href="#numeric-literals">Numeric literals</a></li>
-<li><a href="#integer-literals">Integer literals</a></li>
-<li><a href="#floating-point-literals">Floating-point literals</a></li>
-<li><a href="#object-literals">Object literals</a>
-<ul>
-<li><a href="#enhanced-object-literals">Enhanced Object literals</a></li>
-</ul>
-</li>
-<li><a href="#regexp-literals">RegExp literals</a></li>
-<li><a href="#string-literals">String literals</a></li>
-<li><a href="#template-literals">Template literals</a></li>
-<li><a href="#tagged-templates">Tagged templates</a></li>
-<li><a href="#escape-character">Escape character</a></li>
-</ul>
-</li>
-</ul>
+  <div
+    class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#javascript">Javascript</a></li>
+    <li><a href="#coding">Coding</a></li>
+    <li><a href="#comments">Comments</a></li>
+    <li><a href="#variables">Variables</a></li>
+    <li><a href="#declarations">Declarations</a></li>
+    <li><a href="#initialization">Initialization</a></li>
+    <li><a href="#variable-scope">Variable scope</a></li>
+    <li><a href="#variable-hoisting">Variable hoisting</a></li>
+    <li><a href="#global-variables">Global variables</a></li>
+    <li><a href="#constants">Constants</a></li>
+    <li><a href="#data-types">Data types</a></li>
+    <li><a href="#data-type-conversion">Data type conversion</a>
+      <ul>
+        <li><a href="#numbers-and-the--operator">Numbers and the &lsquo;+&rsquo; operator</a></li>
+        <li><a href="#converting-strings-to-numbers">Converting strings to numbers</a></li>
+      </ul>
+    </li>
+    <li><a href="#array">Array</a></li>
+    <li><a href="#literals">Literals</a>
+      <ul>
+        <li><a href="#array-literals">Array literals</a></li>
+        <li><a href="#extra-commas-in-array-literals">Extra commas in array literals</a></li>
+        <li><a href="#boolean-literals">Boolean literals</a></li>
+        <li><a href="#numeric-literals">Numeric literals</a></li>
+        <li><a href="#integer-literals">Integer literals</a></li>
+        <li><a href="#floating-point-literals">Floating-point literals</a></li>
+        <li><a href="#object-literals">Object literals</a>
+          <ul>
+            <li><a href="#enhanced-object-literals">Enhanced Object literals</a></li>
+          </ul>
+        </li>
+        <li><a href="#regexp-literals">RegExp literals</a></li>
+        <li><a href="#string-literals">String literals</a></li>
+        <li><a href="#template-literals">Template literals</a></li>
+        <li><a href="#tagged-templates">Tagged templates</a></li>
+        <li><a href="#escape-character">Escape character</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
-</div>
+  </div>
 </details>
+
+ 
 <script>
   (function () {
     var $toc = $('#TableOfContents');
@@ -401,56 +751,74 @@ MathJax.Hub.Queue(function() {
     }
   })();
 </script>
-</div>
-</div>
-<div class="min-w-0 min-h-0 max-w-prose">
-<p>This chapter discusses what is JavaScript and its basic grammar, variable declarations, data types and literals.</p>
-<div class="anchor" id="javascript"></div>
+   </div>
+      </div>
+      
+      <div class="min-w-0 min-h-0 max-w-prose">
+        
+
+        <p>This chapter discusses what is JavaScript and its basic grammar, variable declarations, data types and literals.</p>
+<div id="javascript" class="anchor"></div>
 <h2 class="relative group">Javascript 
-    <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-<a aria-label="Anchor" class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" href="#javascript" style="text-decoration-line: none !important;">#</a></span>
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#javascript" aria-label="Anchor">#</a></span>        
+    
 </h2>
 <p><strong>JavaScript</strong> is a cross-platform, object-oriented scripting language used to make webpages interactive (e.g., having complex animations, clickable buttons, popup menus, etc.). There are also more advanced server side versions of JavaScript such as Node.js, which allow you to add more functionality to a website than downloading files (such as realtime collaboration between multiple computers). Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.</p>
-<div class="anchor" id="coding"></div>
+<div id="coding" class="anchor"></div>
 <h2 class="relative group">Coding 
-    <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-<a aria-label="Anchor" class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" href="#coding" style="text-decoration-line: none !important;">#</a></span>
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#coding" aria-label="Anchor">#</a></span>        
+    
 </h2>
 <p>JavaScript is case-sensitive and uses the Unicode character set, which means it can supports such like:</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">Früh</span> <span class="o">=</span> <span class="s2">"foobar"</span><span class="p">;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">Früh</span> <span class="o">=</span> <span class="s2">&#34;foobar&#34;</span><span class="p">;</span>
 </span></span></code></pre></div><p>In JavaScript, instructions are called statements and are separated by semicolons (<code>;</code>).</p>
-<div class="anchor" id="comments"></div>
+<div id="comments" class="anchor"></div>
 <h2 class="relative group">Comments 
-    <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-<a aria-label="Anchor" class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" href="#comments" style="text-decoration-line: none !important;">#</a></span>
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#comments" aria-label="Anchor">#</a></span>        
+    
 </h2>
 <p>The syntax of comments is the same as in C++ and in many other languages:</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="c1">// a one line comment
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="c1">// a one line comment
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>
 </span></span><span class="line"><span class="cl"><span class="cm">/* this is a longer,
 </span></span></span><span class="line"><span class="cl"><span class="cm"> * multi-line comment
 </span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
-</span></span></code></pre></div><div class="anchor" id="variables"></div>
+</span></span></code></pre></div><div id="variables" class="anchor"></div>
 <h2 class="relative group">Variables 
-    <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-<a aria-label="Anchor" class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" href="#variables" style="text-decoration-line: none !important;">#</a></span>
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#variables" aria-label="Anchor">#</a></span>        
+    
 </h2>
 <p>The names of variables in Javascript called identifiers, usually starts with a letter, underscore (<code>_</code>), or dollar sign (<code>$</code>). Subsequent characters can also be digits (<code>0 – 9</code>). Because JavaScript is case sensitive, letters include the characters <code>A</code> through <code>Z</code> (uppercase) as well as <code>a</code> through <code>z</code> (lowercase). Javascript also support ISO 8859-1 or Unicode letters such as <code>å</code> and <code>ü</code> in identifiers.</p>
 <p>Some examples of legal names are <code>Number_hits</code>, <code>temp99</code>, <code>$credit</code>, and <code>_name</code>.</p>
-<div class="anchor" id="declarations"></div>
+<div id="declarations" class="anchor"></div>
 <h2 class="relative group">Declarations 
-    <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-<a aria-label="Anchor" class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" href="#declarations" style="text-decoration-line: none !important;">#</a></span>
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#declarations" aria-label="Anchor">#</a></span>        
+    
 </h2>
 <p>JavaScript has three kinds of variable declarations.</p>
 <ul>
 <li><code>var</code> declares a function-scoped or globally-scoped variable, optionally initializing it to a value.</li>
 </ul>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="nx">x</span> <span class="o">===</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="c1">// if use 'let' the second output is 1
+</span></span><span class="line"><span class="cl">  <span class="c1">// if use &#39;let&#39; the second output is 1
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">  <span class="c1">// expected output: 2
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
@@ -460,12 +828,12 @@ MathJax.Hub.Queue(function() {
 </span></span></span></code></pre></div><ul>
 <li><code>let</code> declares a block-scoped local variable, optionally initializing it to a value.</li>
 </ul>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="nx">x</span> <span class="o">===</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  <span class="cm">/* if use var, it will result clash because of 
-</span></span></span><span class="line"><span class="cl"><span class="cm">   * existing global 'x' and local 'x'
+</span></span></span><span class="line"><span class="cl"><span class="cm">   * existing global &#39;x&#39; and local &#39;x&#39;
 </span></span></span><span class="line"><span class="cl"><span class="cm">   */</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">  <span class="c1">// expected output: 2
@@ -474,39 +842,45 @@ MathJax.Hub.Queue(function() {
 </span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="c1">// expected output: 1
 </span></span></span></code></pre></div><ul>
-<li><code>const</code> creates block-scoped constants, much like variables declared using the let keyword. The value of a constant can’t be changed through reassignment (i.e. by using the assignment operator), and it can’t be redeclared (i.e. through a variable declaration). However, if a constant is an object or array its properties or items can be updated or removed.</li>
+<li><code>const</code> creates block-scoped constants, much like variables declared using the let keyword. The value of a constant can&rsquo;t be changed through reassignment (i.e. by using the assignment operator), and it can&rsquo;t be redeclared (i.e. through a variable declaration). However, if a constant is an object or array its properties or items can be updated or removed.</li>
 </ul>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">number</span> <span class="o">=</span> <span class="mi">42</span><span class="p">;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">number</span> <span class="o">=</span> <span class="mi">42</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="k">try</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">number</span> <span class="o">=</span> <span class="mi">99</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="c1">// if add 'const', it can be accepted and value is 99
+</span></span><span class="line"><span class="cl">  <span class="c1">// if add &#39;const&#39;, it can be accepted and value is 99
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">  <span class="c1">// expected output: TypeError: invalid assignment to const `number'
+</span></span><span class="line"><span class="cl">  <span class="c1">// expected output: TypeError: invalid assignment to const `number&#39;
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">// (Note: the exact output may be browser-dependent)
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">number</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="c1">// expected output: 42
 </span></span></span></code></pre></div><p>You can declare variables to unpack values using the destructuring assignment syntax. For example:</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="p">{</span> <span class="nx">bar</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">foo</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="p">{</span> <span class="nx">bar</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">foo</span>
 </span></span></code></pre></div><p>This will create a variable named <code>bar</code> and assign to it the value corresponding to the key of the same name from our object <code>foo</code>.</p>
 <p>Variables should always be declared before they are used. JavaScript used to allow assigning to undeclared variables, which creates an undeclared global variable. This is an error in strict mode and should be avoided altogether.</p>
-<div class="anchor" id="initialization"></div>
+<div id="initialization" class="anchor"></div>
 <h2 class="relative group">Initialization 
-    <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-<a aria-label="Anchor" class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" href="#initialization" style="text-decoration-line: none !important;">#</a></span>
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#initialization" aria-label="Anchor">#</a></span>        
+    
 </h2>
 <p>In <code>var</code> and <code>let</code> declarations, the initializer is optional. If a variable is declared without an initializer, it is assigned the value <code>undefined</code>.</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">x</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span><span class="p">);</span> <span class="c1">// logs "undefined"
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">x</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span><span class="p">);</span> <span class="c1">// logs &#34;undefined&#34;
 </span></span></span></code></pre></div><p>const declarations always need an initializer, because they forbid any kind of assignment after declaration, and implicitly initializing it with undefined is likely a programmer mistake.</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">x</span><span class="p">;</span> <span class="c1">// SyntaxError: Missing initializer in const declaration
-</span></span></span></code></pre></div><div class="anchor" id="variable-scope"></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">x</span><span class="p">;</span> <span class="c1">// SyntaxError: Missing initializer in const declaration
+</span></span></span></code></pre></div><div id="variable-scope" class="anchor"></div>
 <h2 class="relative group">Variable scope 
-    <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-<a aria-label="Anchor" class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" href="#variable-scope" style="text-decoration-line: none !important;">#</a></span>
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#variable-scope" aria-label="Anchor">#</a></span>        
+    
 </h2>
 <p>A variable may belong to one of the following scopes:</p>
 <ul>
@@ -518,61 +892,70 @@ MathJax.Hub.Queue(function() {
 <ul>
 <li>Block scope: The scope created with a pair of curly braces (<code>{}</code>).</li>
 </ul>
-<div class="anchor" id="variable-hoisting"></div>
+<div id="variable-hoisting" class="anchor"></div>
 <h2 class="relative group">Variable hoisting 
-    <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-<a aria-label="Anchor" class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" href="#variable-hoisting" style="text-decoration-line: none !important;">#</a></span>
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#variable-hoisting" aria-label="Anchor">#</a></span>        
+    
 </h2>
-<p><code>var</code> declared variables are hoisted, meaning you can refer to the variable anywhere in its scope, even if its declaration isn’t reached yet. You can see <code>var</code> declarations as being “lifted” to the top of its function or global scope. However, if you access a variable before it’s declared, the value is always <code>undefined</code>, because only its declaration is hoisted, but not its initialization.</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span> <span class="o">===</span> <span class="kc">undefined</span><span class="p">);</span> <span class="c1">// true
+<p><code>var</code> declared variables are hoisted, meaning you can refer to the variable anywhere in its scope, even if its declaration isn&rsquo;t reached yet. You can see <code>var</code> declarations as being &ldquo;lifted&rdquo; to the top of its function or global scope. However, if you access a variable before it&rsquo;s declared, the value is always <code>undefined</code>, because only its declaration is hoisted, but not its initialization.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span> <span class="o">===</span> <span class="kc">undefined</span><span class="p">);</span> <span class="c1">// true
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span><span class="p">);</span> <span class="c1">// undefined
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="s1">'local value'</span><span class="p">;</span>
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="s1">&#39;local value&#39;</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">})();</span>
 </span></span></code></pre></div><p>The above examples will be interpreted the same as:</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">x</span><span class="p">;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">x</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span> <span class="o">===</span> <span class="kc">undefined</span><span class="p">);</span> <span class="c1">// true
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">x</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="kd">var</span> <span class="nx">x</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span><span class="p">);</span> <span class="c1">// undefined
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">x</span> <span class="o">=</span> <span class="s1">'local value'</span><span class="p">;</span>
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">x</span> <span class="o">=</span> <span class="s1">&#39;local value&#39;</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">})();</span>
 </span></span></code></pre></div><p>Notice if remove the sceond <code>var</code> in the first example, it will be:</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span> <span class="o">===</span> <span class="kc">undefined</span><span class="p">);</span> <span class="c1">// true
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span> <span class="o">===</span> <span class="kc">undefined</span><span class="p">);</span> <span class="c1">// true
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span><span class="p">);</span> <span class="c1">// 3
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">// because no new decalaration to be hoisted
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">x</span> <span class="o">=</span> <span class="s1">'local value'</span><span class="p">;</span>
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">x</span> <span class="o">=</span> <span class="s1">&#39;local value&#39;</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">})();</span>
 </span></span></code></pre></div><p>Because of hoisting, all var statements in a function should be placed as near to the top of the function as possible. This best practice increases the clarity of the code.</p>
-<p>Because the variable is in a “temporal dead zone” from the start of the block until the declaration is processed, same situation for <code>let</code> and <code>const</code> will cause <code>ReferenceError</code>.</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span><span class="p">);</span> <span class="c1">// ReferenceError
+<p>Because the variable is in a &ldquo;temporal dead zone&rdquo; from the start of the block until the declaration is processed, same situation for <code>let</code> and <code>const</code> will cause <code>ReferenceError</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span><span class="p">);</span> <span class="c1">// ReferenceError
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">y</span><span class="p">);</span> <span class="c1">// ReferenceError
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">let</span> <span class="nx">y</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
 </span></span></code></pre></div><p>Unlike var declarations, which only hoist the declaration but not its value, function declarations are hoisted entirely — you can safely call the function anywhere in its scope.</p>
-<div class="anchor" id="global-variables"></div>
+<div id="global-variables" class="anchor"></div>
 <h2 class="relative group">Global variables 
-    <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-<a aria-label="Anchor" class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" href="#global-variables" style="text-decoration-line: none !important;">#</a></span>
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#global-variables" aria-label="Anchor">#</a></span>        
+    
 </h2>
 <p>Global variables are in fact properties of the global object.</p>
 <p>In web pages, the global object is <code>window</code>, so you can set and access global variables using the <code>window.variable</code> syntax. In all environments, you can use the <code>globalThis</code> variable (which itself is a global variable) to access global variables.</p>
 <p>Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the <code>window</code> or <code>frame</code> name.</p>
-<div class="anchor" id="constants"></div>
+<div id="constants" class="anchor"></div>
 <h2 class="relative group">Constants 
-    <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-<a aria-label="Anchor" class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" href="#constants" style="text-decoration-line: none !important;">#</a></span>
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#constants" aria-label="Anchor">#</a></span>        
+    
 </h2>
 <p>You cannot declare a constant with the same name as a function or variable in the same scope. For example:</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="c1">// THIS WILL CAUSE AN ERROR
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="c1">// THIS WILL CAUSE AN ERROR
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">function</span> <span class="nx">f</span><span class="p">()</span> <span class="p">{};</span>
 </span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">f</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">
@@ -583,17 +966,20 @@ MathJax.Hub.Queue(function() {
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  <span class="c1">//statements
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
-</span></span></code></pre></div><p>However, const only prevents re-assignments, but doesn’t prevent mutations. The properties of objects assigned to constants are not protected, so the following statement is executed without problems.</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">MY_OBJECT</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">key</span><span class="o">:</span> <span class="s1">'value'</span> <span class="p">};</span>
-</span></span><span class="line"><span class="cl"><span class="nx">MY_OBJECT</span><span class="p">.</span><span class="nx">key</span> <span class="o">=</span> <span class="s1">'otherValue'</span><span class="p">;</span>
+</span></span></code></pre></div><p>However, const only prevents re-assignments, but doesn&rsquo;t prevent mutations. The properties of objects assigned to constants are not protected, so the following statement is executed without problems.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">MY_OBJECT</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">key</span><span class="o">:</span> <span class="s1">&#39;value&#39;</span> <span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="nx">MY_OBJECT</span><span class="p">.</span><span class="nx">key</span> <span class="o">=</span> <span class="s1">&#39;otherValue&#39;</span><span class="p">;</span>
 </span></span></code></pre></div><p>Also, the contents of an array are not protected, so the following statement is executed without problems.</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">MY_ARRAY</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'HTML'</span><span class="p">,</span><span class="s1">'CSS'</span><span class="p">];</span>
-</span></span><span class="line"><span class="cl"><span class="nx">MY_ARRAY</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s1">'JAVASCRIPT'</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">MY_ARRAY</span><span class="p">);</span> <span class="c1">// ['HTML', 'CSS', 'JAVASCRIPT'];
-</span></span></span></code></pre></div><div class="anchor" id="data-types"></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">MY_ARRAY</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;HTML&#39;</span><span class="p">,</span><span class="s1">&#39;CSS&#39;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="nx">MY_ARRAY</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s1">&#39;JAVASCRIPT&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">MY_ARRAY</span><span class="p">);</span> <span class="c1">// [&#39;HTML&#39;, &#39;CSS&#39;, &#39;JAVASCRIPT&#39;];
+</span></span></span></code></pre></div><div id="data-types" class="anchor"></div>
 <h2 class="relative group">Data types 
-    <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-<a aria-label="Anchor" class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" href="#data-types" style="text-decoration-line: none !important;">#</a></span>
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#data-types" aria-label="Anchor">#</a></span>        
+    
 </h2>
 <p>The latest ECMAScript standard defines eight data types:</p>
 <ul>
@@ -605,7 +991,7 @@ MathJax.Hub.Queue(function() {
 <li><code>undefined</code>. A top-level property whose value is not defined.</li>
 <li><code>Number</code>. An integer or floating point number. For example: 42 or 3.14159.</li>
 <li><code>BigInt</code>. An integer with arbitrary precision. For example: 9007199254740992n.</li>
-<li><code>String</code>. A sequence of characters that represent a text value. For example: “Howdy”.</li>
+<li><code>String</code>. A sequence of characters that represent a text value. For example: &ldquo;Howdy&rdquo;.</li>
 <li><code>Symbol</code>. A data type whose instances are unique and immutable.</li>
 </ul>
 </li>
@@ -613,58 +999,73 @@ MathJax.Hub.Queue(function() {
 <p>and <code>Object</code></p>
 </li>
 </ul>
-<div class="anchor" id="data-type-conversion"></div>
+<div id="data-type-conversion" class="anchor"></div>
 <h2 class="relative group">Data type conversion 
-    <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-<a aria-label="Anchor" class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" href="#data-type-conversion" style="text-decoration-line: none !important;">#</a></span>
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#data-type-conversion" aria-label="Anchor">#</a></span>        
+    
 </h2>
 <p>JavaScript is a <em>dynamically typed</em> language:</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">answer</span> <span class="o">=</span> <span class="mi">42</span><span class="p">;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">answer</span> <span class="o">=</span> <span class="mi">42</span><span class="p">;</span>
 </span></span></code></pre></div><p>And later, you could assign the same variable a string value, for example:</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">answer</span> <span class="o">=</span> <span class="s1">'Thanks for all the fish!'</span><span class="p">;</span>
-</span></span></code></pre></div><div class="anchor" id="numbers-and-the--operator"></div>
-<h3 class="relative group">Numbers and the ‘+’ operator 
-    <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-<a aria-label="Anchor" class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" href="#numbers-and-the--operator" style="text-decoration-line: none !important;">#</a></span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">answer</span> <span class="o">=</span> <span class="s1">&#39;Thanks for all the fish!&#39;</span><span class="p">;</span>
+</span></span></code></pre></div><div id="numbers-and-the--operator" class="anchor"></div>
+<h3 class="relative group">Numbers and the &lsquo;+&rsquo; operator 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#numbers-and-the--operator" aria-label="Anchor">#</a></span>        
+    
 </h3>
 <p>In expressions involving numeric and string values with the <code>+</code> operator, JavaScript converts numeric values to strings. For example:</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">x</span> <span class="o">=</span> <span class="s1">'The answer is '</span> <span class="o">+</span> <span class="mi">42</span> <span class="c1">// "The answer is 42"
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">y</span> <span class="o">=</span> <span class="mi">42</span> <span class="o">+</span> <span class="s1">' is the answer'</span> <span class="c1">// "42 is the answer"
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">z</span> <span class="o">=</span> <span class="s1">'37'</span> <span class="o">+</span> <span class="mi">7</span> <span class="c1">// "377"
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">x</span> <span class="o">=</span> <span class="s1">&#39;The answer is &#39;</span> <span class="o">+</span> <span class="mi">42</span> <span class="c1">// &#34;The answer is 42&#34;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">y</span> <span class="o">=</span> <span class="mi">42</span> <span class="o">+</span> <span class="s1">&#39; is the answer&#39;</span> <span class="c1">// &#34;42 is the answer&#34;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">z</span> <span class="o">=</span> <span class="s1">&#39;37&#39;</span> <span class="o">+</span> <span class="mi">7</span> <span class="c1">// &#34;377&#34;
 </span></span></span></code></pre></div><p>With all other operators, JavaScript does not convert numeric values to strings. For example:</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="s1">'37'</span> <span class="o">-</span> <span class="mi">7</span> <span class="c1">// 30
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="s1">'37'</span> <span class="o">*</span> <span class="mi">7</span> <span class="c1">// 259
-</span></span></span></code></pre></div><div class="anchor" id="converting-strings-to-numbers"></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="s1">&#39;37&#39;</span> <span class="o">-</span> <span class="mi">7</span> <span class="c1">// 30
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="s1">&#39;37&#39;</span> <span class="o">*</span> <span class="mi">7</span> <span class="c1">// 259
+</span></span></span></code></pre></div><div id="converting-strings-to-numbers" class="anchor"></div>
 <h3 class="relative group">Converting strings to numbers 
-    <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-<a aria-label="Anchor" class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" href="#converting-strings-to-numbers" style="text-decoration-line: none !important;">#</a></span>
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#converting-strings-to-numbers" aria-label="Anchor">#</a></span>        
+    
 </h3>
 <p>In the case that a value representing a number is in memory as a string, there are methods for conversion.</p>
 <ul>
 <li><code>parseInt()</code> parses a string argument and returns an integer of the specified radix.</li>
 <li><code>parseFloat()</code> parses a string argument and returns a floating point number.</li>
 </ul>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nb">parseInt</span><span class="p">(</span><span class="s1">'101'</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="c1">// 5
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nb">parseInt</span><span class="p">(</span><span class="s1">&#39;101&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="c1">// 5
 </span></span></span></code></pre></div><p>An alternative method of retrieving a number from a string is with the <code>+ (unary plus)</code> operator:</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="s1">'1.1'</span> <span class="o">+</span> <span class="s1">'1.1'</span> <span class="c1">// '1.11.1'
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">(</span><span class="o">+</span><span class="s1">'1.1'</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="o">+</span><span class="s1">'1.1'</span><span class="p">)</span> <span class="c1">// 2.2
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="s1">&#39;1.1&#39;</span> <span class="o">+</span> <span class="s1">&#39;1.1&#39;</span> <span class="c1">// &#39;1.11.1&#39;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">(</span><span class="o">+</span><span class="s1">&#39;1.1&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="o">+</span><span class="s1">&#39;1.1&#39;</span><span class="p">)</span> <span class="c1">// 2.2
 </span></span></span><span class="line"><span class="cl"><span class="c1">// Note: the parentheses are added for clarity, not required.
-</span></span></span></code></pre></div><div class="anchor" id="array"></div>
+</span></span></span></code></pre></div><div id="array" class="anchor"></div>
 <h2 class="relative group">Array 
-    <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-<a aria-label="Anchor" class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" href="#array" style="text-decoration-line: none !important;">#</a></span>
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#array" aria-label="Anchor">#</a></span>        
+    
 </h2>
 <p>The <code>Array</code> object, as with arrays in other programming languages, enables storing a collection of multiple items under a single variable name, and has members for performing common array operations.</p>
 <ul>
 <li>JavaScript arrays are resizable and can contain a mix of different data types. (When those characteristics are undesirable, use typed arrays instead.)</li>
 <li>JavaScript arrays are not associative arrays and so, array elements cannot be accessed using arbitrary strings as indexes, but must be accessed using nonnegative integers (or their respective string form, e.g., <code>num[1]</code> or <code>num['1']</code>) as indexes.</li>
-<li>JavaScript arrays are zero-indexed: the first element of an array is at index 0, the second is at index 1, and so on and the last element is at the value of the array’s length property minus 1.</li>
+<li>JavaScript arrays are zero-indexed: the first element of an array is at index 0, the second is at index 1, and so on and the last element is at the value of the array&rsquo;s length property minus 1.</li>
 <li>JavaScript array-copy operations create shallow copies. (All standard built-in copy operations with any JavaScript objects create shallow copies, rather than deep copies).</li>
 </ul>
-<div class="anchor" id="literals"></div>
+<div id="literals" class="anchor"></div>
 <h2 class="relative group">Literals 
-    <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-<a aria-label="Anchor" class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" href="#literals" style="text-decoration-line: none !important;">#</a></span>
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#literals" aria-label="Anchor">#</a></span>        
+    
 </h2>
 <p>Literals represent values in JavaScript. These are fixed values <em>(not variables)</em> that you literally provide in your script. This section describes the following types of literals:</p>
 <ul>
@@ -675,67 +1076,82 @@ MathJax.Hub.Queue(function() {
 <li>RegExp literals</li>
 <li>String literals</li>
 </ul>
-<div class="anchor" id="array-literals"></div>
+<div id="array-literals" class="anchor"></div>
 <h3 class="relative group">Array literals 
-    <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-<a aria-label="Anchor" class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" href="#array-literals" style="text-decoration-line: none !important;">#</a></span>
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#array-literals" aria-label="Anchor">#</a></span>        
+    
 </h3>
 <p>An array literal is a list of zero or more expressions, each of which represents an array element, enclosed in square brackets (<code>[]</code>). When you create an array using an array literal, it is initialized with the specified values as its elements, and its <code>length</code> is set to the number of arguments specified.</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">coffees</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'French Roast'</span><span class="p">,</span> <span class="s1">'Colombian'</span><span class="p">,</span> <span class="s1">'Kona'</span><span class="p">];</span> <span class="c1">// length is 3
-</span></span></span></code></pre></div><div class="anchor" id="extra-commas-in-array-literals"></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">coffees</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;French Roast&#39;</span><span class="p">,</span> <span class="s1">&#39;Colombian&#39;</span><span class="p">,</span> <span class="s1">&#39;Kona&#39;</span><span class="p">];</span> <span class="c1">// length is 3
+</span></span></span></code></pre></div><div id="extra-commas-in-array-literals" class="anchor"></div>
 <h3 class="relative group">Extra commas in array literals 
-    <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-<a aria-label="Anchor" class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" href="#extra-commas-in-array-literals" style="text-decoration-line: none !important;">#</a></span>
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#extra-commas-in-array-literals" aria-label="Anchor">#</a></span>        
+    
 </h3>
 <p>If you put two commas in a row in an array literal, the array leaves an empty slot for the unspecified element.</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">fish</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Lion'</span><span class="p">,</span> <span class="p">,</span> <span class="s1">'Angel'</span><span class="p">];</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">fish</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Lion&#39;</span><span class="p">,</span> <span class="p">,</span> <span class="s1">&#39;Angel&#39;</span><span class="p">];</span>
 </span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">fish</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="c1">// [ 'Lion', &lt;1 empty item&gt;, 'Angel' ]
+</span></span><span class="line"><span class="cl"><span class="c1">// [ &#39;Lion&#39;, &lt;1 empty item&gt;, &#39;Angel&#39; ]
 </span></span></span></code></pre></div><p>Index-accessing <code>fish[1]</code> returns <code>undefined</code>, but which is not exactly the same as the actual <code>undefined</code> value.</p>
 <p>In the following example, the length of the array is <strong>three</strong>. There is no <code>myList[3]</code>.</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">myList</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'home'</span><span class="p">,</span> <span class="p">,</span> <span class="s1">'school'</span><span class="p">,</span> <span class="p">];</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">myList</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;home&#39;</span><span class="p">,</span> <span class="p">,</span> <span class="s1">&#39;school&#39;</span><span class="p">,</span> <span class="p">];</span>
 </span></span></code></pre></div><p>In the following example, the length of the array is four, and <code>myList[0]</code> and <code>myList[2]</code> are missing.</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">myList</span> <span class="o">=</span> <span class="p">[,</span> <span class="s1">'home'</span><span class="p">,</span> <span class="p">,</span> <span class="s1">'school'</span><span class="p">];</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">myList</span> <span class="o">=</span> <span class="p">[,</span> <span class="s1">&#39;home&#39;</span><span class="p">,</span> <span class="p">,</span> <span class="s1">&#39;school&#39;</span><span class="p">];</span>
 </span></span></code></pre></div><p>In the following example, the length of the array is four, and <code>myList[1]</code> and <code>myList[3]</code> are missing. <strong>Only the last comma is ignored</strong>.</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">myList</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'home'</span><span class="p">,</span> <span class="p">,</span> <span class="s1">'school'</span><span class="p">,</span> <span class="p">,</span> <span class="p">];</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">myList</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;home&#39;</span><span class="p">,</span> <span class="p">,</span> <span class="s1">&#39;school&#39;</span><span class="p">,</span> <span class="p">,</span> <span class="p">];</span>
 </span></span></code></pre></div><p>However, when writing your own code, you should explicitly declare the missing elements as undefined, or at least insert a comment to highlight its absence.</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">myList</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'home'</span><span class="p">,</span> <span class="cm">/* empty */</span><span class="p">,</span> <span class="s1">'school'</span><span class="p">,</span> <span class="cm">/* empty */</span><span class="p">,</span> <span class="p">];</span>
-</span></span></code></pre></div><div class="anchor" id="boolean-literals"></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">myList</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;home&#39;</span><span class="p">,</span> <span class="cm">/* empty */</span><span class="p">,</span> <span class="s1">&#39;school&#39;</span><span class="p">,</span> <span class="cm">/* empty */</span><span class="p">,</span> <span class="p">];</span>
+</span></span></code></pre></div><div id="boolean-literals" class="anchor"></div>
 <h3 class="relative group">Boolean literals 
-    <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-<a aria-label="Anchor" class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" href="#boolean-literals" style="text-decoration-line: none !important;">#</a></span>
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#boolean-literals" aria-label="Anchor">#</a></span>        
+    
 </h3>
 <p>Do not confuse the <em><code>Boolean</code> primitive</em> values <code>true</code> and <code>false</code> with the <code>true</code> and <code>false</code> values of the <em><code>Boolean</code> object</em>.</p>
 <p>Any object, including a <em><code>Boolean</code> object</em> whose value is false, evaluates to <code>true</code> when passed to a conditional statement. For example, the condition in the following if statement evaluates to <code>true</code>:</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">x</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Boolean</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">x</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Boolean</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="c1">// this code is executed
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
 </span></span></code></pre></div><p>This behavior does not apply to <em><code>Boolean</code> primitive</em>. For example, the condition in the following if statement evaluates to <code>false</code>:</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">x</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">x</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="c1">// this code is not executed
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
 </span></span></code></pre></div><p>Do not use the <code>Boolean()</code> constructor with <code>new</code> to convert a non-boolean value to a boolean value. Use <code>Boolean</code> as a function or a <em>double NOT (<code>!!</code>)</em> instead:</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">good</span> <span class="o">=</span> <span class="nb">Boolean</span><span class="p">(</span><span class="nx">expression</span><span class="p">);</span>    <span class="c1">// use this
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">good</span> <span class="o">=</span> <span class="nb">Boolean</span><span class="p">(</span><span class="nx">expression</span><span class="p">);</span>    <span class="c1">// use this
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">good2</span> <span class="o">=</span> <span class="o">!!</span><span class="p">(</span><span class="nx">expression</span><span class="p">);</span>        <span class="c1">// or this
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">bad</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Boolean</span><span class="p">(</span><span class="nx">expression</span><span class="p">);</span> <span class="c1">// don't use this!
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">bad</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Boolean</span><span class="p">(</span><span class="nx">expression</span><span class="p">);</span> <span class="c1">// don&#39;t use this!
 </span></span></span></code></pre></div><p>If you specify any object, including a <em><code>Boolean</code> object</em> whose value is <code>false</code>, as the initial value of a <em><code>Boolean</code> object</em>, the <em>new <code>Boolean</code> object</em> has a value of <code>true</code>.</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">myFalse</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Boolean</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>   <span class="c1">// initial value of false
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">myFalse</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Boolean</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>   <span class="c1">// initial value of false
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">g</span> <span class="o">=</span> <span class="nb">Boolean</span><span class="p">(</span><span class="nx">myFalse</span><span class="p">);</span>           <span class="c1">// initial value of true
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">myString</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">String</span><span class="p">(</span><span class="s1">'Hello'</span><span class="p">);</span> <span class="c1">// string object
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">myString</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">String</span><span class="p">(</span><span class="s1">&#39;Hello&#39;</span><span class="p">);</span> <span class="c1">// string object
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">s</span> <span class="o">=</span> <span class="nb">Boolean</span><span class="p">(</span><span class="nx">myString</span><span class="p">);</span>          <span class="c1">// initial value of true
-</span></span></span></code></pre></div><div class="anchor" id="numeric-literals"></div>
+</span></span></span></code></pre></div><div id="numeric-literals" class="anchor"></div>
 <h3 class="relative group">Numeric literals 
-    <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-<a aria-label="Anchor" class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" href="#numeric-literals" style="text-decoration-line: none !important;">#</a></span>
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#numeric-literals" aria-label="Anchor">#</a></span>        
+    
 </h3>
 <p>JavaScript numeric literals include <em>integer literals in different bases</em> as well as <em>floating-point literals in base-10</em>.</p>
 <p>Note that the language specification requires numeric literals to be unsigned. Nevertheless, code fragments like <code>-123.4</code> are fine, being interpreted as a unary <code>-</code> operator applied to the numeric literal <code>123.4</code>.</p>
-<div class="anchor" id="integer-literals"></div>
+<div id="integer-literals" class="anchor"></div>
 <h3 class="relative group">Integer literals 
-    <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-<a aria-label="Anchor" class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" href="#integer-literals" style="text-decoration-line: none !important;">#</a></span>
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#integer-literals" aria-label="Anchor">#</a></span>        
+    
 </h3>
 <p><code>Integer</code> and <code>BigInt</code> literals can be written in decimal (base 10), hexadecimal (base 16), octal (base 8) and binary (base 2).</p>
 <ul>
@@ -746,26 +1162,32 @@ MathJax.Hub.Queue(function() {
 <li>A trailing <code>n</code> suffix on an integer literal indicates a BigInt literal. The integer literal can use any of the above bases. <em>Note that leading-zero octal syntax like 0123n is not allowed, but 0o123n is fine.</em></li>
 </ul>
 <p>Some examples of integer literals are:</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="mi">0</span><span class="p">,</span> <span class="mi">117</span><span class="p">,</span> <span class="mi">123456789123456789</span><span class="nx">n</span>            <span class="c1">// decimal, base 10
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="mi">0</span><span class="p">,</span> <span class="mi">117</span><span class="p">,</span> <span class="mi">123456789123456789</span><span class="nx">n</span>            <span class="c1">// decimal, base 10
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="mi">015</span><span class="p">,</span> <span class="mi">0001</span><span class="p">,</span> <span class="mo">0o777777777777</span><span class="nx">n</span>             <span class="c1">// octal, base 8
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="mh">0x1123</span><span class="p">,</span> <span class="mh">0x00111</span><span class="p">,</span> <span class="mh">0x123456789ABCDEF</span><span class="nx">n</span>    <span class="c1">// hexadecimal, "hex" or base 16
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="mh">0x1123</span><span class="p">,</span> <span class="mh">0x00111</span><span class="p">,</span> <span class="mh">0x123456789ABCDEF</span><span class="nx">n</span>    <span class="c1">// hexadecimal, &#34;hex&#34; or base 16
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="mb">0b11</span><span class="p">,</span> <span class="mb">0b0011</span><span class="p">,</span> <span class="mb">0b11101001010101010101</span><span class="nx">n</span>  <span class="c1">// binary, base 2
-</span></span></span></code></pre></div><div class="anchor" id="floating-point-literals"></div>
+</span></span></span></code></pre></div><div id="floating-point-literals" class="anchor"></div>
 <h3 class="relative group">Floating-point literals 
-    <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-<a aria-label="Anchor" class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" href="#floating-point-literals" style="text-decoration-line: none !important;">#</a></span>
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#floating-point-literals" aria-label="Anchor">#</a></span>        
+    
 </h3>
 <p>Succinctly, the syntax is:</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">digits</span><span class="p">].[</span><span class="nx">digits</span><span class="p">][(</span><span class="nx">E</span><span class="o">|</span><span class="nx">e</span><span class="p">)[(</span><span class="o">+|-</span><span class="p">)]</span><span class="nx">digits</span><span class="p">]</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">digits</span><span class="p">].[</span><span class="nx">digits</span><span class="p">][(</span><span class="nx">E</span><span class="o">|</span><span class="nx">e</span><span class="p">)[(</span><span class="o">+|-</span><span class="p">)]</span><span class="nx">digits</span><span class="p">]</span>
 </span></span></code></pre></div><p>For example:</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="mf">3.1415926</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="mf">3.1415926</span>
 </span></span><span class="line"><span class="cl"><span class="p">.</span><span class="mi">123456789</span>
 </span></span><span class="line"><span class="cl"><span class="mf">3.1</span><span class="nx">E</span><span class="o">+</span><span class="mi">12</span>
 </span></span><span class="line"><span class="cl"><span class="p">.</span><span class="mf">1e-23</span>
-</span></span></code></pre></div><div class="anchor" id="object-literals"></div>
+</span></span></code></pre></div><div id="object-literals" class="anchor"></div>
 <h3 class="relative group">Object literals 
-    <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-<a aria-label="Anchor" class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" href="#object-literals" style="text-decoration-line: none !important;">#</a></span>
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#object-literals" aria-label="Anchor">#</a></span>        
+    
 </h3>
 <p>An object literal is a list of zero or more pairs of property names and associated values of an object, enclosed in curly braces (<code>{}</code>).</p>
 <ul>
@@ -774,82 +1196,94 @@ MathJax.Hub.Queue(function() {
 <li>Use (<code>[]</code>) to access <em>unvalid identifier</em> property name.</li>
 </ul>
 <p>For example the <code>car</code> object:</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="c1">// e.g. 1
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">sales</span> <span class="o">=</span> <span class="s1">'Toyota'</span><span class="p">;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="c1">// e.g. 1
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">sales</span> <span class="o">=</span> <span class="s1">&#39;Toyota&#39;</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">carTypes</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="nx">name</span> <span class="o">===</span> <span class="s1">'Honda'</span> <span class="o">?</span> <span class="nx">name</span> <span class="o">:</span> <span class="sb">`Sorry, we don't sell </span><span class="si">${</span><span class="nx">name</span><span class="si">}</span><span class="sb">.`</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="nx">name</span> <span class="o">===</span> <span class="s1">&#39;Honda&#39;</span> <span class="o">?</span> <span class="nx">name</span> <span class="o">:</span> <span class="sb">`Sorry, we don&#39;t sell </span><span class="si">${</span><span class="nx">name</span><span class="si">}</span><span class="sb">.`</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">car</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">myCar</span><span class="o">:</span> <span class="s1">'Saturn'</span><span class="p">,</span> <span class="nx">getCar</span><span class="o">:</span> <span class="nx">carTypes</span><span class="p">(</span><span class="s1">'Honda'</span><span class="p">),</span> <span class="nx">special</span><span class="o">:</span> <span class="nx">sales</span> <span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">car</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">myCar</span><span class="o">:</span> <span class="s1">&#39;Saturn&#39;</span><span class="p">,</span> <span class="nx">getCar</span><span class="o">:</span> <span class="nx">carTypes</span><span class="p">(</span><span class="s1">&#39;Honda&#39;</span><span class="p">),</span> <span class="nx">special</span><span class="o">:</span> <span class="nx">sales</span> <span class="p">};</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">car</span><span class="p">.</span><span class="nx">myCar</span><span class="p">);</span>   <span class="c1">// Saturn
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">car</span><span class="p">.</span><span class="nx">getCar</span><span class="p">);</span>  <span class="c1">// Honda
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">car</span><span class="p">.</span><span class="nx">special</span><span class="p">);</span> <span class="c1">// Toyota
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>
 </span></span><span class="line"><span class="cl"><span class="c1">// e.g. 2
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">car</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">manyCars</span><span class="o">:</span> <span class="p">{</span> <span class="nx">a</span><span class="o">:</span> <span class="s1">'Saab'</span><span class="p">,</span> <span class="nx">b</span><span class="o">:</span> <span class="s1">'Jeep'</span> <span class="p">},</span> <span class="mi">7</span><span class="o">:</span> <span class="s1">'Mazda'</span> <span class="p">};</span>
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">car</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">manyCars</span><span class="o">:</span> <span class="p">{</span> <span class="nx">a</span><span class="o">:</span> <span class="s1">&#39;Saab&#39;</span><span class="p">,</span> <span class="nx">b</span><span class="o">:</span> <span class="s1">&#39;Jeep&#39;</span> <span class="p">},</span> <span class="mi">7</span><span class="o">:</span> <span class="s1">&#39;Mazda&#39;</span> <span class="p">};</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">car</span><span class="p">.</span><span class="nx">manyCars</span><span class="p">.</span><span class="nx">b</span><span class="p">);</span> <span class="c1">// Jeep
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">car</span><span class="p">[</span><span class="mi">7</span><span class="p">]);</span> <span class="c1">// Mazda
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>
 </span></span><span class="line"><span class="cl"><span class="c1">// e.g. 3
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">unusualPropertyNames</span> <span class="o">=</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">  <span class="s1">''</span><span class="o">:</span> <span class="s1">'An empty string'</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">  <span class="s1">'!'</span><span class="o">:</span> <span class="s1">'Bang!'</span>
+</span></span><span class="line"><span class="cl">  <span class="s1">&#39;&#39;</span><span class="o">:</span> <span class="s1">&#39;An empty string&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="s1">&#39;!&#39;</span><span class="o">:</span> <span class="s1">&#39;Bang!&#39;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">unusualPropertyNames</span><span class="p">[</span><span class="s1">''</span><span class="p">]);</span>  <span class="c1">// An empty string
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">unusualPropertyNames</span><span class="p">[</span><span class="s1">'!'</span><span class="p">]);</span> <span class="c1">// Bang!
-</span></span></span></code></pre></div><div class="anchor" id="enhanced-object-literals"></div>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">unusualPropertyNames</span><span class="p">[</span><span class="s1">&#39;&#39;</span><span class="p">]);</span>  <span class="c1">// An empty string
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">unusualPropertyNames</span><span class="p">[</span><span class="s1">&#39;!&#39;</span><span class="p">]);</span> <span class="c1">// Bang!
+</span></span></span></code></pre></div><div id="enhanced-object-literals" class="anchor"></div>
 <h4 class="relative group">Enhanced Object literals 
-    <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-<a aria-label="Anchor" class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" href="#enhanced-object-literals" style="text-decoration-line: none !important;">#</a></span>
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#enhanced-object-literals" aria-label="Anchor">#</a></span>        
+    
 </h4>
 <p>Object literals support a range of shorthand syntaxes that include setting the prototype at construction, shorthand for foo: foo assignments, defining methods, making super calls, and computing property names with expressions.</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="c1">// __proto__
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">__proto__</span><span class="o">:</span> <span class="nx">theProtoObj</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">  <span class="c1">// Shorthand for 'handler: handler'
+</span></span><span class="line"><span class="cl">  <span class="c1">// Shorthand for &#39;handler: handler&#39;
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">handler</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">  <span class="c1">// Methods
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">toString</span><span class="p">()</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="c1">// Super calls
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">return</span> <span class="s1">'d '</span> <span class="o">+</span> <span class="kr">super</span><span class="p">.</span><span class="nx">toString</span><span class="p">();</span>
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">return</span> <span class="s1">&#39;d &#39;</span> <span class="o">+</span> <span class="kr">super</span><span class="p">.</span><span class="nx">toString</span><span class="p">();</span>
 </span></span><span class="line"><span class="cl">  <span class="p">},</span>
 </span></span><span class="line"><span class="cl">  <span class="c1">// Computed (dynamic) property names
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">[</span><span class="s1">'prop_'</span> <span class="o">+</span> <span class="p">(()</span> <span class="p">=&gt;</span> <span class="mi">42</span><span class="p">)()]</span><span class="o">:</span> <span class="mi">42</span><span class="p">,</span>
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">[</span><span class="s1">&#39;prop_&#39;</span> <span class="o">+</span> <span class="p">(()</span> <span class="p">=&gt;</span> <span class="mi">42</span><span class="p">)()]</span><span class="o">:</span> <span class="mi">42</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><div class="anchor" id="regexp-literals"></div>
+</span></span></code></pre></div><div id="regexp-literals" class="anchor"></div>
 <h3 class="relative group">RegExp literals 
-    <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-<a aria-label="Anchor" class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" href="#regexp-literals" style="text-decoration-line: none !important;">#</a></span>
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#regexp-literals" aria-label="Anchor">#</a></span>        
+    
 </h3>
 <p>A regex literal is a pattern enclosed between slashes (<code>/</code>).</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">re</span> <span class="o">=</span> <span class="sr">/ab+c/</span><span class="p">;</span>
-</span></span></code></pre></div><div class="anchor" id="string-literals"></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">re</span> <span class="o">=</span> <span class="sr">/ab+c/</span><span class="p">;</span>
+</span></span></code></pre></div><div id="string-literals" class="anchor"></div>
 <h3 class="relative group">String literals 
-    <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-<a aria-label="Anchor" class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" href="#string-literals" style="text-decoration-line: none !important;">#</a></span>
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#string-literals" aria-label="Anchor">#</a></span>        
+    
 </h3>
-<p>A string literal is zero or more characters enclosed in double (<code>"</code>) or single (<code>'</code>) quotation marks.</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="s1">'foo'</span>
-</span></span><span class="line"><span class="cl"><span class="s2">"bar"</span>
-</span></span><span class="line"><span class="cl"><span class="s1">'1234'</span>
-</span></span><span class="line"><span class="cl"><span class="s1">'one line \n another line'</span>
-</span></span><span class="line"><span class="cl"><span class="s2">"Joyo's cat"</span>
+<p>A string literal is zero or more characters enclosed in double (<code>&quot;</code>) or single (<code>'</code>) quotation marks.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="s1">&#39;foo&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="s2">&#34;bar&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="s1">&#39;1234&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="s1">&#39;one line \n another line&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="s2">&#34;Joyo&#39;s cat&#34;</span>
 </span></span></code></pre></div><p>You should use string literals unless you specifically need to use a String object. See String for details on String objects.</p>
-<p>You can call any of the String object’s methods on a string literal value. JavaScript automatically converts the string literal to a temporary String object, calls the method, then discards the temporary String object.</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="c1">// Will print the number of symbols in the string including whitespace.
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Joyo's cat"</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span>  <span class="c1">// In this case, 10.
-</span></span></span></code></pre></div><div class="anchor" id="template-literals"></div>
+<p>You can call any of the String object&rsquo;s methods on a string literal value. JavaScript automatically converts the string literal to a temporary String object, calls the method, then discards the temporary String object.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="c1">// Will print the number of symbols in the string including whitespace.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Joyo&#39;s cat&#34;</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span>  <span class="c1">// In this case, 10.
+</span></span></span></code></pre></div><div id="template-literals" class="anchor"></div>
 <h3 class="relative group">Template literals 
-    <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-<a aria-label="Anchor" class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" href="#template-literals" style="text-decoration-line: none !important;">#</a></span>
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#template-literals" aria-label="Anchor">#</a></span>        
+    
 </h3>
 <p>Template literals are enclosed by the back-tick (<code> </code> `).</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="c1">// Basic literal string creation
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="sb">`In JavaScript '\n' is a line-feed.`</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="c1">// Basic literal string creation
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="sb">`In JavaScript &#39;\n&#39; is a line-feed.`</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">// Multiline strings
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="sb">`In JavaScript, template strings can run
@@ -857,22 +1291,25 @@ MathJax.Hub.Queue(function() {
 </span></span></span><span class="line"><span class="cl"><span class="sb"> quoted strings cannot.`</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">// String interpolation
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">name</span> <span class="o">=</span> <span class="s1">'Lev'</span><span class="p">,</span> <span class="nx">time</span> <span class="o">=</span> <span class="s1">'today'</span><span class="p">;</span>
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">name</span> <span class="o">=</span> <span class="s1">&#39;Lev&#39;</span><span class="p">,</span> <span class="nx">time</span> <span class="o">=</span> <span class="s1">&#39;today&#39;</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="sb">`Hello </span><span class="si">${</span><span class="nx">name</span><span class="si">}</span><span class="sb">, how are you </span><span class="si">${</span><span class="nx">time</span><span class="si">}</span><span class="sb">?`</span>
-</span></span></code></pre></div><div class="anchor" id="tagged-templates"></div>
+</span></span></code></pre></div><div id="tagged-templates" class="anchor"></div>
 <h3 class="relative group">Tagged templates 
-    <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-<a aria-label="Anchor" class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" href="#tagged-templates" style="text-decoration-line: none !important;">#</a></span>
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#tagged-templates" aria-label="Anchor">#</a></span>        
+    
 </h3>
 <p>Tagged templates are a compact syntax for specifying a template literal along with a call to a <strong>tag</strong> function for parsing it. A tagged template is just a more succinct and semantic way to invoke a function that processes a string and a set of relevant values. The name of the template tag function precedes the template literal — as in the following example, where the template tag function is named <code>print</code>. The <code>print</code> function will interpolate the arguments and serialize any objects or arrays that may come up, avoiding the pesky <code>[object Object]</code>.</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">formatArg</span> <span class="o">=</span> <span class="p">(</span><span class="nx">arg</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">formatArg</span> <span class="o">=</span> <span class="p">(</span><span class="nx">arg</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="nb">Array</span><span class="p">.</span><span class="nx">isArray</span><span class="p">(</span><span class="nx">arg</span><span class="p">))</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="c1">// Print a bulleted list
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">return</span> <span class="nx">arg</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">part</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="sb">`- </span><span class="si">${</span><span class="nx">part</span><span class="si">}</span><span class="sb">`</span><span class="p">).</span><span class="nx">join</span><span class="p">(</span><span class="s2">"\n"</span><span class="p">);</span>
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">return</span> <span class="nx">arg</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">part</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="sb">`- </span><span class="si">${</span><span class="nx">part</span><span class="si">}</span><span class="sb">`</span><span class="p">).</span><span class="nx">join</span><span class="p">(</span><span class="s2">&#34;\n&#34;</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">  <span class="p">}</span>
 </span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="nx">arg</span><span class="p">.</span><span class="nx">toString</span> <span class="o">===</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">toString</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="c1">// This object will be serialized to "[object Object]".
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">// Let's print something nicer.
+</span></span><span class="line"><span class="cl">    <span class="c1">// This object will be serialized to &#34;[object Object]&#34;.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">// Let&#39;s print something nicer.
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">return</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">arg</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">  <span class="p">}</span>
 </span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="nx">arg</span><span class="p">;</span>
@@ -889,10 +1326,10 @@ MathJax.Hub.Queue(function() {
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">todos</span> <span class="o">=</span> <span class="p">[</span>
-</span></span><span class="line"><span class="cl">  <span class="s2">"Learn JavaScript"</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">  <span class="s2">"Learn Web APIs"</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">  <span class="s2">"Set up my website"</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">  <span class="s2">"Profit!"</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;Learn JavaScript&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;Learn Web APIs&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;Set up my website&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;Profit!&#34;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl"><span class="p">];</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">progress</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">javascript</span><span class="o">:</span> <span class="mi">20</span><span class="p">,</span> <span class="nx">html</span><span class="o">:</span> <span class="mi">50</span><span class="p">,</span> <span class="nx">css</span><span class="o">:</span> <span class="mi">10</span> <span class="p">};</span>
@@ -907,16 +1344,19 @@ MathJax.Hub.Queue(function() {
 </span></span></span><span class="line"><span class="cl"><span class="c1">// - Learn Web APIs
 </span></span></span><span class="line"><span class="cl"><span class="c1">// - Set up my website
 </span></span></span><span class="line"><span class="cl"><span class="c1">// - Profit!
-</span></span></span><span class="line"><span class="cl"><span class="c1">// My current progress is: {"javascript":20,"html":50,"css":10}
+</span></span></span><span class="line"><span class="cl"><span class="c1">// My current progress is: {&#34;javascript&#34;:20,&#34;html&#34;:50,&#34;css&#34;:10}
 </span></span></span></code></pre></div><p>Since tagged template literals are just sugar of function calls, you can re-write the above as an equivalent function call:</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">print</span><span class="p">([</span><span class="s2">"I need to do:\n"</span><span class="p">,</span> <span class="s2">"\nMy current progress is: "</span><span class="p">,</span> <span class="s2">"\n"</span><span class="p">],</span> <span class="nx">todos</span><span class="p">,</span> <span class="nx">progress</span><span class="p">);</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">print</span><span class="p">([</span><span class="s2">&#34;I need to do:\n&#34;</span><span class="p">,</span> <span class="s2">&#34;\nMy current progress is: &#34;</span><span class="p">,</span> <span class="s2">&#34;\n&#34;</span><span class="p">],</span> <span class="nx">todos</span><span class="p">,</span> <span class="nx">progress</span><span class="p">);</span>
 </span></span></code></pre></div><p>This may be reminiscent of the console.log-style interpolation:</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"I need to do:\n%o\nMy current progress is: %o\n"</span><span class="p">,</span> <span class="nx">todos</span><span class="p">,</span> <span class="nx">progress</span><span class="p">);</span>
-</span></span></code></pre></div><p>Tagged template reads more naturally than a traditional “formatter” function, where the variables and the template itself have to be declared separately.</p>
-<div class="anchor" id="escape-character"></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;I need to do:\n%o\nMy current progress is: %o\n&#34;</span><span class="p">,</span> <span class="nx">todos</span><span class="p">,</span> <span class="nx">progress</span><span class="p">);</span>
+</span></span></code></pre></div><p>Tagged template reads more naturally than a traditional &ldquo;formatter&rdquo; function, where the variables and the template itself have to be declared separately.</p>
+<div id="escape-character" class="anchor"></div>
 <h3 class="relative group">Escape character 
-    <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-<a aria-label="Anchor" class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" href="#escape-character" style="text-decoration-line: none !important;">#</a></span>
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#escape-character" aria-label="Anchor">#</a></span>        
+    
 </h3>
 <table>
 <thead>
@@ -959,7 +1399,7 @@ MathJax.Hub.Queue(function() {
 <td style="text-align:left">Apostrophe or single quote</td>
 </tr>
 <tr>
-<td style="text-align:left"><code>\"</code></td>
+<td style="text-align:left"><code>\&quot;</code></td>
 <td style="text-align:left">Double quote</td>
 </tr>
 <tr>
@@ -984,248 +1424,669 @@ MathJax.Hub.Queue(function() {
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">quote</span> <span class="o">=</span> <span class="s2">"\\ He read \"The Cremation of Sam McGee\" by R.W. Service. \\"</span><span class="p">;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">quote</span> <span class="o">=</span> <span class="s2">&#34;\\ He read \&#34;The Cremation of Sam McGee\&#34; by R.W. Service. \\&#34;</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">quote</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="c1">// \ He read "The Cremation of Sam McGee" by R.W. Service. \
+</span></span><span class="line"><span class="cl"><span class="c1">// \ He read &#34;The Cremation of Sam McGee&#34; by R.W. Service. \
 </span></span></span></code></pre></div><p>You can also escape line breaks by preceding them with backslash. The backslash and line break are both removed from the value of the string.</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">str</span> <span class="o">=</span> <span class="s1">'this string \
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">str</span> <span class="o">=</span> <span class="s1">&#39;this string \
 </span></span></span><span class="line"><span class="cl"><span class="s1">is broken \
 </span></span></span><span class="line"><span class="cl"><span class="s1">across multiple \
-</span></span></span><span class="line"><span class="cl"><span class="s1">lines.'</span>
+</span></span></span><span class="line"><span class="cl"><span class="s1">lines.&#39;</span>
 </span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">str</span><span class="p">);</span>   
 </span></span><span class="line"><span class="cl"><span class="c1">// this string is broken across multiple lines.
 </span></span></span></code></pre></div>
-</div>
-<script>
+        </br></br>
+        
+
+      </div>
+     
+     <script>
         var oid = "views_posts\\javascript\\javascript-basics-1\\index.md"
         var oid_likes = "likes_posts\\javascript\\javascript-basics-1\\index.md"
       </script>
-<script integrity="sha512-DkmXO0rQo4LHxgEti/+CJjFmQtqrxPiiBHe9CGdPPabi+pk7wgrU9R58W7aOb5E6IHp8T+N+oOe4BolK/OCmTg==" src="/js/page.min.0e49973b4ad0a382c7c6012d8bff8226316642daabc4f8a20477bd08674f3da6e2fa993bc20ad4f51e7c5bb68e6f913a207a7c4fe37ea0e7b806894afce0a64e.js" type="text/javascript"></script>
-</section>
-<footer class="pt-8 max-w-prose print:hidden">
-<div class="flex">
-<img alt="Tang Zhu" class="!mt-0 !mb-0 h-24 w-24 rounded-full ltr:mr-4 rtl:ml-4" height="96" src="/img/hutao_huab4b9d12dc650a180e79ea4705cdfc41_155590_192x192_fill_q75_box_center.jpg" width="96"/>
-<div class="place-self-center">
-<div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+      
+      
+      <script type="text/javascript" src="/js/page.min.0e49973b4ad0a382c7c6012d8bff8226316642daabc4f8a20477bd08674f3da6e2fa993bc20ad4f51e7c5bb68e6f913a207a7c4fe37ea0e7b806894afce0a64e.js" integrity="sha512-DkmXO0rQo4LHxgEti/&#43;CJjFmQtqrxPiiBHe9CGdPPabi&#43;pk7wgrU9R58W7aOb5E6IHp8T&#43;N&#43;oOe4BolK/OCmTg=="></script>
+  
+    </section>
+  <footer class="pt-8 max-w-prose print:hidden">
+
+    
+  <div class="flex">
+    
+      
+      
+        
+        <img
+          class="!mt-0 !mb-0 h-24 w-24 rounded-full ltr:mr-4 rtl:ml-4"
+          width="96"
+          height="96"
+          alt="Tang Zhu"
+          src="/img/hutao_huab4b9d12dc650a180e79ea4705cdfc41_155590_192x192_fill_q75_box_center.jpg"
+        />
+      
+    
+    <div class="place-self-center">
+      
+        <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
           Author
         </div>
-<div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+        <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
           Tang Zhu
         </div>
-<div class="text-sm text-neutral-700 dark:text-neutral-400">In me the tiger, sniffs the rose</div>
-<div class="text-2xl sm:text-lg">
-<div class="flex flex-wrap text-neutral-400 dark:text-neutral-500">
-<a aria-label="Email" class="px-1 hover:text-primary-700 dark:hover:text-primary-400" href="mailto:tang_zhu_mail@163.com" rel="me noopener noreferrer" target="_blank"><span class="inline-block align-text-bottom">
-<span class="relative block icon">
-<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M207.8 20.73c-93.45 18.32-168.7 93.66-187 187.1c-27.64 140.9 68.65 266.2 199.1 285.1c19.01 2.888 36.17-12.26 36.17-31.49l.0001-.6631c0-15.74-11.44-28.88-26.84-31.24c-84.35-12.98-149.2-86.13-149.2-174.2c0-102.9 88.61-185.5 193.4-175.4c91.54 8.869 158.6 91.25 158.6 183.2l0 16.16c0 22.09-17.94 40.05-40 40.05s-40.01-17.96-40.01-40.05v-120.1c0-8.847-7.161-16.02-16.01-16.02l-31.98 .0036c-7.299 0-13.2 4.992-15.12 11.68c-24.85-12.15-54.24-16.38-86.06-5.106c-38.75 13.73-68.12 48.91-73.72 89.64c-9.483 69.01 43.81 128 110.9 128c26.44 0 50.43-9.544 69.59-24.88c24 31.3 65.23 48.69 109.4 37.49C465.2 369.3 496 324.1 495.1 277.2V256.3C495.1 107.1 361.2-9.332 207.8 20.73zM239.1 304.3c-26.47 0-48-21.56-48-48.05s21.53-48.05 48-48.05s48 21.56 48 48.05S266.5 304.3 239.1 304.3z" fill="currentColor"></path></svg>
-</span>
-</span></a>
-<a aria-label="Github" class="px-1 hover:text-primary-700 dark:hover:text-primary-400" href="https://github.com/tang-zhu" rel="me noopener noreferrer" target="_blank"><span class="inline-block align-text-bottom">
-<span class="relative block icon">
-<svg viewbox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" fill="currentColor"></path></svg>
-</span>
-</span></a>
+      
+      
+        <div class="text-sm text-neutral-700 dark:text-neutral-400">In me the tiger, sniffs the rose</div>
+      
+      <div class="text-2xl sm:text-lg">
+  <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500">
+    
+      
+        <a
+          class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
+          href="mailto:tang_zhu_mail@163.com"
+          target="_blank"
+          aria-label="Email"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M207.8 20.73c-93.45 18.32-168.7 93.66-187 187.1c-27.64 140.9 68.65 266.2 199.1 285.1c19.01 2.888 36.17-12.26 36.17-31.49l.0001-.6631c0-15.74-11.44-28.88-26.84-31.24c-84.35-12.98-149.2-86.13-149.2-174.2c0-102.9 88.61-185.5 193.4-175.4c91.54 8.869 158.6 91.25 158.6 183.2l0 16.16c0 22.09-17.94 40.05-40 40.05s-40.01-17.96-40.01-40.05v-120.1c0-8.847-7.161-16.02-16.01-16.02l-31.98 .0036c-7.299 0-13.2 4.992-15.12 11.68c-24.85-12.15-54.24-16.38-86.06-5.106c-38.75 13.73-68.12 48.91-73.72 89.64c-9.483 69.01 43.81 128 110.9 128c26.44 0 50.43-9.544 69.59-24.88c24 31.3 65.23 48.69 109.4 37.49C465.2 369.3 496 324.1 495.1 277.2V256.3C495.1 107.1 361.2-9.332 207.8 20.73zM239.1 304.3c-26.47 0-48-21.56-48-48.05s21.53-48.05 48-48.05s48 21.56 48 48.05S266.5 304.3 239.1 304.3z"/></svg>
+
+  </span>
+
+</span></a
+        >
+      
+    
+      
+        <a
+          class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://github.com/tang-zhu"
+          target="_blank"
+          aria-label="Github"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+
+  </span>
+
+</span></a
+        >
+      
+    
+  </div>
+
 </div>
-</div>
-</div>
-</div>
+    </div>
+  </div>
+
+
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+
+    
+
+
 <h2 class="mt-8 text-2xl font-extrabold mb-10">Related</h2>
 <section class="w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3">
-<a class="min-w-full" href="/posts/nodejs/starting-nodejs/">
-<div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative backdrop-blur">
-<div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/nodejs/starting-nodejs/feature.png);"></div>
-<div class="px-6 py-4">
-<div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral" href="/posts/nodejs/starting-nodejs/">Starting Node.js</div>
-<div class="text-sm text-neutral-500 dark:text-neutral-400">
+  
+  
+
+  <a href="/posts/nodejs/starting-nodejs/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative backdrop-blur">
+        
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/nodejs/starting-nodejs/feature.png);"></div>
+        
+      
+
+      <div class="px-6 py-4">
+
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/posts/nodejs/starting-nodejs/">Starting Node.js</div>
+        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="flex flex-row flex-wrap items-center">
-<time datetime="2023-01-09 11:01:14 +0800 CST">9 January 2023</time><span class="px-2 text-primary-500">·</span><span>251 words</span><span class="px-2 text-primary-500">·</span><span title="Reading time">2 mins</span>
+  
+  
+  <time datetime="2023-01-09 11:01:14 &#43;0800 CST">9 January 2023</time><span class="px-2 text-primary-500">&middot;</span><span>251 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">2 mins</span>
+  
+
+  
+  
 </div>
+
+
+
+
+
 <div class="flex flex-row flex-wrap items-center">
-<span class="mr-2" onclick="window.open(&quot;/categories/program/&quot;,'_self');" style="margin-top:0.5rem">
-<span class="flex">
-<span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/program/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
     Program
   </span>
 </span>
-</span>
-<span class="mr-2" onclick="window.open(&quot;/categories/javascript/&quot;,'_self');" style="margin-top:0.5rem">
-<span class="flex">
-<span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/javascript/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
     Javascript
   </span>
 </span>
-</span>
-<span class="mr-2" onclick="window.open(&quot;/tags/node.js/&quot;,'_self');" style="margin-top:0.5rem">
-<span class="flex">
-<span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+
+  </span>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/node.js/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
     Node.js
   </span>
 </span>
-</span>
-<span class="mr-2" onclick="window.open(&quot;/tags/javascript/&quot;,'_self');" style="margin-top:0.5rem">
-<span class="flex">
-<span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/javascript/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
     Javascript
   </span>
 </span>
-</span>
+
+  </span>
+  
+  
+  
+  
 </div>
-</div>
-<div class="py-1 prose dark:prose-invert">
-<p>This chapter will introduce the basic concept of Node.js and preparation for using Node.js.</p>
-</div>
-</div>
-<div class="px-6 pt-4 pb-2">
-</div>
-</div>
-</a>
-<a class="min-w-full" href="/posts/petsc/topopt-in-petsc/">
-<div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative backdrop-blur">
-<div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/petsc/topopt-in-petsc/feature.png);"></div>
-<div class="px-6 py-4">
-<div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral" href="/posts/petsc/topopt-in-petsc/">Usage of TopOpt-in-PETSc Projects</div>
-<div class="text-sm text-neutral-500 dark:text-neutral-400">
+
+
+
+        </div>
+
+        
+        <div class="py-1 prose dark:prose-invert">
+          <p>This chapter will introduce the basic concept of Node.js and preparation for using Node.js.</p>
+        </div>
+        
+      </div>
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
+    </div>
+  </a>
+  
+  
+
+  <a href="/posts/petsc/topopt-in-petsc/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative backdrop-blur">
+        
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/petsc/topopt-in-petsc/feature.png);"></div>
+        
+      
+
+      <div class="px-6 py-4">
+
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/posts/petsc/topopt-in-petsc/">Usage of TopOpt-in-PETSc Projects</div>
+        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="flex flex-row flex-wrap items-center">
-<time datetime="2022-12-29 17:18:05 +0800 CST">29 December 2022</time><span class="px-2 text-primary-500">·</span><span>771 words</span><span class="px-2 text-primary-500">·</span><span title="Reading time">4 mins</span>
+  
+  
+  <time datetime="2022-12-29 17:18:05 &#43;0800 CST">29 December 2022</time><span class="px-2 text-primary-500">&middot;</span><span>771 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">4 mins</span>
+  
+
+  
+  
 </div>
+
+
+
+
+
 <div class="flex flex-row flex-wrap items-center">
-<span class="mr-2" onclick="window.open(&quot;/categories/program/&quot;,'_self');" style="margin-top:0.5rem">
-<span class="flex">
-<span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/program/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
     Program
   </span>
 </span>
-</span>
-<span class="mr-2" onclick="window.open(&quot;/categories/math/&quot;,'_self');" style="margin-top:0.5rem">
-<span class="flex">
-<span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/math/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
     Math
   </span>
 </span>
-</span>
-<span class="mr-2" onclick="window.open(&quot;/categories/lib/&quot;,'_self');" style="margin-top:0.5rem">
-<span class="flex">
-<span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/lib/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
     Lib
   </span>
 </span>
-</span>
-<span class="mr-2" onclick="window.open(&quot;/tags/petsc/&quot;,'_self');" style="margin-top:0.5rem">
-<span class="flex">
-<span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+
+  </span>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/petsc/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
     PETSc
   </span>
 </span>
-</span>
+
+  </span>
+  
+  
+  
+  
 </div>
-</div>
-<div class="py-1 prose dark:prose-invert">
-<p>This article is the Usage for the two follow github projects about the use of PETSc lib.</p>
-</div>
-</div>
-<div class="px-6 pt-4 pb-2">
-</div>
-</div>
-</a>
-<a class="min-w-full" href="/posts/petsc/installation-petsc/">
-<div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative backdrop-blur">
-<div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/petsc/installation-petsc/feature.png);"></div>
-<div class="px-6 py-4">
-<div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral" href="/posts/petsc/installation-petsc/">Installation of PETSc</div>
-<div class="text-sm text-neutral-500 dark:text-neutral-400">
+
+
+
+        </div>
+
+        
+        <div class="py-1 prose dark:prose-invert">
+          <p>This article is the Usage for the two follow github projects about the use of PETSc lib.</p>
+        </div>
+        
+      </div>
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
+    </div>
+  </a>
+  
+  
+
+  <a href="/posts/petsc/installation-petsc/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative backdrop-blur">
+        
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/petsc/installation-petsc/feature.png);"></div>
+        
+      
+
+      <div class="px-6 py-4">
+
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/posts/petsc/installation-petsc/">Installation of PETSc</div>
+        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="flex flex-row flex-wrap items-center">
-<time datetime="2022-12-28 18:02:29 +0800 CST">28 December 2022</time><span class="px-2 text-primary-500">·</span><span>1287 words</span><span class="px-2 text-primary-500">·</span><span title="Reading time">7 mins</span>
+  
+  
+  <time datetime="2022-12-28 18:02:29 &#43;0800 CST">28 December 2022</time><span class="px-2 text-primary-500">&middot;</span><span>1287 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">7 mins</span>
+  
+
+  
+  
 </div>
+
+
+
+
+
 <div class="flex flex-row flex-wrap items-center">
-<span class="mr-2" onclick="window.open(&quot;/categories/program/&quot;,'_self');" style="margin-top:0.5rem">
-<span class="flex">
-<span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/program/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
     Program
   </span>
 </span>
-</span>
-<span class="mr-2" onclick="window.open(&quot;/categories/math/&quot;,'_self');" style="margin-top:0.5rem">
-<span class="flex">
-<span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/math/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
     Math
   </span>
 </span>
-</span>
-<span class="mr-2" onclick="window.open(&quot;/categories/lib/&quot;,'_self');" style="margin-top:0.5rem">
-<span class="flex">
-<span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/lib/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
     Lib
   </span>
 </span>
-</span>
-<span class="mr-2" onclick="window.open(&quot;/tags/petsc/&quot;,'_self');" style="margin-top:0.5rem">
-<span class="flex">
-<span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+
+  </span>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/petsc/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
     PETSc
   </span>
 </span>
-</span>
+
+  </span>
+  
+  
+  
+  
 </div>
-</div>
-<div class="py-1 prose dark:prose-invert">
-<p>This article will cover the installation of the PETSc library, including the common installation for Linux and the attempt on Windows.</p>
-</div>
-</div>
-<div class="px-6 pt-4 pb-2">
-</div>
-</div>
-</a>
+
+
+
+        </div>
+
+        
+        <div class="py-1 prose dark:prose-invert">
+          <p>This article will cover the installation of the PETSc library, including the common installation for Linux and the attempt on Windows.</p>
+        </div>
+        
+      </div>
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
+    </div>
+  </a>
+  
 </section>
-<div class="pt-8">
-<hr class="border-dotted border-neutral-300 dark:border-neutral-600"/>
-<div class="flex justify-between pt-3">
-<span>
-<a class="flex group mr-3" href="/posts/nodejs/starting-nodejs/">
-<span class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400">←</span>
-<span class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400">→</span>
-<span class="flex flex-col">
-<span class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500">Starting Node.js</span>
-<span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-<time datetime="2023-01-09 11:01:14 +0800 CST">9 January 2023</time>
-</span>
-</span>
-</a>
-</span>
-<span>
-<a class="flex text-right group ml-3" href="/posts/javascript/javascript-basic/">
-<span class="flex flex-col">
-<span class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500">Javascript Basic</span>
-<span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-<time datetime="2023-01-12 11:42:11 +0800 CST">12 January 2023</time>
-</span>
-</span>
-<span class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400">→</span>
-<span class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400">←</span>
-</a>
-</span>
-</div>
-</div>
-</footer>
+
+
+
+    
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="flex group mr-3" href="/posts/nodejs/starting-nodejs/">
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Starting Node.js</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2023-01-09 11:01:14 &#43;0800 CST">9 January 2023</time>
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+            <a class="flex text-right group ml-3" href="/posts/javascript/javascript-basic/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Javascript Basic</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2023-01-12 11:42:11 &#43;0800 CST">12 January 2023</time>
+                  
+                </span>
+              </span>
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+            </a>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+    
+  </footer>
 </article>
-<div class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0" id="top-scroller">
-<a aria-label="Scroll to top" class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 backdrop-blur hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400" href="#the-top" title="Scroll to top">
-    ↑
+
+      <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0">
+  <a href="#the-top"
+    class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 backdrop-blur hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="Scroll to top" title="Scroll to top">
+    &uarr;
   </a>
 </div>
-</main><footer class="py-10 print:hidden" id="site-footer">
-<div class="flex items-center justify-between">
-<p class="text-sm text-neutral-500 dark:text-neutral-400">
-      ©
+    </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+    
+  
+  <div class="flex items-center justify-between">
+
+    
+    
+    <p class="text-sm text-neutral-500 dark:text-neutral-400">
+      &copy;
       2023
       Tang Zhu
     </p>
-<p class="text-xs text-neutral-500 dark:text-neutral-400">
+    
+
+    
+    
+    <p class="text-xs text-neutral-500 dark:text-neutral-400">
       
       
-      Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="https://blowfish.page/" rel="noopener noreferrer" target="_blank">Blowfish</a>
-</p>
-</div>
-<script>
+      Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+        href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+        href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a>
+    </p>
+    
+
+  </div>
+  <script>
     
     mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
       margin: 24,
@@ -1234,30 +2095,65 @@ MathJax.Hub.Queue(function() {
     })
     
   </script>
-<script integrity="sha512-NcERO8wWxaWb8DEIL55jgiqpUoBCOIGnhHp/8zoW5imc5qhA2e9OENlH4DChjz8gNZr7LsDzWWdIS5qTYKwxRQ==" src="/js/process.min.35c1113bcc16c5a59bf031082f9e63822aa95280423881a7847a7ff33a16e6299ce6a840d9ef4e10d947e030a18f3f20359afb2ec0f35967484b9a9360ac3145.js" type="text/javascript"></script>
-</footer><div class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]" data-url="https://Tang-Zhu.gihgub.io/" id="search-wrapper" style="z-index:500">
-<div class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800" id="search-modal">
-<header class="relative z-10 flex items-center justify-between flex-none px-2">
-<form class="flex items-center flex-auto min-w-0">
-<div class="flex items-center justify-center w-8 h-8 text-neutral-400">
-<span class="relative block icon">
-<svg aria-hidden="true" class="svg-inline--fa fa-search fa-w-16" data-icon="search" data-prefix="fas" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" fill="currentColor"></path></svg>
-</span>
+  
+  
+  <script type="text/javascript" src="/js/process.min.35c1113bcc16c5a59bf031082f9e63822aa95280423881a7847a7ff33a16e6299ce6a840d9ef4e10d947e030a18f3f20359afb2ec0f35967484b9a9360ac3145.js" integrity="sha512-NcERO8wWxaWb8DEIL55jgiqpUoBCOIGnhHp/8zoW5imc5qhA2e9OENlH4DChjz8gNZr7LsDzWWdIS5qTYKwxRQ=="></script>
+  
+  
+</footer><div
+  id="search-wrapper"
+  class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
+  data-url="https://Tang-Zhu.gihgub.io/"
+  style="z-index:500"
+>
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800"
+  >
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="Search"
+          tabindex="0"
+        />
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="Close (Esc)"
+      >
+        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+
+      </button>
+    </header>
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
 </div>
-<input class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent" id="search-query" placeholder="Search" tabindex="0" type="search"/>
-</form>
-<button class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400" id="close-search-button" title="Close (Esc)">
-<span class="relative block icon">
-<svg viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z" fill="currentColor"></path></svg>
-</span>
-</button>
-</header>
-<section class="flex-auto px-2 overflow-auto">
-<ul id="search-results">
-</ul>
-</section>
-</div>
-</div>
-</div>
+
+  </div>
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html class="scroll-smooth" data-auto-appearance="true" data-default-appearance="dark" dir="ltr" lang="en"><head><style>
+<html lang="en" dir="ltr" class="scroll-smooth" data-default-appearance="dark"
+  data-auto-appearance="true"><style>
 code.has-jax {
     font: inherit;
     font-size: 100%;
@@ -8,34 +9,82 @@ code.has-jax {
     color: #515151;
 }
 </style>
-<meta charset="utf-8"/>
-<meta content="en" http-equiv="content-language"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="ie=edge" http-equiv="X-UA-Compatible"/>
-<title>Installation of PETSc · Tang Zhu</title>
-<meta content="Installation of PETSc · Tang Zhu" name="title"/>
-<meta content="My awesome website" name="description"/>
-<meta content="PETSc, " name="keywords"/>
-<link href="https://Tang-Zhu.gihgub.io/posts/petsc/installation-petsc/" rel="canonical"/>
-<link href="/css/main.bundle.min.55800f303ced971710fcec8763e3a2eb63b3fb2606988f7139a956fe0aea85d71ed6a30e6173ab797d2f7ffa06850e79622ce5d198b483b0c942f51afefdd89f.css" integrity="sha512-VYAPMDztlxcQ/OyHY+Oi62Oz+yYGmI9xOalW/grqhdce1qMOYXOreX0vf/oGhQ55Yizl0Zi0g7DJQvUa/v3Ynw==" rel="stylesheet" type="text/css"/>
-<script integrity="sha512-UWoWdFvqWpvQERONJUzA/TlzzVXObhXz3sdj58fCx0SPj+e1TMqBHLghsMfhLNFhyqzh3XlKw9NNQJN8vMnuEg==" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js" type="text/javascript"></script>
-<script data-copied="" data-copy="" defer="" id="script-bundle" integrity="sha512-PdzwT1sNTDL3LnJtPBLuvM2MPJ+dqpoTQUgIiV3grh4c3d2mhJaA1b2W27YNCx4LJMKfXIPlYx5V5+a8AgFUkA==" src="/js/main.bundle.min.3ddcf04f5b0d4c32f72e726d3c12eebccd8c3c9f9daa9a13414808895de0ae1e1cdddda6849680d5bd96dbb60d0b1e0b24c29f5c83e5631e55e7e6bc02015490.js" type="text/javascript"></script>
-<script src="/js/zoom.min.js"></script>
-<link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
-<link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
-<link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
-<link href="/site.webmanifest" rel="manifest"/>
-<meta content="Installation of PETSc" property="og:title"/>
-<meta content="This article will cover the installation of the PETSc library, including the common installation for Linux and the attempt on Windows." property="og:description"/>
-<meta content="article" property="og:type"/>
-<meta content="https://Tang-Zhu.gihgub.io/posts/petsc/installation-petsc/" property="og:url"/><meta content="https://Tang-Zhu.gihgub.io/posts/petsc/installation-petsc/feature.png" property="og:image"/><meta content="posts" property="article:section"/>
-<meta content="2022-12-28T18:02:29+08:00" property="article:published_time"/>
-<meta content="2022-12-28T18:02:29+08:00" property="article:modified_time"/>
-<meta content="summary_large_image" name="twitter:card"/>
-<meta content="https://Tang-Zhu.gihgub.io/posts/petsc/installation-petsc/feature.png" name="twitter:image"/>
-<meta content="Installation of PETSc" name="twitter:title"/>
-<meta content="This article will cover the installation of the PETSc library, including the common installation for Linux and the attempt on Windows." name="twitter:description"/>
-<script type="application/ld+json">
+
+<head>
+  <meta charset="utf-8" />
+  
+  <meta http-equiv="content-language" content="en" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+  <title>Installation of PETSc &middot; Tang Zhu</title>
+  <meta name="title" content="Installation of PETSc &middot; Tang Zhu" />
+  
+  <meta name="description" content="My awesome website" />
+  <meta name="keywords" content="PETSc, " />
+  
+  
+  <link rel="canonical" href="https://Tang-Zhu.gihgub.io/posts/petsc/installation-petsc/" />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.55800f303ced971710fcec8763e3a2eb63b3fb2606988f7139a956fe0aea85d71ed6a30e6173ab797d2f7ffa06850e79622ce5d198b483b0c942f51afefdd89f.css"
+    integrity="sha512-VYAPMDztlxcQ/OyHY&#43;Oi62Oz&#43;yYGmI9xOalW/grqhdce1qMOYXOreX0vf/oGhQ55Yizl0Zi0g7DJQvUa/v3Ynw==" />
+  
+  
+  <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
+    integrity="sha512-UWoWdFvqWpvQERONJUzA/TlzzVXObhXz3sdj58fCx0SPj&#43;e1TMqBHLghsMfhLNFhyqzh3XlKw9NNQJN8vMnuEg=="></script>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.3ddcf04f5b0d4c32f72e726d3c12eebccd8c3c9f9daa9a13414808895de0ae1e1cdddda6849680d5bd96dbb60d0b1e0b24c29f5c83e5631e55e7e6bc02015490.js"
+    integrity="sha512-PdzwT1sNTDL3LnJtPBLuvM2MPJ&#43;dqpoTQUgIiV3grh4c3d2mhJaA1b2W27YNCx4LJMKfXIPlYx5V5&#43;a8AgFUkA==" data-copy="" data-copied=""></script>
+  
+  <script src="/js/zoom.min.js"></script>
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="Installation of PETSc" />
+<meta property="og:description" content="This article will cover the installation of the PETSc library, including the common installation for Linux and the attempt on Windows." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://Tang-Zhu.gihgub.io/posts/petsc/installation-petsc/" /><meta property="og:image" content="https://Tang-Zhu.gihgub.io/posts/petsc/installation-petsc/feature.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-12-28T18:02:29+08:00" />
+<meta property="article:modified_time" content="2022-12-28T18:02:29+08:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://Tang-Zhu.gihgub.io/posts/petsc/installation-petsc/feature.png"/>
+<meta name="twitter:title" content="Installation of PETSc"/>
+<meta name="twitter:description" content="This article will cover the installation of the PETSc library, including the common installation for Linux and the attempt on Windows."/>
+
+  
+  <script type="application/ld+json">
   [{
     "@context": "https://schema.org",
     "@type": "Article",
@@ -62,123 +111,276 @@ code.has-jax {
     "wordCount": "1287"
   }]
   </script>
-<meta content="Tang Zhu" name="author"/>
-<link href="mailto:tang_zhu_mail@163.com" rel="me"/>
-<link href="https://github.com/tang-zhu" rel="me"/>
-<script integrity="" src="/lib/jquery/jquery.slim.min.js"></script>
-<script async="" src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
-MathJax.Hub.Config({
-  tex2jax: {
-    inlineMath: [['$','$'], ['\\(','\\)']],
-    displayMath: [['$$','$$'], ['\[\[','\]\]']],
-    processEscapes: true,
-    processEnvironments: true,
-    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-    TeX: { equationNumbers: { autoNumber: "AMS" },
-         extensions: ["AMSmath.js", "AMSsymbols.js"] }
-  }
-});
-
-MathJax.Hub.Queue(function() {
-    
-    
-    
-    var all = MathJax.Hub.getAllJax(), i;
-    for(i = 0; i < all.length; i += 1) {
-        all[i].SourceElement().parentNode.className += ' has-jax';
-    }
-});
+
+
+  
+  
+  <meta name="author" content="Tang Zhu" />
+  
+  
+  
+  <link href="mailto:tang_zhu_mail@163.com" rel="me" />
+  
+  
+  <link href="https://github.com/tang-zhu" rel="me" />
+  
+  
+  
+  
+
+<script src="/lib/jquery/jquery.slim.min.js" integrity=""></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+  
+  
+  <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
 </script>
-<meta name="theme-color"/>
-</head><body class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32">
-<div class="absolute flex self-center" id="the-top">
-<a class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600" href="#main-content"><span class="font-bold text-primary-600 ltr:pr-2 rtl:pl-2 dark:text-primary-400">↓</span>Skip to main content</a>
-</div>
-<div class="min-h-[148px]"></div>
+
+
+  
+  <meta name="theme-color"/>
+  
+  
+</head>
+<body
+  class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32">
+  <div id="the-top" class="absolute flex self-center">
+    <a class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+      href="#main-content"><span
+        class="font-bold text-primary-600 ltr:pr-2 rtl:pl-2 dark:text-primary-400">&darr;</span>Skip to main content</a>
+  </div>
+  
+  
+  <div class="min-h-[148px]"></div>
 <div class="fixed inset-x-0 pl-[24px] pr-[24px]" style="z-index:100">
-<div class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl shadow-2xl" id="menu-blur"></div>
-<div class="relative max-w-[64rem] ml-auto mr-auto">
-<div class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start space-x-3" style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px">
-<div class="flex flex-1 items-center justify-between">
-<nav class="flex space-x-3">
-<a class="text-base font-medium text-gray-500 hover:text-gray-900" href="/">Tang Zhu</a>
-</nav>
-<nav class="hidden md:flex items-center space-x-5 md:ml-12">
-<a class="flex items-center" href="/posts/">
-<p class="text-base font-medium text-gray-500 hover:text-gray-900" title="Posts">
+  <div id="menu-blur" class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl shadow-2xl"></div>
+  <div class="relative max-w-[64rem] ml-auto mr-auto">
+    <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
+    class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start space-x-3">
+    
+    <div class="flex flex-1 items-center justify-between">
+        <nav class="flex space-x-3">
+
+            <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">Tang Zhu</a>
+
+
+        </nav>
+        <nav class="hidden md:flex items-center space-x-5 md:ml-12">
+
+            
+            
+            
+  <a href="/posts/"  class="flex items-center">
+    
+    <p class="text-base font-medium text-gray-500 hover:text-gray-900" title="Posts">
         Post
     </p>
 </a>
-<button aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400" id="search-button" title="">
-<span class="relative block icon">
-<svg aria-hidden="true" class="svg-inline--fa fa-search fa-w-16" data-icon="search" data-prefix="fas" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" fill="currentColor"></path></svg>
+
+
+            
+            
+
+            
+
+
+            
+            <button id="search-button" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+                title="">
+                
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+            </button>
+            
+
+
+            
+            
+            <div
+                class="ltr:mr-14 rtl:ml-14 cursor-pointer text-sm text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400">
+                <button id="appearance-switcher" aria-label="Dark mode switcher" type="button">
+                    <div class="flex items-center justify-center h-12 dark:hidden">
+                        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+
+  </span>
+
+
+                    </div>
+                    <div class="items-center justify-center hidden h-12 dark:flex">
+                        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+
+  </span>
+
+
+                    </div>
+                </button>
+            </div>
+            
+
+        </nav>
+        <div class="flex md:hidden items-center space-x-5 md:ml-12">
+
+            <span></span>
+
+            
+
+
+            
+            <button id="search-button-mobile" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+                title="">
+                
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+            </button>
+            
+
+            
+            
+            <button id="appearance-switcher-mobile" aria-label="Dark mode switcher" type="button" style="margin-right:5px">
+                <div class="flex items-center justify-center h-12 dark:hidden">
+                    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+
+  </span>
+
+
+                </div>
+                <div class="items-center justify-center hidden h-12 dark:flex">
+                    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+
+  </span>
+
+
+                </div>
+            </button>
+            
+
+        </div>
+    </div>
+    <div class="-my-2 -mr-2 md:hidden">
+
+        <label id="menu-button" for="menu-controller" class="block">
+            <input type="checkbox" id="menu-controller" class="hidden" />
+            <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+                
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+
+  </span>
+
+
+            </div>
+            <div id="menu-wrapper" style="padding-top:5px;"
+                class="fixed inset-0 z-30 invisible w-screen h-screen m-auto overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50">
+                <ul
+                    class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
+
+                    <li>
+                        <span
+                            class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
 </span>
-</button>
-<div class="ltr:mr-14 rtl:ml-14 cursor-pointer text-sm text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400">
-<button aria-label="Dark mode switcher" id="appearance-switcher" type="button">
-<div class="flex items-center justify-center h-12 dark:hidden">
-<span class="relative block icon">
-<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z" fill="currentColor"></path></svg>
-</span>
-</div>
-<div class="items-center justify-center hidden h-12 dark:flex">
-<span class="relative block icon">
-<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z" fill="currentColor"></path></svg>
-</span>
-</div>
-</button>
-</div>
-</nav>
-<div class="flex md:hidden items-center space-x-5 md:ml-12">
-<span></span>
-<button aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400" id="search-button-mobile" title="">
-<span class="relative block icon">
-<svg aria-hidden="true" class="svg-inline--fa fa-search fa-w-16" data-icon="search" data-prefix="fas" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" fill="currentColor"></path></svg>
-</span>
-</button>
-<button aria-label="Dark mode switcher" id="appearance-switcher-mobile" style="margin-right:5px" type="button">
-<div class="flex items-center justify-center h-12 dark:hidden">
-<span class="relative block icon">
-<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z" fill="currentColor"></path></svg>
-</span>
-</div>
-<div class="items-center justify-center hidden h-12 dark:flex">
-<span class="relative block icon">
-<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z" fill="currentColor"></path></svg>
-</span>
-</div>
-</button>
-</div>
-</div>
-<div class="-my-2 -mr-2 md:hidden">
-<label class="block" for="menu-controller" id="menu-button">
-<input class="hidden" id="menu-controller" type="checkbox"/>
-<div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
-<span class="relative block icon">
-<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z" fill="currentColor"></path></svg>
-</span>
-</div>
-<div class="fixed inset-0 z-30 invisible w-screen h-screen m-auto overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50" id="menu-wrapper" style="padding-top:5px;">
-<ul class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
-<li>
-<span class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
-<span class="relative block icon">
-<svg viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z" fill="currentColor"></path></svg>
-</span>
-</span>
-</li>
-<li class="mt-1">
-<a class="flex items-center" href="/posts/">
-<p class="text-bg font-bg text-gray-500 hover:text-gray-900" title="Posts">
+                    </li>
+
+                    
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/posts/"  class="flex items-center">
+        
+        <p class="text-bg font-bg text-gray-500 hover:text-gray-900" title="Posts">
             Post
         </p>
-</a>
+    </a>
 </li>
-</ul>
+
+
+
+                    
+                    
+
+                </ul>
+                
+
+            </div>
+        </label>
+    </div>
 </div>
-</label>
-</div>
-</div>
+
+
+
+
 <script>
     (function () {
         var $mainmenu = $('.main-menu');
@@ -188,7 +390,9 @@ MathJax.Hub.Queue(function() {
         });
     })();
 </script>
-</div>
+
+
+  </div>
 </div>
 <script>
   window.addEventListener('scroll', function (e) {
@@ -197,18 +401,45 @@ MathJax.Hub.Queue(function() {
     background_blur.style.opacity = (scroll / 300);
   });
 </script>
-<div class="relative flex flex-col grow">
-<main class="grow" id="main-content">
+
+  
+  <div class="relative flex flex-col grow">
+    <main id="main-content" class="grow">
+      
+
+
 <article>
-<div class="h-[150px] md:h-[200px]" id="hero"></div>
-<div class="fixed w-full inset-x-0 top-0 h-[1000px] object-cover m-0 single_hero_background nozoom" style="background-image:url(/img/bg.png);">
-<video autoplay="" class="w-full inset-x-0 top-0 h-[1000px] object-cover m-0 single_hero_background nozoom" loop="" muted="" playsinline="" poster="/img/bg.png" src="/img/bg.mp4"></video>
-<div class="absolute inset-0 h-[1000px] bg-gradient-to-t from-neutral dark:from-neutral-800 to-transparent mix-blend-normal">
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+<div id="hero" class="h-[150px] md:h-[200px]"></div>
+
+
+    
+    <div class="fixed w-full inset-x-0 top-0 h-[1000px] object-cover m-0 single_hero_background nozoom"
+    style="background-image:url(/img/bg.png);">
+    
+            <video  poster="/img/bg.png" src="/img/bg.mp4" autoplay loop playsinline muted class="w-full inset-x-0 top-0 h-[1000px] object-cover m-0 single_hero_background nozoom"></video>
+        
+    
+
+
+    <div class="absolute inset-0 h-[1000px] bg-gradient-to-t from-neutral dark:from-neutral-800 to-transparent mix-blend-normal">
+    </div>
+    <div
+        class="absolute inset-0 h-[1000px] opacity-60 bg-gradient-to-t from-neutral dark:from-neutral-800 to-neutral-100 dark:to-neutral-800 mix-blend-normal">
+    </div>
 </div>
-<div class="absolute inset-0 h-[1000px] opacity-60 bg-gradient-to-t from-neutral dark:from-neutral-800 to-neutral-100 dark:to-neutral-800 mix-blend-normal">
-</div>
-</div>
-<div class="fixed opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl" id="background-blur"></div>
+
+<div id="background-blur" class="fixed opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl"></div>
 <script>
     window.addEventListener('scroll', function (e) {
         var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
@@ -216,153 +447,648 @@ MathJax.Hub.Queue(function() {
         background_blur.style.opacity = (scroll / 300)
     });
 </script>
-<header class="mt-5 max-w-prose" id="single_header">
-<ol class="text-sm text-neutral-500 dark:text-neutral-400 print:hidden">
-<li class="inline hidden">
-<a class="hover:underline decoration-neutral-300 dark:underline-neutral-600" href="/">Tang Zhu</a><span class="px-1 text-primary-500">/</span>
-</li>
-<li class="inline">
-<a class="hover:underline decoration-neutral-300 dark:underline-neutral-600" href="/posts/">Posts</a><span class="px-1 text-primary-500">/</span>
-</li>
-<li class="inline hidden">
-<a class="hover:underline decoration-neutral-300 dark:underline-neutral-600" href="/posts/petsc/installation-petsc/">Installation of PETSc</a><span class="px-1 text-primary-500">/</span>
-</li>
+
+  
+  
+
+  <header id="single_header" class="mt-5 max-w-prose">
+    
+    <ol class="text-sm text-neutral-500 dark:text-neutral-400 print:hidden">
+  
+  
+    
+  
+    
+  
+  <li class="inline hidden">
+    <a
+      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
+      href="/"
+      >Tang Zhu</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class="inline ">
+    <a
+      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
+      href="/posts/"
+      >Posts</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class="inline hidden">
+    <a
+      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
+      href="/posts/petsc/installation-petsc/"
+      >Installation of PETSc</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
 </ol>
-<h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+
+
+    
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
       Installation of PETSc
     </h1>
-<div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+    <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="flex flex-row flex-wrap items-center">
-<time datetime="2022-12-28 18:02:29 +0800 CST">28 December 2022</time><span class="px-2 text-primary-500">·</span><span>1287 words</span><span class="px-2 text-primary-500">·</span><span title="Reading time">7 mins</span>
+  
+  
+  <time datetime="2022-12-28 18:02:29 &#43;0800 CST">28 December 2022</time><span class="px-2 text-primary-500">&middot;</span><span>1287 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">7 mins</span>
+  
+
+  
+  
 </div>
+
+
+
+
+
 <div class="flex flex-row flex-wrap items-center">
-<span class="mr-2" onclick="window.open(&quot;/categories/program/&quot;,'_self');" style="margin-top:0.5rem">
-<span class="flex">
-<span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/program/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
     Program
   </span>
 </span>
-</span>
-<span class="mr-2" onclick="window.open(&quot;/categories/math/&quot;,'_self');" style="margin-top:0.5rem">
-<span class="flex">
-<span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/math/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
     Math
   </span>
 </span>
-</span>
-<span class="mr-2" onclick="window.open(&quot;/categories/lib/&quot;,'_self');" style="margin-top:0.5rem">
-<span class="flex">
-<span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/lib/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
     Lib
   </span>
 </span>
-</span>
-<span class="mr-2" onclick="window.open(&quot;/tags/petsc/&quot;,'_self');" style="margin-top:0.5rem">
-<span class="flex">
-<span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+
+  </span>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/petsc/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
     PETSc
   </span>
 </span>
-</span>
+
+  </span>
+  
+  
+  
+  
 </div>
-</div>
-</header>
-<section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
-<div class="min-w-0 min-h-0 max-w-prose">
-<p>This article will cover the installation of the PETSc library, including the common installation for Linux and the attempt on Windows.</p>
+
+
+
+    </div>
+  </header>
+  <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+    
+      <div class="min-w-0 min-h-0 max-w-prose">
+        
+
+        <p>This article will cover the installation of the PETSc library, including the common installation for Linux and the attempt on Windows.</p>
+
+
+
+
 <div class="hugo-encryptor-container">
-<div class="hugo-encryptor-prompt">
-<p>Part of this article is encrypted with password:</p>
+  <div class="hugo-encryptor-prompt">
+    
+      <p>Part of this article is encrypted with password:</p>
+    
+  </div>
+  <div class="hugo-encryptor-form">
+    <input
+      class="hugo-encryptor-input"
+      placeholder='Password and Enter'
+      onkeydown="if(event.keyCode==13) {_click_handler(this)}"
+      style="border-radius: 5px; text-align: center;"
+      type="password"
+    />
+  </div>
+  <div
+    class="hugo-encryptor-cipher-text"
+    data-password="Dotk1125104"
+    style="display: none;"
+  >
+    <span style="display: none;">--- DON'T MODIFY THIS LINE ---</span>
+    <div id="installation-for-linux" class="anchor"></div>
+<h2 class="relative group">Installation for Linux 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#installation-for-linux" aria-label="Anchor">#</a></span>        
+    
+</h2>
+<p>This article is applicable to the building of <strong>PETSc-3.14.1</strong>. You can download the newest version by:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone -b release https://gitlab.com/petsc/petsc.git
+</span></span><span class="line"><span class="cl"><span class="c1">#If haven&#39;t the git tool, you can install it through &#39;apt&#39;.</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#Follow steps will show how to use &#39;apt&#39;.</span>
+</span></span></code></pre></div><p>or search the applicable version through the link:</p>
+<p><a href="https://gitlab.com/petsc/petsc"   target="_blank">
+    https://gitlab.com/petsc/petsc</a></p>
+<div id="environment" class="anchor"></div>
+<h3 class="relative group">Environment 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#environment" aria-label="Anchor">#</a></span>        
+    
+</h3>
+<p>Building PETSc relies on the following environments：</p>
+<ul>
+<li><strong>Ubuntu</strong> (Linux system, tested in 22.04.1 version)</li>
+<li><strong>gcc/g++/gfrotran</strong> (C/C++/Frotran compiler, tested in 11.3.0 version)</li>
+<li><strong>Python3</strong> (tested in 3.10.6)</li>
+<li><strong>LAPACK/BLAS</strong> (Scientific computing library, tested in 3,4,2 version)</li>
+<li><strong>MPICH</strong> (Realization of MPI, tested in 4.0.2 version)</li>
+</ul>
+<div id="installation" class="anchor"></div>
+<h3 class="relative group">Installation 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#installation" aria-label="Anchor">#</a></span>        
+    
+</h3>
+<p>The first step is installing <strong>Ubuntu</strong> system, you can install it on your PC or virtual machine (e.g.VMware).</p>
+<ul>
+<li><em>Please choose <strong>English</strong> as the system language if you can accpet, which is convenient for programming.</em></li>
+<li><em>You can choose the minimal installation and don&rsquo;t choose any third-part software and updating opeions when installing, if you internet is not good enough.</em></li>
+</ul>
+<p>After Ubuntu installation, the first thing you need to do is updating software. Ubuntu uses <strong>apt</strong> gizmo to manage software, the updating command:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Using &#39;apt-get&#39; to instead &#39;apt&#39;, If your system doesn&#39;t support &#39;apt&#39; </span>
+</span></span><span class="line"><span class="cl">sudo apt update <span class="c1"># update &#39;apt&#39; itself</span>
+</span></span><span class="line"><span class="cl">sudo apt upgrade <span class="c1"># update software</span>
+</span></span></code></pre></div><p>If the origin software mirror source is too late, you can change it by:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cp /etc/apt/sources.list /etc/apt/sources.list.bak <span class="c1"># Copy old version</span>
+</span></span><span class="line"><span class="cl">sudo vi /etc/apt/sources.list
+</span></span><span class="line"><span class="cl">deb http://mirrors.aliyun.com/ubuntu/ xxxx main restricted universe multiverse
+</span></span><span class="line"><span class="cl"><span class="c1"># Change all the link, notice keep &#39;xxxx&#39; with your own Codename</span>
+</span></span></code></pre></div><p>Some recommended sources are follows:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Aliyun</span>
+</span></span><span class="line"><span class="cl">deb http://mirrors.aliyun.com/ubuntu/ xenial main restricted universe multiverse
+</span></span><span class="line"><span class="cl">deb http://mirrors.aliyun.com/ubuntu/ xenial-security main restricted universe multiverse
+</span></span><span class="line"><span class="cl">deb http://mirrors.aliyun.com/ubuntu/ xenial-updates main restricted universe multiverse
+</span></span><span class="line"><span class="cl">deb http://mirrors.aliyun.com/ubuntu/ xenial-backports main restricted universe multiverse
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Tsinghua</span>
+</span></span><span class="line"><span class="cl">deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial main restricted universe multiverse
+</span></span><span class="line"><span class="cl">deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-security main restricted universe multiverse
+</span></span><span class="line"><span class="cl">deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-updates main restricted universe multiverse
+</span></span><span class="line"><span class="cl">deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-backports main restricted universe multiverse
+</span></span></code></pre></div><p>The next step is installing <strong>gcc/g++/gfrotran</strong> and <strong>Python3</strong>, you can directly install them with <strong>apt</strong>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt install gcc
+</span></span><span class="line"><span class="cl">sudo apt install g++
+</span></span><span class="line"><span class="cl">sudo apt install gfortran
+</span></span><span class="line"><span class="cl">sudo apt install python3
+</span></span></code></pre></div><p>If can&rsquo;t find the package, you can use <em><code>apt search</code></em> to search it and choose the right version for installing.</p>
+<p>In some situation, you might meet error:
+<em><code>configure: error: no acceptable C compiler found in $PATH</code></em>, especially choosing minimal version when installing Ubuntu. You can fix it by:<em><code>sudo apt-get install -y build-essential</code></em>.</p>
+<p>There are two different ways about installing <strong>LAPACK/BLAS</strong> and  <strong>MPICH</strong>. The first is installing during the PETSc configuring, which recommended by PETSc official. The other is using <strong>apt</strong>.</p>
+<p>For the first way, <em><code>cd</code></em> into the PETSc&rsquo;s root directory and configure with follow command:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">./configure --with-cc<span class="o">=</span>gcc --with-cxx<span class="o">=</span>g++ --with-fc<span class="o">=</span>gfortran --download-mpich --download-fblaslapack
+</span></span></code></pre></div><p>If download fails, you can download these packages mannually from the given link in the configure message. Then, indicate the download directory:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">./configure --with-cc<span class="o">=</span>gcc --with-cxx<span class="o">=</span>g++ --with-fc<span class="o">=</span>gfortran --download-mpich --download-fblaslapack --with-download-dir<span class="o">=</span>&lt;xxxxx&gt;
+</span></span></code></pre></div><p>After configuration, make the project:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">make all check
+</span></span></code></pre></div><p>If you don&rsquo;t have the <em><code>make</code></em> tool, install it by <em><code>apt</code></em>.</p>
+<p>The second way is installing <strong>LAPACK/BLAS</strong> and  <strong>MPICH</strong> mannually. <strong>LAPACK/BLAS</strong> are easily to install:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt search lapack-dev
+</span></span><span class="line"><span class="cl">...
+</span></span><span class="line"><span class="cl">sudo apt install liblapack64-dev <span class="c1">#Choose the applicable version</span>
+</span></span><span class="line"><span class="cl">sudo apt search blas-dev
+</span></span><span class="line"><span class="cl">...
+</span></span><span class="line"><span class="cl">sudo apt install libblas64-dev <span class="c1">#Choose the applicable version</span>
+</span></span></code></pre></div><p><strong>MPI</strong> is a cross-language communication protocol for parallel programming. <strong>MPICH</strong> is one of realizations of MPI, and you can also choose <strong>OpenMPI</strong> to instead it:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt install mpich
+</span></span><span class="line"><span class="cl"><span class="c1">#sudo apt install openmpi</span>
+</span></span></code></pre></div><p>After that, if the <strong>$PATH</strong> is correct you can configure PETSc directly, otherwise you need indicate the directory:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">./configure --with-cc<span class="o">=</span>gcc --with-cxx<span class="o">=</span>g++ --with-fc<span class="o">=</span>gfortran
+</span></span><span class="line"><span class="cl"><span class="c1">#./configure --with-cc=gcc --with-cxx=g++ --with-fc=gfortran --with--mpich-dir=&lt;xxxx&gt; --with--fblaslapack-dir=&lt;xxxx&gt;</span>
+</span></span></code></pre></div><p>After configuration, make the project:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">make all check
+</span></span></code></pre></div><p>During the making process, some errors might occur such as <em><code>/usr/bin/ld: cannot find -lmpi_cxx</code></em>, which means lack of depended libs. You need to use <strong>apt</strong> to install them for example:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt search lmpi
+</span></span><span class="line"><span class="cl">...
+</span></span><span class="line"><span class="cl">sudo apt install libmkl-blacs-intelmpi-ilp64 <span class="c1">#Choose the applicable version</span>
+</span></span></code></pre></div><p>After making, the message will show follows. You can re-check this information through configure.log, the <strong>PETSC_DIR</strong> and <strong>PETSC_ARCH</strong> will be used in your project.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">-----------------------------------------
+</span></span><span class="line"><span class="cl">PETSC_VERSION_RELEASE
+</span></span><span class="line"><span class="cl">.
+</span></span><span class="line"><span class="cl">.
+</span></span><span class="line"><span class="cl">.
+</span></span><span class="line"><span class="cl">-----------------------------------------
+</span></span><span class="line"><span class="cl"><span class="c1">#define SOME_PETSC_VARIABLE</span>
+</span></span><span class="line"><span class="cl">.
+</span></span><span class="line"><span class="cl">.
+</span></span><span class="line"><span class="cl">.
+</span></span><span class="line"><span class="cl">-----------------------------------------
+</span></span><span class="line"><span class="cl">Installed Compiler, Package, and Library Information
+</span></span><span class="line"><span class="cl">.
+</span></span><span class="line"><span class="cl">.
+</span></span><span class="line"><span class="cl">.
+</span></span><span class="line"><span class="cl"><span class="o">=========================================</span>
+</span></span><span class="line"><span class="cl">       FC arch-darwin-c-debug/obj/sys/f90-mod/petscsysmod.o
+</span></span><span class="line"><span class="cl">       FC arch-darwin-c-debug/obj/sys/fsrc/somefort.o
+</span></span><span class="line"><span class="cl">       FC arch-darwin-c-debug/obj/sys/f90-src/fsrc/f90_fwrap.o
+</span></span><span class="line"><span class="cl">       CC arch-darwin-c-debug/obj/sys/info/verboseinfo.o
+</span></span><span class="line"><span class="cl">       CC arch-darwin-c-debug/obj/sys/info/ftn-auto/verboseinfof.o
+</span></span><span class="line"><span class="cl">       CC arch-darwin-c-debug/obj/sys/info/ftn-custom/zverboseinfof.o
+</span></span><span class="line"><span class="cl">       .
+</span></span><span class="line"><span class="cl">       .
+</span></span><span class="line"><span class="cl">       .
+</span></span><span class="line"><span class="cl">       FC arch-darwin-c-debug/obj/snes/f90-mod/petscsnesmod.o
+</span></span><span class="line"><span class="cl">       FC arch-darwin-c-debug/obj/ts/f90-mod/petsctsmod.o
+</span></span><span class="line"><span class="cl">       FC arch-darwin-c-debug/obj/tao/f90-mod/petsctaomod.o
+</span></span><span class="line"><span class="cl">  CLINKER arch-darwin-c-debug/lib/libpetsc.PETSC_MAJOR.PETSC_MINOR.PETSC_PATCH.dylib
+</span></span><span class="line"><span class="cl"> DSYMUTIL arch-darwin-c-debug/lib/libpetsc.PETSC_MAJOR.PETSC_MINOR.PETSC_PATCH.dylib
+</span></span><span class="line"><span class="cl">gmake<span class="o">[</span>2<span class="o">]</span>: Leaving directory <span class="s1">&#39;/your/petsc/dir&#39;</span>
+</span></span><span class="line"><span class="cl">gmake<span class="o">[</span>1<span class="o">]</span>: Leaving directory <span class="s1">&#39;/your/petsc/dir&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="o">=========================================</span>
+</span></span><span class="line"><span class="cl">Running <span class="nb">test</span> examples to verify correct installation
+</span></span><span class="line"><span class="cl">Using <span class="nv">PETSC_DIR</span><span class="o">=</span>/your/petsc/dir and <span class="nv">PETSC_ARCH</span><span class="o">=</span>your-petsc-arch
+</span></span><span class="line"><span class="cl">C/C++ example src/snes/examples/tutorials/ex19 run successfully with <span class="m">1</span> MPI process
+</span></span><span class="line"><span class="cl">C/C++ example src/snes/examples/tutorials/ex19 run successfully with <span class="m">2</span> MPI processes
+</span></span><span class="line"><span class="cl">Fortran example src/snes/examples/tutorials/ex5f run successfully with <span class="m">1</span> MPI process
+</span></span><span class="line"><span class="cl">Completed <span class="nb">test</span> examples
+</span></span></code></pre></div><div id="installation-for-windows" class="anchor"></div>
+<h2 class="relative group">Installation for Windows 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#installation-for-windows" aria-label="Anchor">#</a></span>        
+    
+</h2>
+<p>The installation of PETSc for <strong>Windows</strong> is not successful yet, this is just a record for the works.</p>
+<div id="environment-1" class="anchor"></div>
+<h3 class="relative group">Environment 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#environment-1" aria-label="Anchor">#</a></span>        
+    
+</h3>
+<p>This article try <strong>MSYS2</strong> and <strong>Cygwin</strong> separately to build PETSc：</p>
+<ul>
+<li><strong>MSYS2</strong> (Linux environment in Windows, tested in 20221216.0.0 version)</li>
+<li><strong>Cygwin</strong> (Linux environment in Windows, tested in 1.2.1 version)</li>
+</ul>
+<div id="test-in-msys2" class="anchor"></div>
+<h3 class="relative group">Test in MSYS2 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#test-in-msys2" aria-label="Anchor">#</a></span>        
+    
+</h3>
+<p>The <strong>MSYS2</strong> system uses <em><code>pacman</code></em> to manage packages such like <em><code>apt</code></em>. You need to install all the same packages in <strong>Linux</strong> to <strong>MSYS2</strong> by <em><code>pacman</code></em>. <strong>MSYS2</strong> doesn&rsquo;t have some base packages (e.g.<em><code>make</code></em>), which you also need to install. Usage of <em><code>pacman</code></em>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pacman -Ss <span class="o">[</span>package name<span class="o">]</span> <span class="c1">#Search package</span>
+</span></span><span class="line"><span class="cl">pacman -S <span class="o">[</span>package name<span class="o">]</span> <span class="c1">#Install package</span>
+</span></span></code></pre></div><p>The problem is when trying to configure PETSc after installing all the packages, it will meet error:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">Could not execute <span class="s2">&#34;[&#39;/bin/rpm -q diffutils&#39;]&#34;</span>: 
+</span></span><span class="line"><span class="cl">    /bin/sh: line 1: /bin/rpm: No such file or directory.
+</span></span></code></pre></div><p>The <strong>MSYS2</strong> is a simple Linux environment running on Windows, which doesn&rsquo;t support enough to run this command.</p>
+<div id="test-in-cygwin" class="anchor"></div>
+<h3 class="relative group">Test in Cygwin 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#test-in-cygwin" aria-label="Anchor">#</a></span>        
+    
+</h3>
+<p>The <strong>Cygwin</strong> system doesn&rsquo;t have such as <em><code>pacman</code></em> or <em><code>apt</code></em> tool to manage packages. One of the way to get package is to re-run the <strong>Cygwin-setup</strong> and to choose the needed package.</p>
+<p>
+
+
+
+
+  <figure>
+    <img class="my-0 rounded-md" src="https://raw.githubusercontent.com/tang-zhu/tang-zhu.github.io/master/posts/javascript/javascript-basic/images/cygwin-setup.png" alt="Cygwin-setup" />
+    
+  </figure>
+
+</p>
+<p>The other way to get the package is use <em><code>apt-cyg</code></em>. <em><code>apt-cyg</code></em> is similar to <em><code>apt</code></em>, but need be installed mannually:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">lynx -source rawgit.com/transcode-open/apt-cyg/master/apt-cyg &gt; apt-cyg
+</span></span><span class="line"><span class="cl">install apt-cyg /bin
+</span></span></code></pre></div><p>Or you can copy the <em>apt-cyg</em>&rsquo;s content through <a href="https://github.com/transcode-open/apt-cyg"   target="_blank">
+    https://github.com/transcode-open/apt-cyg</a> to <em><strong>Cygwin:</strong></em>/bin to creat the same file and run:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">chmod +x apt-cyg
+</span></span></code></pre></div><p>The first problem except installing the base packages is <strong>Cygwin</strong> can&rsquo;t install <strong>MPICH</strong> successfully through above ways. So I try to build it mannualy.</p>
+<p>Firstly, download the source of <strong>MPICH</strong> from <a href="https://www.mpich.org/downloads/"   target="_blank">
+    https://www.mpich.org/downloads/</a> and unpack the tar file (If doesn&rsquo;t have <strong>tar</strong> or other tools, just install them by <strong>Cygwin-setup</strong> or <em><code>apt-cyg</code></em>):</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">tar xfz mpich.tar.gz
+</span></span><span class="line"><span class="cl"><span class="c1">#If tar doesn’t accept the z option, use</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#gunzip -c mpich.tar.gz | tar xf -</span>
+</span></span></code></pre></div><p>Let us assume that the directory where you do this is <em>/home/you/libraries</em>. It will now contain a subdirectory named <em>mpich-x.x.x</em>. Choose an installation directory (the default is <em>/usr/local/bin</em>):</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mkdir /home/you/mpich-install
+</span></span></code></pre></div><p>Choose a build directory:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mkdir /tmp/you/mpich-x.x.x
+</span></span></code></pre></div><p>Configure <strong>MPICH</strong>, specifying the installation directory, and running the configure script in the source directory:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> /tmp/you/mpich-x.x.x
+</span></span><span class="line"><span class="cl">/home/you/libraries/mpich-x.x.x/configure -prefix<span class="o">=</span>/home/you/mpich-install <span class="p">|&amp;</span> tee c.txt
+</span></span></code></pre></div><p>For the <strong>Cygwin</strong>&rsquo;s <em>gfortran</em>, it will meet error:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">configure: error: The Fortran compiler gfortran does not accept programs that call the same routine with arguments of different types without the option -fallow-argument-mismatch.  Rerun configure with <span class="nv">FFLAGS</span><span class="o">=</span>-fallow-argument-mismatch and <span class="nv">FCFLAGS</span><span class="o">=</span>-fallow-argument-mismatch
+</span></span></code></pre></div><p>Change the command:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">/home/you/libraries/mpich-x.x.x/configure -prefix<span class="o">=</span>/home/you/mpich-install <span class="nv">FFLAGS</span><span class="o">=</span>-fallow-argument-mismatch <span class="nv">FCFLAGS</span><span class="o">=</span>-fallow-argument-mismatch <span class="p">|&amp;</span> tee c.txt
+</span></span></code></pre></div><p>The error change to:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">configure: error: libfabric only builds on Linux, OS X, and FreeBSD
+</span></span><span class="line"><span class="cl">configure: error: libfabric configure failed
+</span></span></code></pre></div><p>It seems <strong>Cygwin</strong> can not support <strong>MPICH</strong> yet.</p>
+<div id="conclusion" class="anchor"></div>
+<h3 class="relative group">Conclusion 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#conclusion" aria-label="Anchor">#</a></span>        
+    
+</h3>
+<p>It is not to hard to and possible to change the code to Windows version, because of the similarity between <strong>gcc</strong> and <strong>MSVC</strong>。So the best way is to rewrite the full code instead of using virtual Linux environment.</p>
+
+  </div>
 </div>
-<div class="hugo-encryptor-form">
-<input class="hugo-encryptor-input" onkeydown="if(event.keyCode==13) {_click_handler(this)}" placeholder="Password and Enter" style="border-radius: 5px; text-align: center;" type="password"/>
-</div>
-<div class="hugo-encryptor-cipher-text" style="display: none;">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</div>
-</div>
-</div>
-<script>
+        </br></br>
+        
+
+      </div>
+     
+     <script>
         var oid = "views_posts\\petsc\\installation-petsc\\index.md"
         var oid_likes = "likes_posts\\petsc\\installation-petsc\\index.md"
       </script>
-<script integrity="sha512-DkmXO0rQo4LHxgEti/+CJjFmQtqrxPiiBHe9CGdPPabi+pk7wgrU9R58W7aOb5E6IHp8T+N+oOe4BolK/OCmTg==" src="/js/page.min.0e49973b4ad0a382c7c6012d8bff8226316642daabc4f8a20477bd08674f3da6e2fa993bc20ad4f51e7c5bb68e6f913a207a7c4fe37ea0e7b806894afce0a64e.js" type="text/javascript"></script>
-</section>
-<footer class="pt-8 max-w-prose print:hidden">
-<div class="flex">
-<img alt="Tang Zhu" class="!mt-0 !mb-0 h-24 w-24 rounded-full ltr:mr-4 rtl:ml-4" height="96" src="/img/hutao_huab4b9d12dc650a180e79ea4705cdfc41_155590_192x192_fill_q75_box_center.jpg" width="96"/>
-<div class="place-self-center">
-<div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+      
+      
+      <script type="text/javascript" src="/js/page.min.0e49973b4ad0a382c7c6012d8bff8226316642daabc4f8a20477bd08674f3da6e2fa993bc20ad4f51e7c5bb68e6f913a207a7c4fe37ea0e7b806894afce0a64e.js" integrity="sha512-DkmXO0rQo4LHxgEti/&#43;CJjFmQtqrxPiiBHe9CGdPPabi&#43;pk7wgrU9R58W7aOb5E6IHp8T&#43;N&#43;oOe4BolK/OCmTg=="></script>
+  
+    </section>
+  <footer class="pt-8 max-w-prose print:hidden">
+
+    
+  <div class="flex">
+    
+      
+      
+        
+        <img
+          class="!mt-0 !mb-0 h-24 w-24 rounded-full ltr:mr-4 rtl:ml-4"
+          width="96"
+          height="96"
+          alt="Tang Zhu"
+          src="/img/hutao_huab4b9d12dc650a180e79ea4705cdfc41_155590_192x192_fill_q75_box_center.jpg"
+        />
+      
+    
+    <div class="place-self-center">
+      
+        <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
           Author
         </div>
-<div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+        <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
           Tang Zhu
         </div>
-<div class="text-sm text-neutral-700 dark:text-neutral-400">In me the tiger, sniffs the rose</div>
-<div class="text-2xl sm:text-lg">
-<div class="flex flex-wrap text-neutral-400 dark:text-neutral-500">
-<a aria-label="Email" class="px-1 hover:text-primary-700 dark:hover:text-primary-400" href="mailto:tang_zhu_mail@163.com" rel="me noopener noreferrer" target="_blank"><span class="inline-block align-text-bottom">
-<span class="relative block icon">
-<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M207.8 20.73c-93.45 18.32-168.7 93.66-187 187.1c-27.64 140.9 68.65 266.2 199.1 285.1c19.01 2.888 36.17-12.26 36.17-31.49l.0001-.6631c0-15.74-11.44-28.88-26.84-31.24c-84.35-12.98-149.2-86.13-149.2-174.2c0-102.9 88.61-185.5 193.4-175.4c91.54 8.869 158.6 91.25 158.6 183.2l0 16.16c0 22.09-17.94 40.05-40 40.05s-40.01-17.96-40.01-40.05v-120.1c0-8.847-7.161-16.02-16.01-16.02l-31.98 .0036c-7.299 0-13.2 4.992-15.12 11.68c-24.85-12.15-54.24-16.38-86.06-5.106c-38.75 13.73-68.12 48.91-73.72 89.64c-9.483 69.01 43.81 128 110.9 128c26.44 0 50.43-9.544 69.59-24.88c24 31.3 65.23 48.69 109.4 37.49C465.2 369.3 496 324.1 495.1 277.2V256.3C495.1 107.1 361.2-9.332 207.8 20.73zM239.1 304.3c-26.47 0-48-21.56-48-48.05s21.53-48.05 48-48.05s48 21.56 48 48.05S266.5 304.3 239.1 304.3z" fill="currentColor"></path></svg>
-</span>
-</span></a>
-<a aria-label="Github" class="px-1 hover:text-primary-700 dark:hover:text-primary-400" href="https://github.com/tang-zhu" rel="me noopener noreferrer" target="_blank"><span class="inline-block align-text-bottom">
-<span class="relative block icon">
-<svg viewbox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" fill="currentColor"></path></svg>
-</span>
-</span></a>
+      
+      
+        <div class="text-sm text-neutral-700 dark:text-neutral-400">In me the tiger, sniffs the rose</div>
+      
+      <div class="text-2xl sm:text-lg">
+  <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500">
+    
+      
+        <a
+          class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
+          href="mailto:tang_zhu_mail@163.com"
+          target="_blank"
+          aria-label="Email"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M207.8 20.73c-93.45 18.32-168.7 93.66-187 187.1c-27.64 140.9 68.65 266.2 199.1 285.1c19.01 2.888 36.17-12.26 36.17-31.49l.0001-.6631c0-15.74-11.44-28.88-26.84-31.24c-84.35-12.98-149.2-86.13-149.2-174.2c0-102.9 88.61-185.5 193.4-175.4c91.54 8.869 158.6 91.25 158.6 183.2l0 16.16c0 22.09-17.94 40.05-40 40.05s-40.01-17.96-40.01-40.05v-120.1c0-8.847-7.161-16.02-16.01-16.02l-31.98 .0036c-7.299 0-13.2 4.992-15.12 11.68c-24.85-12.15-54.24-16.38-86.06-5.106c-38.75 13.73-68.12 48.91-73.72 89.64c-9.483 69.01 43.81 128 110.9 128c26.44 0 50.43-9.544 69.59-24.88c24 31.3 65.23 48.69 109.4 37.49C465.2 369.3 496 324.1 495.1 277.2V256.3C495.1 107.1 361.2-9.332 207.8 20.73zM239.1 304.3c-26.47 0-48-21.56-48-48.05s21.53-48.05 48-48.05s48 21.56 48 48.05S266.5 304.3 239.1 304.3z"/></svg>
+
+  </span>
+
+</span></a
+        >
+      
+    
+      
+        <a
+          class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://github.com/tang-zhu"
+          target="_blank"
+          aria-label="Github"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+
+  </span>
+
+</span></a
+        >
+      
+    
+  </div>
+
 </div>
-</div>
-</div>
-</div>
-<div class="pt-8">
-<hr class="border-dotted border-neutral-300 dark:border-neutral-600"/>
-<div class="flex justify-between pt-3">
-<span>
-<a class="flex group mr-3" href="/posts/futhark/futhark-note-1/futhark-note-1/">
-<span class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400">←</span>
-<span class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400">→</span>
-<span class="flex flex-col">
-<span class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"></span>
-<span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-<time datetime="0001-01-01 00:00:00 +0000 UTC">1 January 0001</time>
-</span>
-</span>
-</a>
-</span>
-<span>
-<a class="flex text-right group ml-3" href="/posts/petsc/topopt-in-petsc/">
-<span class="flex flex-col">
-<span class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500">Usage of TopOpt-in-PETSc Projects</span>
-<span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-<time datetime="2022-12-29 17:18:05 +0800 CST">29 December 2022</time>
-</span>
-</span>
-<span class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400">→</span>
-<span class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400">←</span>
-</a>
-</span>
-</div>
-</div>
-</footer>
+    </div>
+  </div>
+
+
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+
+    
+
+
+
+
+    
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="flex group mr-3" href="/posts/futhark/futhark-note-1/futhark-note-1/">
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  ></span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="0001-01-01 00:00:00 &#43;0000 UTC">1 January 0001</time>
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+            <a class="flex text-right group ml-3" href="/posts/petsc/topopt-in-petsc/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Usage of TopOpt-in-PETSc Projects</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2022-12-29 17:18:05 &#43;0800 CST">29 December 2022</time>
+                  
+                </span>
+              </span>
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+            </a>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+    
+  </footer>
 </article>
-<div class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0" id="top-scroller">
-<a aria-label="Scroll to top" class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 backdrop-blur hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400" href="#the-top" title="Scroll to top">
-    ↑
+
+      <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0">
+  <a href="#the-top"
+    class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 backdrop-blur hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="Scroll to top" title="Scroll to top">
+    &uarr;
   </a>
 </div>
-</main><footer class="py-10 print:hidden" id="site-footer">
-<div class="flex items-center justify-between">
-<p class="text-sm text-neutral-500 dark:text-neutral-400">
-      ©
+    </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+    
+  
+  <div class="flex items-center justify-between">
+
+    
+    
+    <p class="text-sm text-neutral-500 dark:text-neutral-400">
+      &copy;
       2023
       Tang Zhu
     </p>
-<p class="text-xs text-neutral-500 dark:text-neutral-400">
+    
+
+    
+    
+    <p class="text-xs text-neutral-500 dark:text-neutral-400">
       
       
-      Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="https://blowfish.page/" rel="noopener noreferrer" target="_blank">Blowfish</a>
-</p>
-</div>
-<script>
+      Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+        href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+        href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a>
+    </p>
+    
+
+  </div>
+  <script>
     
     mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
       margin: 24,
@@ -371,30 +1097,65 @@ MathJax.Hub.Queue(function() {
     })
     
   </script>
-<script integrity="sha512-NcERO8wWxaWb8DEIL55jgiqpUoBCOIGnhHp/8zoW5imc5qhA2e9OENlH4DChjz8gNZr7LsDzWWdIS5qTYKwxRQ==" src="/js/process.min.35c1113bcc16c5a59bf031082f9e63822aa95280423881a7847a7ff33a16e6299ce6a840d9ef4e10d947e030a18f3f20359afb2ec0f35967484b9a9360ac3145.js" type="text/javascript"></script>
-</footer><div class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]" data-url="https://Tang-Zhu.gihgub.io/" id="search-wrapper" style="z-index:500">
-<div class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800" id="search-modal">
-<header class="relative z-10 flex items-center justify-between flex-none px-2">
-<form class="flex items-center flex-auto min-w-0">
-<div class="flex items-center justify-center w-8 h-8 text-neutral-400">
-<span class="relative block icon">
-<svg aria-hidden="true" class="svg-inline--fa fa-search fa-w-16" data-icon="search" data-prefix="fas" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" fill="currentColor"></path></svg>
-</span>
+  
+  
+  <script type="text/javascript" src="/js/process.min.35c1113bcc16c5a59bf031082f9e63822aa95280423881a7847a7ff33a16e6299ce6a840d9ef4e10d947e030a18f3f20359afb2ec0f35967484b9a9360ac3145.js" integrity="sha512-NcERO8wWxaWb8DEIL55jgiqpUoBCOIGnhHp/8zoW5imc5qhA2e9OENlH4DChjz8gNZr7LsDzWWdIS5qTYKwxRQ=="></script>
+  
+  
+</footer><div
+  id="search-wrapper"
+  class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
+  data-url="https://Tang-Zhu.gihgub.io/"
+  style="z-index:500"
+>
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800"
+  >
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="Search"
+          tabindex="0"
+        />
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="Close (Esc)"
+      >
+        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+
+      </button>
+    </header>
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
 </div>
-<input class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent" id="search-query" placeholder="Search" tabindex="0" type="search"/>
-</form>
-<button class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400" id="close-search-button" title="Close (Esc)">
-<span class="relative block icon">
-<svg viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z" fill="currentColor"></path></svg>
-</span>
-</button>
-</header>
-<section class="flex-auto px-2 overflow-auto">
-<ul id="search-results">
-</ul>
-</section>
-</div>
-</div>
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script><script src="/decrypt.js"></script></body>
+
+  </div>
+</body>
+
 </html>
