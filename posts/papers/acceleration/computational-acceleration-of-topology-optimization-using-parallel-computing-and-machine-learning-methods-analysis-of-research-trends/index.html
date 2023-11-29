@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" data-auto-appearance="true" data-default-appearance="dark" dir="ltr" lang="en"><head><style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+<meta charset="utf-8"/>
+<meta content="en" http-equiv="content-language"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+<title>Computational Acceleration of Topology Optimization Using Parallel Computing and Machine Learning Methods – Analysis of Research Trends · Tang Zhu</title>
+<meta content="Computational Acceleration of Topology Optimization Using Parallel Computing and Machine Learning Methods – Analysis of Research Trends · Tang Zhu" name="title"/>
+<meta content="My awesome website" name="description"/>
+<meta content="Paper, Acceleration, " name="keywords"/>
+<link href="https://Tang-Zhu.gihgub.io/posts/papers/acceleration/computational-acceleration-of-topology-optimization-using-parallel-computing-and-machine-learning-methods-analysis-of-research-trends/" rel="canonical"/>
+<link href="/css/main.bundle.min.55800f303ced971710fcec8763e3a2eb63b3fb2606988f7139a956fe0aea85d71ed6a30e6173ab797d2f7ffa06850e79622ce5d198b483b0c942f51afefdd89f.css" integrity="sha512-VYAPMDztlxcQ/OyHY+Oi62Oz+yYGmI9xOalW/grqhdce1qMOYXOreX0vf/oGhQ55Yizl0Zi0g7DJQvUa/v3Ynw==" rel="stylesheet" type="text/css"/>
+<script integrity="sha512-UWoWdFvqWpvQERONJUzA/TlzzVXObhXz3sdj58fCx0SPj+e1TMqBHLghsMfhLNFhyqzh3XlKw9NNQJN8vMnuEg==" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js" type="text/javascript"></script>
+<script data-copied="" data-copy="" defer="" id="script-bundle" integrity="sha512-PdzwT1sNTDL3LnJtPBLuvM2MPJ+dqpoTQUgIiV3grh4c3d2mhJaA1b2W27YNCx4LJMKfXIPlYx5V5+a8AgFUkA==" src="/js/main.bundle.min.3ddcf04f5b0d4c32f72e726d3c12eebccd8c3c9f9daa9a13414808895de0ae1e1cdddda6849680d5bd96dbb60d0b1e0b24c29f5c83e5631e55e7e6bc02015490.js" type="text/javascript"></script>
+<script src="/js/zoom.min.js"></script>
+<link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="/site.webmanifest" rel="manifest"/>
+<meta content="Computational Acceleration of Topology Optimization Using Parallel Computing and Machine Learning Methods – Analysis of Research Trends" property="og:title"/>
+<meta content="JOURNAL: Journal of Industrial Information Integration
+
+Abstract 
+    
+        #        
+    
+
+
+CPU-accelerated: In this category, TO algorithms numerically calculated using multi CPU cores.
+GPU-accelerated: Here, algorithms of TO is parallelized using multicore graphics processors to improve the computational time.
+ML-accelerated: TO problems are addressed using machine learning methods, such as artificial neural networks and image processing techniques, with the purpose of reducing the computation cost.
+" property="og:description"/>
+<meta content="article" property="og:type"/>
+<meta content="https://Tang-Zhu.gihgub.io/posts/papers/acceleration/computational-acceleration-of-topology-optimization-using-parallel-computing-and-machine-learning-methods-analysis-of-research-trends/" property="og:url"/><meta content="posts" property="article:section"/>
+<meta content="2023-11-29T18:02:29+08:00" property="article:published_time"/>
+<meta content="2023-11-29T18:02:29+08:00" property="article:modified_time"/>
+<meta content="summary" name="twitter:card"/>
+<meta content="Computational Acceleration of Topology Optimization Using Parallel Computing and Machine Learning Methods – Analysis of Research Trends" name="twitter:title"/>
+<meta content="JOURNAL: Journal of Industrial Information Integration
+
+Abstract 
+    
+        #        
+    
+
+
+CPU-accelerated: In this category, TO algorithms numerically calculated using multi CPU cores.
+GPU-accelerated: Here, algorithms of TO is parallelized using multicore graphics processors to improve the computational time.
+ML-accelerated: TO problems are addressed using machine learning methods, such as artificial neural networks and image processing techniques, with the purpose of reducing the computation cost.
+" name="twitter:description"/>
+<script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Posts",
+    "name": "Computational Acceleration of Topology Optimization Using Parallel Computing and Machine Learning Methods – Analysis of Research Trends",
+    "headline": "Computational Acceleration of Topology Optimization Using Parallel Computing and Machine Learning Methods – Analysis of Research Trends",
+    
+    "abstract": "\u003cp\u003e\u003cstrong\u003eJOURNAL:\u003c\/strong\u003e \u003cem\u003e\u003cstrong\u003eJournal of Industrial Information Integration\u003c\/strong\u003e\u003c\/em\u003e\u003c\/p\u003e\n\u003cdiv id=\u0022abstract\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n\u003ch2 class=\u0022relative group\u0022\u003eAbstract \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#abstract\u0022 aria-label=\u0022Anchor\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e        \n    \n\u003c\/h2\u003e\n\u003cul\u003e\n\u003cli\u003eCPU-accelerated: In this category, TO algorithms numerically calculated using multi CPU cores.\u003c\/li\u003e\n\u003cli\u003eGPU-accelerated: Here, algorithms of TO is parallelized using multicore graphics processors to improve the computational time.\u003c\/li\u003e\n\u003cli\u003eML-accelerated: TO problems are addressed using machine learning methods, such as artificial neural networks and image processing techniques, with the purpose of reducing the computation cost.\u003c\/li\u003e\n\u003c\/ul\u003e",
+    "inLanguage": "en",
+    "url" : "https:\/\/Tang-Zhu.gihgub.io\/posts\/papers\/acceleration\/computational-acceleration-of-topology-optimization-using-parallel-computing-and-machine-learning-methods-analysis-of-research-trends\/",
+    "author" : {
+      "@type": "Person",
+      "name": "Tang Zhu"
+    },
+    "copyrightYear": "2023",
+    "dateCreated": "2023-11-29T18:02:29\u002b08:00",
+    "datePublished": "2023-11-29T18:02:29\u002b08:00",
+    
+    "dateModified": "2023-11-29T18:02:29\u002b08:00",
+    
+    "keywords": ["Paper","Acceleration"],
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "1233"
+  }]
+  </script>
+<meta content="Tang Zhu" name="author"/>
+<link href="mailto:tang_zhu_mail@163.com" rel="me"/>
+<link href="https://github.com/tang-zhu" rel="me"/>
+<script integrity="" src="/lib/jquery/jquery.slim.min.js"></script>
+<script async="" src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+<meta name="theme-color"/>
+</head><body class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32">
+<div class="absolute flex self-center" id="the-top">
+<a class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600" href="#main-content"><span class="font-bold text-primary-600 ltr:pr-2 rtl:pl-2 dark:text-primary-400">↓</span>Skip to main content</a>
+</div>
+<div class="min-h-[148px]"></div>
+<div class="fixed inset-x-0 pl-[24px] pr-[24px]" style="z-index:100">
+<div class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl shadow-2xl" id="menu-blur"></div>
+<div class="relative max-w-[64rem] ml-auto mr-auto">
+<div class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start space-x-3" style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px">
+<div class="flex flex-1 items-center justify-between">
+<nav class="flex space-x-3">
+<a class="text-base font-medium text-gray-500 hover:text-gray-900" href="/">Tang Zhu</a>
+</nav>
+<nav class="hidden md:flex items-center space-x-5 md:ml-12">
+<a class="flex items-center" href="/posts/">
+<p class="text-base font-medium text-gray-500 hover:text-gray-900" title="Posts">
+        Post
+    </p>
+</a>
+<button aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400" id="search-button" title="">
+<span class="relative block icon">
+<svg aria-hidden="true" class="svg-inline--fa fa-search fa-w-16" data-icon="search" data-prefix="fas" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" fill="currentColor"></path></svg>
+</span>
+</button>
+<div class="ltr:mr-14 rtl:ml-14 cursor-pointer text-sm text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400">
+<button aria-label="Dark mode switcher" id="appearance-switcher" type="button">
+<div class="flex items-center justify-center h-12 dark:hidden">
+<span class="relative block icon">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z" fill="currentColor"></path></svg>
+</span>
+</div>
+<div class="items-center justify-center hidden h-12 dark:flex">
+<span class="relative block icon">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z" fill="currentColor"></path></svg>
+</span>
+</div>
+</button>
+</div>
+</nav>
+<div class="flex md:hidden items-center space-x-5 md:ml-12">
+<span></span>
+<button aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400" id="search-button-mobile" title="">
+<span class="relative block icon">
+<svg aria-hidden="true" class="svg-inline--fa fa-search fa-w-16" data-icon="search" data-prefix="fas" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" fill="currentColor"></path></svg>
+</span>
+</button>
+<button aria-label="Dark mode switcher" id="appearance-switcher-mobile" style="margin-right:5px" type="button">
+<div class="flex items-center justify-center h-12 dark:hidden">
+<span class="relative block icon">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z" fill="currentColor"></path></svg>
+</span>
+</div>
+<div class="items-center justify-center hidden h-12 dark:flex">
+<span class="relative block icon">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z" fill="currentColor"></path></svg>
+</span>
+</div>
+</button>
+</div>
+</div>
+<div class="-my-2 -mr-2 md:hidden">
+<label class="block" for="menu-controller" id="menu-button">
+<input class="hidden" id="menu-controller" type="checkbox"/>
+<div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+<span class="relative block icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z" fill="currentColor"></path></svg>
+</span>
+</div>
+<div class="fixed inset-0 z-30 invisible w-screen h-screen m-auto overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50" id="menu-wrapper" style="padding-top:5px;">
+<ul class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
+<li>
+<span class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
+<span class="relative block icon">
+<svg viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z" fill="currentColor"></path></svg>
+</span>
+</span>
+</li>
+<li class="mt-1">
+<a class="flex items-center" href="/posts/">
+<p class="text-bg font-bg text-gray-500 hover:text-gray-900" title="Posts">
+            Post
+        </p>
+</a>
+</li>
+</ul>
+</div>
+</label>
+</div>
+</div>
+<script>
+    (function () {
+        var $mainmenu = $('.main-menu');
+        var path = window.location.pathname;
+        $mainmenu.find('a[href="' + path + '"]').each(function (i, e) {
+            $(e).children('p').addClass('active');
+        });
+    })();
+</script>
+</div>
+</div>
+<script>
+  window.addEventListener('scroll', function (e) {
+    var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    var background_blur = document.getElementById('menu-blur');
+    background_blur.style.opacity = (scroll / 300);
+  });
+</script>
+<div class="relative flex flex-col grow">
+<main class="grow" id="main-content">
+<article>
+<div class="h-[150px] md:h-[200px]" id="hero"></div>
+<div class="fixed w-full inset-x-0 top-0 h-[1000px] object-cover m-0 single_hero_background nozoom" style="background-image:url(/img/bg.png);">
+<video autoplay="" class="w-full inset-x-0 top-0 h-[1000px] object-cover m-0 single_hero_background nozoom" loop="" muted="" playsinline="" poster="/img/bg.png" src="/img/bg.mp4"></video>
+<div class="absolute inset-0 h-[1000px] bg-gradient-to-t from-neutral dark:from-neutral-800 to-transparent mix-blend-normal">
+</div>
+<div class="absolute inset-0 h-[1000px] opacity-60 bg-gradient-to-t from-neutral dark:from-neutral-800 to-neutral-100 dark:to-neutral-800 mix-blend-normal">
+</div>
+</div>
+<div class="fixed opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl" id="background-blur"></div>
+<script>
+    window.addEventListener('scroll', function (e) {
+        var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+        var background_blur = document.getElementById('background-blur');
+        background_blur.style.opacity = (scroll / 300)
+    });
+</script>
+<header class="mt-5 max-w-prose" id="single_header">
+<ol class="text-sm text-neutral-500 dark:text-neutral-400 print:hidden">
+<li class="inline hidden">
+<a class="hover:underline decoration-neutral-300 dark:underline-neutral-600" href="/">Tang Zhu</a><span class="px-1 text-primary-500">/</span>
+</li>
+<li class="inline">
+<a class="hover:underline decoration-neutral-300 dark:underline-neutral-600" href="/posts/">Posts</a><span class="px-1 text-primary-500">/</span>
+</li>
+<li class="inline hidden">
+<a class="hover:underline decoration-neutral-300 dark:underline-neutral-600" href="/posts/papers/acceleration/computational-acceleration-of-topology-optimization-using-parallel-computing-and-machine-learning-methods-analysis-of-research-trends/">Computational Acceleration of Topology Optimization Using Parallel Computing and Machine Learning Methods – Analysis of Research Trends</a><span class="px-1 text-primary-500">/</span>
+</li>
+</ol>
+<h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+      Computational Acceleration of Topology Optimization Using Parallel Computing and Machine Learning Methods – Analysis of Research Trends
+    </h1>
+<div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+<div class="flex flex-row flex-wrap items-center">
+<time datetime="2023-11-29 18:02:29 +0800 CST">29 November 2023</time><span class="px-2 text-primary-500">·</span><span>1233 words</span><span class="px-2 text-primary-500">·</span><span title="Reading time">6 mins</span>
+</div>
+<div class="flex flex-row flex-wrap items-center">
+<span class="mr-2" onclick="window.open(&quot;/categories/paper/&quot;,'_self');" style="margin-top:0.5rem">
+<span class="flex">
+<span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Paper
+  </span>
+</span>
+</span>
+<span class="mr-2" onclick="window.open(&quot;/categories/acceleration/&quot;,'_self');" style="margin-top:0.5rem">
+<span class="flex">
+<span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Acceleration
+  </span>
+</span>
+</span>
+<span class="mr-2" onclick="window.open(&quot;/tags/paper/&quot;,'_self');" style="margin-top:0.5rem">
+<span class="flex">
+<span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Paper
+  </span>
+</span>
+</span>
+<span class="mr-2" onclick="window.open(&quot;/tags/acceleration/&quot;,'_self');" style="margin-top:0.5rem">
+<span class="flex">
+<span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Acceleration
+  </span>
+</span>
+</span>
+</div>
+</div>
+</header>
+<section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+<div class="order-first sm:max-w-prose lg:ml-auto px-0 lg:order-last lg:max-w-xs ltr:lg:pl-8 rtl:lg:pr-8">
+<div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-10">
+<details class="mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block" open="">
+<summary class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+<div class="min-w-[220px] py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+<nav id="TableOfContents">
+<ul>
+<li><a href="#abstract">Abstract</a></li>
+</ul>
+</nav>
+</div>
+</details>
+<details class="mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:hidden">
+<summary class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+<div class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+<nav id="TableOfContents">
+<ul>
+<li><a href="#abstract">Abstract</a></li>
+</ul>
+</nav>
+</div>
+</details>
+<script>
+  (function () {
+    var $toc = $('#TableOfContents');
+    if ($toc.length > 0) {
+      var $window = $(window);
+
+      function onScroll() {
+        var currentScroll = $window.scrollTop();
+        var h = $('.anchor');
+        var id = "";
+        h.each(function (i, e) {
+          e = $(e);
+          if (e.offset().top - $(window).height()/3 <= currentScroll) {
+            id = e.attr('id');
+          }
+        });
+        var active = $toc.find('a.active');      
+        if (active.length == 1 && active.eq(0).attr('href') == '#' + id) return true;
+
+        active.each(function (i, e) {
+           
+            $(e).removeClass('active').siblings('ul').hide();
+          
+        });
+        $toc.find('a[href="#' + id + '"]').addClass('active')
+        $toc.find('a[href="#' + id + '"]').parentsUntil('#TableOfContents').each(function (i, e) {
+          $(e).children('a').parents('ul').show();          
+        });
+      }
+
+      $window.on('scroll', onScroll);
+      $(document).ready(function () {
+         
+          $toc.find('a').parent('li').find('ul').hide();
+        
+        onScroll();
+      });
+    }
+  })();
+</script>
+</div>
+</div>
+<div class="min-w-0 min-h-0 max-w-prose">
+<p><strong>JOURNAL:</strong> <em><strong>Journal of Industrial Information Integration</strong></em></p>
+<div class="anchor" id="abstract"></div>
+<h2 class="relative group">Abstract 
+    <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+<a aria-label="Anchor" class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" href="#abstract" style="text-decoration-line: none !important;">#</a></span>
+</h2>
+<ul>
+<li>CPU-accelerated: In this category, TO algorithms numerically calculated using multi CPU cores.</li>
+<li>GPU-accelerated: Here, algorithms of TO is parallelized using multicore graphics processors to improve the computational time.</li>
+<li>ML-accelerated: TO problems are addressed using machine learning methods, such as artificial neural networks and image processing techniques, with the purpose of reducing the computation cost.</li>
+</ul>
+<div class="hugo-encryptor-container">
+<div class="hugo-encryptor-prompt">
+<p>Part of this article is encrypted with password:</p>
+</div>
+<div class="hugo-encryptor-form">
+<input class="hugo-encryptor-input" onkeydown="if(event.keyCode==13) {_click_handler(this)}" placeholder="Password and Enter" style="border-radius: 5px; text-align: center;" type="password"/>
+</div>
+<div class="hugo-encryptor-cipher-text" style="display: none;">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</div>
+</div>
+</div>
+<script>
+        var oid = "views_posts\\papers\\acceleration\\Computational Acceleration of Topology Optimization Using Parallel Computing and Machine Learning Methods – Analysis of Research Trends\\index.md"
+        var oid_likes = "likes_posts\\papers\\acceleration\\Computational Acceleration of Topology Optimization Using Parallel Computing and Machine Learning Methods – Analysis of Research Trends\\index.md"
+      </script>
+<script integrity="sha512-DkmXO0rQo4LHxgEti/+CJjFmQtqrxPiiBHe9CGdPPabi+pk7wgrU9R58W7aOb5E6IHp8T+N+oOe4BolK/OCmTg==" src="/js/page.min.0e49973b4ad0a382c7c6012d8bff8226316642daabc4f8a20477bd08674f3da6e2fa993bc20ad4f51e7c5bb68e6f913a207a7c4fe37ea0e7b806894afce0a64e.js" type="text/javascript"></script>
+</section>
+<footer class="pt-8 max-w-prose print:hidden">
+<div class="flex">
+<img alt="Tang Zhu" class="!mt-0 !mb-0 h-24 w-24 rounded-full ltr:mr-4 rtl:ml-4" height="96" src="/img/hutao_huab4b9d12dc650a180e79ea4705cdfc41_155590_192x192_fill_q75_box_center.jpg" width="96"/>
+<div class="place-self-center">
+<div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+          Author
+        </div>
+<div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+          Tang Zhu
+        </div>
+<div class="text-sm text-neutral-700 dark:text-neutral-400">In me the tiger, sniffs the rose</div>
+<div class="text-2xl sm:text-lg">
+<div class="flex flex-wrap text-neutral-400 dark:text-neutral-500">
+<a aria-label="Email" class="px-1 hover:text-primary-700 dark:hover:text-primary-400" href="mailto:tang_zhu_mail@163.com" rel="me noopener noreferrer" target="_blank"><span class="inline-block align-text-bottom">
+<span class="relative block icon">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M207.8 20.73c-93.45 18.32-168.7 93.66-187 187.1c-27.64 140.9 68.65 266.2 199.1 285.1c19.01 2.888 36.17-12.26 36.17-31.49l.0001-.6631c0-15.74-11.44-28.88-26.84-31.24c-84.35-12.98-149.2-86.13-149.2-174.2c0-102.9 88.61-185.5 193.4-175.4c91.54 8.869 158.6 91.25 158.6 183.2l0 16.16c0 22.09-17.94 40.05-40 40.05s-40.01-17.96-40.01-40.05v-120.1c0-8.847-7.161-16.02-16.01-16.02l-31.98 .0036c-7.299 0-13.2 4.992-15.12 11.68c-24.85-12.15-54.24-16.38-86.06-5.106c-38.75 13.73-68.12 48.91-73.72 89.64c-9.483 69.01 43.81 128 110.9 128c26.44 0 50.43-9.544 69.59-24.88c24 31.3 65.23 48.69 109.4 37.49C465.2 369.3 496 324.1 495.1 277.2V256.3C495.1 107.1 361.2-9.332 207.8 20.73zM239.1 304.3c-26.47 0-48-21.56-48-48.05s21.53-48.05 48-48.05s48 21.56 48 48.05S266.5 304.3 239.1 304.3z" fill="currentColor"></path></svg>
+</span>
+</span></a>
+<a aria-label="Github" class="px-1 hover:text-primary-700 dark:hover:text-primary-400" href="https://github.com/tang-zhu" rel="me noopener noreferrer" target="_blank"><span class="inline-block align-text-bottom">
+<span class="relative block icon">
+<svg viewbox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" fill="currentColor"></path></svg>
+</span>
+</span></a>
+</div>
+</div>
+</div>
+</div>
+<h2 class="mt-8 text-2xl font-extrabold mb-10">Related</h2>
+<section class="w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+<a class="min-w-full" href="/posts/python/lib-trimesh/">
+<div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative backdrop-blur">
+<div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/python/lib-trimesh/feature.png);"></div>
+<div class="px-6 py-4">
+<div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral" href="/posts/python/lib-trimesh/">Point sampling of triangle mesh</div>
+<div class="text-sm text-neutral-500 dark:text-neutral-400">
+<div class="flex flex-row flex-wrap items-center">
+<time datetime="2023-09-11 14:40:05 +0800 CST">11 September 2023</time><span class="px-2 text-primary-500">·</span><span>556 words</span><span class="px-2 text-primary-500">·</span><span title="Reading time">3 mins</span>
+</div>
+<div class="flex flex-row flex-wrap items-center">
+<span class="mr-2" onclick="window.open(&quot;/categories/python/&quot;,'_self');" style="margin-top:0.5rem">
+<span class="flex">
+<span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Python
+  </span>
+</span>
+</span>
+<span class="mr-2" onclick="window.open(&quot;/categories/lib/&quot;,'_self');" style="margin-top:0.5rem">
+<span class="flex">
+<span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Lib
+  </span>
+</span>
+</span>
+<span class="mr-2" onclick="window.open(&quot;/tags/python/&quot;,'_self');" style="margin-top:0.5rem">
+<span class="flex">
+<span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Python
+  </span>
+</span>
+</span>
+<span class="mr-2" onclick="window.open(&quot;/tags/lib/&quot;,'_self');" style="margin-top:0.5rem">
+<span class="flex">
+<span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Lib
+  </span>
+</span>
+</span>
+</div>
+</div>
+<div class="py-1 prose dark:prose-invert">
+          sample() # Sample the surface of a mesh, returning the specified number of points.
+        </div>
+</div>
+<div class="px-6 pt-4 pb-2">
+</div>
+</div>
+</a>
+<a class="min-w-full" href="/posts/graphics/point-sampling-of-triangle-mesh/">
+<div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative backdrop-blur">
+<div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/graphics/point-sampling-of-triangle-mesh/feature.png);"></div>
+<div class="px-6 py-4">
+<div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral" href="/posts/graphics/point-sampling-of-triangle-mesh/">Point sampling of triangle mesh</div>
+<div class="text-sm text-neutral-500 dark:text-neutral-400">
+<div class="flex flex-row flex-wrap items-center">
+<time datetime="2023-09-10 14:40:05 +0800 CST">10 September 2023</time><span class="px-2 text-primary-500">·</span><span>287 words</span><span class="px-2 text-primary-500">·</span><span title="Reading time">2 mins</span>
+</div>
+<div class="flex flex-row flex-wrap items-center">
+<span class="mr-2" onclick="window.open(&quot;/categories/theory/&quot;,'_self');" style="margin-top:0.5rem">
+<span class="flex">
+<span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Theory
+  </span>
+</span>
+</span>
+<span class="mr-2" onclick="window.open(&quot;/categories/graphics/&quot;,'_self');" style="margin-top:0.5rem">
+<span class="flex">
+<span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Graphics
+  </span>
+</span>
+</span>
+<span class="mr-2" onclick="window.open(&quot;/tags/theory/&quot;,'_self');" style="margin-top:0.5rem">
+<span class="flex">
+<span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Theory
+  </span>
+</span>
+</span>
+<span class="mr-2" onclick="window.open(&quot;/tags/graphics/&quot;,'_self');" style="margin-top:0.5rem">
+<span class="flex">
+<span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Graphics
+  </span>
+</span>
+</span>
+</div>
+</div>
+<div class="py-1 prose dark:prose-invert">
+<div class="anchor" id="triangle-point-picking"></div>
+<h1 class="relative group">Triangle Point Picking 
+    <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+<a aria-label="Anchor" class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" href="#triangle-point-picking" style="text-decoration-line: none !important;">#</a></span>
+</h1>
+</div>
+</div>
+<div class="px-6 pt-4 pb-2">
+</div>
+</div>
+</a>
+<a class="min-w-full" href="/posts/topopt-futtop/code-analysis-topopt-futtop/">
+<div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative backdrop-blur">
+<div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/topopt-futtop/code-analysis-topopt-futtop/feature.png);"></div>
+<div class="px-6 py-4">
+<div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral" href="/posts/topopt-futtop/code-analysis-topopt-futtop/">Code Analysis topopt-futtop</div>
+<div class="text-sm text-neutral-500 dark:text-neutral-400">
+<div class="flex flex-row flex-wrap items-center">
+<time datetime="2023-05-29 17:18:05 +0800 CST">29 May 2023</time><span class="px-2 text-primary-500">·</span><span>56 words</span><span class="px-2 text-primary-500">·</span><span title="Reading time">1 min</span>
+</div>
+<div class="flex flex-row flex-wrap items-center">
+<span class="mr-2" onclick="window.open(&quot;/categories/program/&quot;,'_self');" style="margin-top:0.5rem">
+<span class="flex">
+<span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Program
+  </span>
+</span>
+</span>
+<span class="mr-2" onclick="window.open(&quot;/categories/code-analysis/&quot;,'_self');" style="margin-top:0.5rem">
+<span class="flex">
+<span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Code Analysis
+  </span>
+</span>
+</span>
+<span class="mr-2" onclick="window.open(&quot;/tags/program/&quot;,'_self');" style="margin-top:0.5rem">
+<span class="flex">
+<span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Program
+  </span>
+</span>
+</span>
+<span class="mr-2" onclick="window.open(&quot;/tags/code-analysis/&quot;,'_self');" style="margin-top:0.5rem">
+<span class="flex">
+<span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Code Analysis
+  </span>
+</span>
+</span>
+<span class="mr-2" onclick="window.open(&quot;/tags/topopt-futtop/&quot;,'_self');" style="margin-top:0.5rem">
+<span class="flex">
+<span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    topopt-futtop
+  </span>
+</span>
+</span>
+</div>
+</div>
+<div class="py-1 prose dark:prose-invert">
+</div>
+</div>
+<div class="px-6 pt-4 pb-2">
+</div>
+</div>
+</a>
+</section>
+<div class="pt-8">
+<hr class="border-dotted border-neutral-300 dark:border-neutral-600"/>
+<div class="flex justify-between pt-3">
+<span>
+<a class="flex group mr-3" href="/posts/python/lib-trimesh/">
+<span class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400">←</span>
+<span class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400">→</span>
+<span class="flex flex-col">
+<span class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500">Point sampling of triangle mesh</span>
+<span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+<time datetime="2023-09-11 14:40:05 +0800 CST">11 September 2023</time>
+</span>
+</span>
+</a>
+</span>
+<span>
+</span>
+</div>
+</div>
+</footer>
+</article>
+<div class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0" id="top-scroller">
+<a aria-label="Scroll to top" class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 backdrop-blur hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400" href="#the-top" title="Scroll to top">
+    ↑
+  </a>
+</div>
+</main><footer class="py-10 print:hidden" id="site-footer">
+<div class="flex items-center justify-between">
+<p class="text-sm text-neutral-500 dark:text-neutral-400">
+      ©
+      2023
+      Tang Zhu
+    </p>
+<p class="text-xs text-neutral-500 dark:text-neutral-400">
+      
+      
+      Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="https://blowfish.page/" rel="noopener noreferrer" target="_blank">Blowfish</a>
+</p>
+</div>
+<script>
+    
+    mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+      margin: 24,
+      background: 'rgba(0,0,0,0.5)',
+      scrollOffset: 0,
+    })
+    
+  </script>
+<script integrity="sha512-NcERO8wWxaWb8DEIL55jgiqpUoBCOIGnhHp/8zoW5imc5qhA2e9OENlH4DChjz8gNZr7LsDzWWdIS5qTYKwxRQ==" src="/js/process.min.35c1113bcc16c5a59bf031082f9e63822aa95280423881a7847a7ff33a16e6299ce6a840d9ef4e10d947e030a18f3f20359afb2ec0f35967484b9a9360ac3145.js" type="text/javascript"></script>
+</footer><div class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]" data-url="https://Tang-Zhu.gihgub.io/" id="search-wrapper" style="z-index:500">
+<div class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800" id="search-modal">
+<header class="relative z-10 flex items-center justify-between flex-none px-2">
+<form class="flex items-center flex-auto min-w-0">
+<div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+<span class="relative block icon">
+<svg aria-hidden="true" class="svg-inline--fa fa-search fa-w-16" data-icon="search" data-prefix="fas" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" fill="currentColor"></path></svg>
+</span>
+</div>
+<input class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent" id="search-query" placeholder="Search" tabindex="0" type="search"/>
+</form>
+<button class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400" id="close-search-button" title="Close (Esc)">
+<span class="relative block icon">
+<svg viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z" fill="currentColor"></path></svg>
+</span>
+</button>
+</header>
+<section class="flex-auto px-2 overflow-auto">
+<ul id="search-results">
+</ul>
+</section>
+</div>
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script><script src="/decrypt.js"></script></body>
+</html>

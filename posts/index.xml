@@ -6,7 +6,29 @@
     <description>Recent content in Posts on Tang Zhu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 11 Sep 2023 14:40:05 +0800</lastBuildDate><atom:link href="https://Tang-Zhu.gihgub.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Nov 2023 18:02:29 +0800</lastBuildDate><atom:link href="https://Tang-Zhu.gihgub.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Computational Acceleration of Topology Optimization Using Parallel Computing and Machine Learning Methods – Analysis of Research Trends</title>
+      <link>https://Tang-Zhu.gihgub.io/posts/papers/acceleration/computational-acceleration-of-topology-optimization-using-parallel-computing-and-machine-learning-methods-analysis-of-research-trends/</link>
+      <pubDate>Wed, 29 Nov 2023 18:02:29 +0800</pubDate>
+      
+      <guid>https://Tang-Zhu.gihgub.io/posts/papers/acceleration/computational-acceleration-of-topology-optimization-using-parallel-computing-and-machine-learning-methods-analysis-of-research-trends/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;JOURNAL:&lt;/strong&gt; &lt;em&gt;&lt;strong&gt;Journal of Industrial Information Integration&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;div id=&#34;abstract&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+&lt;h2 class=&#34;relative group&#34;&gt;Abstract 
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#abstract&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;&lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;CPU-accelerated: In this category, TO algorithms numerically calculated using multi CPU cores.&lt;/li&gt;
+&lt;li&gt;GPU-accelerated: Here, algorithms of TO is parallelized using multicore graphics processors to improve the computational time.&lt;/li&gt;
+&lt;li&gt;ML-accelerated: TO problems are addressed using machine learning methods, such as artificial neural networks and image processing techniques, with the purpose of reducing the computation cost.&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
     <item>
       <title>Point sampling of triangle mesh</title>
       <link>https://Tang-Zhu.gihgub.io/posts/python/lib-trimesh/</link>
@@ -128,6 +150,24 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://Tang-Zhu.gihgub.io/posts/graphics/mesh-to-sdf/images/mesh-to-sdf-python/</guid>
+      <description>==⚠ Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://Tang-Zhu.gihgub.io/posts/math/dynamical-system/dynamical-system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://Tang-Zhu.gihgub.io/posts/math/dynamical-system/dynamical-system/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://Tang-Zhu.gihgub.io/posts/math/dynamical-system/images/drawing-2023-11-29-11.10.40.excalidraw/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://Tang-Zhu.gihgub.io/posts/math/dynamical-system/images/drawing-2023-11-29-11.10.40.excalidraw/</guid>
       <description>==⚠ Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document.</description>
     </item>
     

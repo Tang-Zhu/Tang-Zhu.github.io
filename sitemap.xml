@@ -10,6 +10,43 @@
   
     
       <url>
+            <loc>https://Tang-Zhu.gihgub.io/posts/papers/acceleration/computational-acceleration-of-topology-optimization-using-parallel-computing-and-machine-learning-methods-analysis-of-research-trends/</loc>
+            <lastmod>2023-11-29T18:02:29+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+  
+    
+      <url>
+            <loc>https://Tang-Zhu.gihgub.io/posts/</loc>
+            <lastmod>2023-11-29T18:02:29+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+      <url>
+            <loc>https://Tang-Zhu.gihgub.io/</loc>
+            <lastmod>2023-11-29T18:02:29+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+  
+    
+      <url>
             <loc>https://Tang-Zhu.gihgub.io/posts/python/lib-trimesh/</loc>
             <lastmod>2023-09-11T14:40:05+08:00</lastmod>
             <changefreq>daily</changefreq>
@@ -18,27 +55,7 @@
     
   
     
-      <url>
-            <loc>https://Tang-Zhu.gihgub.io/posts/</loc>
-            <lastmod>2023-09-11T14:40:05+08:00</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
   
-    
-  
-    
-  
-    
-  
-    
-      <url>
-            <loc>https://Tang-Zhu.gihgub.io/</loc>
-            <lastmod>2023-09-11T14:40:05+08:00</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
     
   
     
@@ -180,6 +197,22 @@
     
       <url>
             <loc>https://Tang-Zhu.gihgub.io/posts/graphics/mesh-to-sdf/images/mesh-to-sdf-python/</loc>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://Tang-Zhu.gihgub.io/posts/math/dynamical-system/dynamical-system/</loc>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://Tang-Zhu.gihgub.io/posts/math/dynamical-system/images/drawing-2023-11-29-11.10.40.excalidraw/</loc>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
           </url>
